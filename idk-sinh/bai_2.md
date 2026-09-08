@@ -84,3 +84,9 @@ Tiến trình nghiên cứu trải qua 6 kĩ năng (bước) liên tiếp:
 **Câu 3:** Thí nghiệm cắt nhân trùng giày:
 a) Nếu tế bào đối chứng (đặt nhân lại) vẫn chết $\rightarrow$ Kết luận: Thao tác kĩ thuật (dùng móc) đã làm rách màng/chết tế bào, không thể khẳng định nguyên nhân chết ở lô thực nghiệm là do mất nhân.
 b) Nếu tế bào đối chứng không chết $\rightarrow$ Kết luận: Thao tác kĩ thuật an toàn. Tế bào lô thực nghiệm chết chắc chắn do mất nhân $\rightarrow$ Nhân là bào quan sống còn, điều khiển mọi hoạt động sống của tế bào.
+
+## C. LÍ DO VÀ CÁCH TƯ DUY TÓM TẮT BÀI 2
+
+- **Đáp ứng trực tiếp yêu cầu học tập (Đề cương 9 câu hỏi):** Phần A được thiết kế lại hoàn toàn dựa trên cấu trúc 9 câu hỏi đề cương của giáo viên. Thay vì tóm tắt lan man theo mục lục SGK, nội dung được tái cấu trúc để "hỏi gì đáp nấy", giúp học sinh có ngay tài liệu ôn tập sát sườn nhất.
+- **Cách diễn đạt:** Lược bỏ phần giải thích dông dài của sách giáo khoa. Giữ lại 100% các từ khóa quan trọng (như *tư duy quy nạp/diễn dịch*, *biến độc lập*, *lô đối chứng*...) và diễn đạt chúng dưới dạng các gạch đầu dòng súc tích, tinh gọn nhất để tối ưu hóa thời gian học thuộc.
+- **Phần Trả lời câu hỏi SGK (Phần B):** Vẫn được giữ lại như một nguồn tài liệu tham khảo dự phòng. Các câu hỏi mang tính suy luận khó (như *thí nghiệm cắt nhân trùng giày*) được giải thích theo logic "Nếu... thì..." giúp học sinh hiểu sâu bản chất thực nghiệm thay vì học vẹt.
