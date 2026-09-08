@@ -1,38 +1,66 @@
-# Bài 2: Phương pháp nghiên cứu và học tập môn Sinh học
+# Bài 2: Các phương pháp nghiên cứu và học tập môn Sinh học
 
-## A. ĐỀ CƯƠNG TÓM TẮT KIẾN THỨC
+## A. TRẢ LỜI CÁC CÂU HỎI ĐỀ CƯƠNG (Theo ảnh bạn cung cấp)
 
-### I. Phương pháp nghiên cứu sinh học
-**1. Phương pháp quan sát:** Gồm 3 bước: Lựa chọn đối tượng/phạm vi $\rightarrow$ Lựa chọn công cụ quan sát (mắt thường, kính hiển vi) $\rightarrow$ Ghi chép số liệu liên tục, khách quan.
-**2. Phương pháp làm việc trong phòng thí nghiệm:**
-- **Đảm bảo an toàn:** Tránh nguy cơ cháy nổ, tuân thủ nguyên tắc pha hóa chất; vận hành thiết bị đúng hướng dẫn; luôn mặc đồ bảo hộ (áo choàng, kính, găng tay).
-- **Kĩ thuật cơ bản:** Giải phẫu (để xem cấu trúc vĩ mô), làm tiêu bản tế bào/NST (cố định, nhuộm màu, dầm ép để quan sát vi mô).
-**3. Phương pháp thực nghiệm khoa học:** Phân loại định danh sinh vật, tách chiết hoạt chất (DNA, enzyme), nuôi cấy mô tế bào/vi sinh vật *in vitro*.
+**1. Phương pháp quan sát: khái niệm, các bước?**
+- **Khái niệm:** Là phương pháp sử dụng các giác quan trực tiếp hoặc nhờ sự hỗ trợ của các công cụ (kính lúp, kính hiển vi) để thu thập thông tin về hình thái, cấu tạo, hoặc hoạt động của sinh vật sống.
+- **Các bước:**
+  - (1) Lựa chọn đối tượng và phạm vi quan sát.
+  - (2) Lựa chọn công cụ quan sát (phù hợp với kích thước đối tượng).
+  - (3) Ghi chép số liệu (ghi liên tục, khách quan để xử lý thống kê).
 
-### II. Các thiết bị nghiên cứu và học tập
-**1. Kính hiển vi:**
-- **Kính hiển vi quang học:** Dùng ánh sáng, độ phóng đại $\sim$ 1.500 lần, phân giải 200nm (quan sát tế bào).
-- **Kính hiển vi điện tử:** Dùng chùm electron, phóng đại siêu việt $\sim$ 50 triệu lần (quan sát virus, bào quan siêu nhỏ).
-**2. Máy li tâm:** Dùng lực li tâm tốc độ cao để phân tách các bào quan/phân tử dựa trên sự khác biệt về khối lượng.
-**3. Thiết bị khác:** Kính lúp, ống nghiệm, pipet, cân điện tử.
+**2. Phương pháp làm việc trong phòng thí nghiệm: khái niệm, các bước?**
+- **Khái niệm:** Là phương pháp nghiên cứu được thực hiện trong không gian phòng thí nghiệm với điều kiện được kiểm soát chặt chẽ và có sự hỗ trợ của các thiết bị, hóa chất chuyên dụng.
+- **Các bước (Quy trình chuẩn):**
+  - (1) Chuẩn bị: Chuẩn bị dụng cụ, hóa chất, mẫu vật và trang bị bảo vệ cá nhân.
+  - (2) Tiến hành: Thực hiện các kĩ thuật phòng thí nghiệm (giải phẫu, làm tiêu bản...) theo đúng thao tác hướng dẫn.
+  - (3) Thu hoạch và dọn dẹp: Ghi nhận kết quả, thu gom rác thải/hóa chất đúng quy định, rửa sạch dụng cụ và vệ sinh chỗ làm việc.
 
-### III. Các kĩ năng nghiên cứu khoa học
-Tiến trình nghiên cứu chuẩn mực gồm 6 bước:
-1. **Quan sát, thu thập dữ liệu:** Tìm ra điểm dị biệt.
-2. **Đặt câu hỏi:** Nêu vấn đề cần giải quyết.
-3. **Hình thành giả thuyết:** Đưa ra lời giải thích sơ bộ. Kết hợp tư duy quy nạp (từ riêng $\rightarrow$ chung) và diễn dịch (nếu giả thuyết đúng $\rightarrow$ thì kết quả là...).
-4. **Thiết kế, tiến hành thí nghiệm:** Phải có **lô đối chứng** (giữ nguyên điều kiện) và **lô thí nghiệm** (thay đổi 1 biến số duy nhất) để so sánh.
-5. **Phân tích kết quả:** Trực quan hóa số liệu (biểu đồ), dùng Toán thống kê để xử lý sai số.
-6. **Rút ra kết luận:** Chấp nhận hay Bác bỏ giả thuyết. Báo cáo để trở thành Học thuyết khoa học.
+**3. Phương pháp thực nghiệm khoa học: khái niệm, các bước?**
+- **Khái niệm:** Là phương pháp chủ động tác động, thay đổi các điều kiện môi trường hoặc đối tượng nghiên cứu để quan sát và tìm hiểu các quy luật sinh học.
+- **Các phương pháp / Các bước tiến hành tiêu biểu:**
+  - Phương pháp nghiên cứu, phân loại sinh vật.
+  - Phương pháp tách chiết (tách enzyme, gene từ tế bào).
+  - Phương pháp nuôi cấy (nuôi cấy mô, tế bào động vật/thực vật, vi sinh vật in vitro).
 
-### IV. Tin sinh học (Bioinformatics)
-- **Khái niệm:** Dùng phần mềm, thuật toán máy tính để lưu trữ, phân loại và phân tích Big Data sinh học.
-- **Ứng dụng:** Giải trình tự gen, mô tả quá trình tiến hóa, dùng AI chẩn đoán bệnh cá thể hóa.
-- **Trong học tập:** Dùng phần mềm mô phỏng 3D quá trình sinh học, sơ đồ tư duy (mindmap) để học tập trực quan.
+**4. Các nội dung trong phương pháp đảm bảo an toàn khi làm việc trong phòng thí nghiệm?**
+- **An toàn cháy nổ, hóa chất:** Tuân thủ quy tắc pha hóa chất, cẩn thận với chất dễ cháy nổ, làm việc ở nơi thoáng khí hoặc có tủ hút.
+- **Vận hành thiết bị:** Chỉ sử dụng thiết bị khi đã nắm rõ cấu trúc và nguyên tắc vận hành, kiểm tra kĩ trước khi dùng.
+- **Trang bị cá nhân:** Luôn mặc áo choàng phòng thí nghiệm, mang găng tay, khẩu trang và kính bảo hộ để tránh tiếp xúc hóa chất hay vi sinh vật gây bệnh.
+- **Nội quy sinh hoạt:** Không ăn uống, đùa nghịch trong phòng thí nghiệm.
+
+**5. Các kĩ thuật phòng thí nghiệm?**
+- **Phương pháp giải phẫu:** Dùng dụng cụ mổ để quan sát cấu trúc vĩ mô bên trong cơ thể (rễ, thân, lá hoặc nội tạng động vật).
+- **Phương pháp làm tiêu bản tế bào/nhiễm sắc thể:** Cắt lát mẫu vật thật mỏng, cố định, nhuộm màu đặc hiệu và dầm ép mẫu để quan sát cấu trúc vi mô dưới kính hiển vi.
+
+**6. Các thiết bị nghiên cứu và học tập môn sinh học?**
+- **Kính hiển vi quang học:** Dùng nguồn sáng điện/mặt trời, độ phóng đại khoảng 1.500 lần (quan sát tế bào).
+- **Kính hiển vi điện tử:** Dùng chùm electron, phóng đại lên tới 50 triệu lần (quan sát cấu trúc siêu hiển vi như virus, DNA).
+- **Máy li tâm:** Dùng lực li tâm để phân tách các bào quan theo khối lượng và kích thước.
+- **Thiết bị khác:** Kính lúp, pipet, ống nghiệm, ống đong, cân điện tử.
+
+**7. Các kĩ năng trong phương pháp thực nghiệm khoa học?**
+Tiến trình nghiên cứu trải qua 6 kĩ năng (bước) liên tiếp:
+1. Quan sát và thu thập dữ liệu.
+2. Đặt câu hỏi.
+3. Hình thành giả thuyết (giải thích sơ bộ có thể kiểm chứng).
+4. Thiết kế và tiến hành thí nghiệm kiểm chứng (thiết kế lô đối chứng và lô thực nghiệm).
+5. Phân tích kết quả và xử lí dữ liệu (dùng Toán thống kê, biểu đồ).
+6. Rút ra kết luận (Chấp nhận hoặc Bác bỏ giả thuyết ban đầu).
+
+**8. Tin sinh học: khái niệm, thành tựu?**
+- **Khái niệm:** Là ngành học ứng dụng phần mềm máy tính, thuật toán và mô hình toán học để lưu trữ, phân loại và phân tích dữ liệu sinh học ở quy mô khổng lồ (Big Data).
+- **Thành tựu:** Giải trình tự bộ gen người, xây dựng sơ đồ tiến hóa phân tử, ứng dụng trí tuệ nhân tạo (AI) để phân tích y khoa, phát hiện bệnh tật và tìm ra thuốc cá thể hóa.
+
+**9. Các công cụ tin học nào được sử dụng trong học tập môn sinh học?**
+- Mạng Internet để tìm kiếm và thu thập thông tin, tài liệu tham khảo.
+- Các phần mềm đồ họa, mô phỏng 3D (mô phỏng cấu trúc tế bào, quá trình sao chép DNA...).
+- Các phần mềm sơ đồ tư duy (mindmap) để hệ thống hóa kiến thức bài học một cách logic, trực quan.
 
 ---
 
-## B. TRẢ LỜI CÂU HỎI SGK
+## B. TRẢ LỜI CÂU HỎI SGK 
+*(Vẫn giữ lại các câu hỏi trong SGK để bạn học thêm)*
 
 ### 1. Dừng lại và suy ngẫm (Trang 15)
 **Câu 1:** Phương pháp an toàn phòng TN: Tuân thủ quy tắc hóa chất/cháy nổ; chỉ vận hành máy khi đã rõ nguyên lí; luôn mặc đồ bảo hộ (áo, găng, kính); dọn dẹp rác thải y tế/hóa học đúng quy định.
