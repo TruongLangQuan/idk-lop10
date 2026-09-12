@@ -1,33 +1,29 @@
 4. Xây dựng kế hoạch giáo dục truyền thống
 Nhiệm vụ: Lập kế hoạch thực hiện một hoạt động giáo dục truyền thống nhà trường
 
-**TÊN HOẠT ĐỘNG: GIÁO DỤC TRUYỀN THỐNG "HIẾU HỌC"**
+**HOẠT ĐỘNG: GIÁO DỤC TRUYỀN THỐNG "HIẾU HỌC"**
 
 - **Mục tiêu:**
-  + Giúp học sinh hiểu được bề dày thành tích và ý nghĩa của truyền thống "Hiếu học" trong lịch sử nhà trường.
-  + Khơi dậy niềm đam mê học hỏi, ý chí vượt khó vươn lên trong học tập và rèn luyện.
-  + Hình thành thái độ tự giác, chủ động lập kế hoạch học tập, đồng thời lan toả phong trào thi đua "Học tập tốt - Rèn luyện tốt" trong toàn trường.
+  + Hiểu ý nghĩa truyền thống hiếu học của trường.
+  + Khơi dậy đam mê học tập, ý chí vượt khó.
+  + Lan tỏa phong trào thi đua "Học tập tốt - Rèn luyện tốt".
 
-- **Đối tượng tham gia:**
-  + Toàn thể học sinh trường THPT.
-  + Khách mời: Ban Giám hiệu, Thầy cô giáo bộ môn, đại diện Hội Khuyến học và các anh chị cựu học sinh có thành tích xuất sắc.
+- **Đối tượng:**
+  + Toàn thể học sinh, Ban Giám hiệu, Giáo viên và Cựu học sinh tiêu biểu.
 
-- **Thời gian:**
-  + Tiết sinh hoạt dưới cờ.
-
-- **Địa điểm:**
-  + Sân trường (hoặc Hội trường lớn của nhà trường).
+- **Thời gian & Địa điểm:**
+  + Tiết sinh hoạt dưới cờ (45 phút) tại Sân trường.
 
 - **Nội dung:**
-  + Báo cáo điểm lại bảng vàng thành tích học tập, các giải thưởng thi học sinh giỏi các cấp của các thế hệ học sinh nhà trường.
-  + Kể những tấm gương sáng về học sinh nghèo vượt khó, vươn lên học giỏi.
-  + Giao lưu, chia sẻ phương pháp học tập hiệu quả và định hướng tương lai.
-  + Lễ trao học bổng hoặc khen thưởng cho những học sinh có thành tích xuất sắc/ học sinh có hoàn cảnh khó khăn đạt điểm cao.
+  + Điểm lại "bảng vàng" thành tích học tập của trường.
+  + Nêu gương các bạn học sinh vượt khó, học giỏi.
+  + Giao lưu, chia sẻ phương pháp học tập với cựu học sinh.
+  + Lễ trao học bổng khuyến học.
 
 - **Cách thức thực hiện:**
-  + Kết hợp linh hoạt giữa Thuyết trình điểm tin thành tích, Tọa đàm giao lưu chia sẻ kinh nghiệm (với cựu học sinh hoặc học sinh giỏi), Trình chiếu video clip về tấm gương vượt khó, và Tổ chức Lễ vinh danh trao thưởng.
+  + Thuyết trình báo cáo, Tọa đàm giao lưu, xem Video clip và Tổ chức trao thưởng.
 
-- **Dự kiến kết quả (Kết quả mong đợi):**
-  + Học sinh toàn trường tham gia nghiêm túc, chú ý lắng nghe và hào hứng tương tác trong phần giao lưu phương pháp học tập.
-  + Khơi dậy thành công động lực học tập: học sinh được truyền cảm hứng, tự xây dựng mục tiêu phấn đấu rõ ràng cho năm học mới, giảm thiểu tình trạng chán học.
-  + Chương trình diễn ra trang trọng, tôn vinh được giá trị của tri thức, thắt chặt tinh thần đoàn kết, hỗ trợ nhau cùng tiến bộ giữa các học sinh.
+- **Dự kiến kết quả:**
+  + Học sinh hào hứng tham gia, tương tác tích cực.
+  + Xây dựng được động lực và mục tiêu học tập cá nhân rõ ràng.
+  + Tôn vinh giá trị tri thức, tạo môi trường học tập thân thiện.
