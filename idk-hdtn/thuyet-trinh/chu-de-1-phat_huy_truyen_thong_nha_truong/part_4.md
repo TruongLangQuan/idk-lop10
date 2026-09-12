@@ -14,7 +14,7 @@ Nhiệm vụ: Lập kế hoạch thực hiện một hoạt động giáo dục 
   + Khách mời: Ban Giám hiệu, Thầy cô giáo bộ môn, đại diện Hội Khuyến học và các anh chị cựu học sinh có thành tích xuất sắc.
 
 - **Thời gian:**
-  + Tiết sinh hoạt dưới cờ (Sáng thứ Hai, tuần thứ 3 của tháng 9 - Hưởng ứng phong trào Khuyến học đầu năm). Thời lượng dự kiến: 45 phút.
+  + Tiết sinh hoạt dưới cờ.
 
 - **Địa điểm:**
   + Sân trường (hoặc Hội trường lớn của nhà trường).
