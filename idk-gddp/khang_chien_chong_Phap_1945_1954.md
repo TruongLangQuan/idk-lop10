@@ -60,3 +60,10 @@
 **💡 Gợi ý trình bày (Dành cho thuyết trình viên):**
 1. **Phần Toàn quốc:** Dùng sơ đồ mũi tên thời gian (Timeline) để trình bày các mốc 1946 -> 1947 -> 1950 -> 1954 giúp người nghe dễ theo dõi tiến trình chuyển từ thế phòng ngự sang phản công.
 2. **Phần TP.HCM:** Nên nhấn mạnh vào sự kiện *23/9/1945 (Nam Bộ Kháng chiến)* và nhân vật *Trần Văn Ơn* để tăng cảm xúc và sự tự hào về địa phương. Có thể chèn một đoạn nhạc bài *"Nam Bộ kháng chiến"* ở đầu phần này để gây ấn tượng mạnh.
+
+---
+### NGUỒN TÀI LIỆU THAM KHẢO CHO BÀI THUYẾT TRÌNH:
+1. **Sách giáo khoa Lịch sử lớp 9 và lớp 12** (Bộ Giáo dục và Đào tạo / NXB Giáo dục Việt Nam): Các bài về Kháng chiến chống Pháp (1945 - 1954), Chiến dịch Việt Bắc, Biên giới, Điện Biên Phủ.
+2. **Tài liệu Giáo dục địa phương Thành phố Hồ Chí Minh**: Phần Lịch sử phong trào đấu tranh của quân dân Sài Gòn - Chợ Lớn - Gia Định.
+3. **Sách "Lịch sử Nam Bộ kháng chiến"** (Hội đồng Chỉ đạo biên soạn Lịch sử Nam Bộ kháng chiến, NXB Chính trị Quốc gia Sự thật): Ghi chép chi tiết về Ngày Nam Bộ Kháng chiến 23/9 và các mặt trận tại Sài Gòn.
+4. **Sách "Lịch sử Sài Gòn - Chợ Lớn - Gia Định kháng chiến (1945 - 1975)"** (NXB TP.HCM): Nguồn gốc các sự kiện biểu tình của học sinh sinh viên (anh Trần Văn Ơn), sự kiện chống Mỹ can thiệp (19/3).
