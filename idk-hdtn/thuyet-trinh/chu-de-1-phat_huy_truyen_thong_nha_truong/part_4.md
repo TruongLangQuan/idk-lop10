@@ -2,7 +2,6 @@
 Nhiệm vụ: Lập kế hoạch thực hiện một hoạt động giáo dục truyền thống nhà trường
 
 **TÊN HOẠT ĐỘNG: GIÁO DỤC TRUYỀN THỐNG "HIẾU HỌC"**
-*(Chủ đề: Tự hào trang sử học đường - Khơi dậy khát vọng vươn lên)*
 
 - **Mục tiêu:**
   + Giúp học sinh hiểu được bề dày thành tích và ý nghĩa của truyền thống "Hiếu học" trong lịch sử nhà trường.
