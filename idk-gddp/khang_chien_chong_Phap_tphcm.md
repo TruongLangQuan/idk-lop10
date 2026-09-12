@@ -3,7 +3,7 @@
 
 *Đặc điểm nổi bật: Sài Gòn là nơi nổ súng kháng chiến đầu tiên (trước cả nước 15 tháng) và là "Thành đồng Tổ quốc" kiên cường bám trụ đến phút cuối cùng.*
 
-### 1. Bối cảnh nổ súng: "Mùa thu rồi ngày hăm ba ta đi theo tiếng kêu sơn hà..."
+### 1. Bối cảnh
 * Chỉ chưa đầy 1 tháng sau khi giành độc lập, đêm 22 rạng sáng **23/9/1945**, thực dân Pháp (núp bóng quân Anh) đã nổ súng tấn công trụ sở Ủy ban Hành chính Lâm thời Nam Bộ tại Sài Gòn.
 * Ngay lập tức, Xứ ủy Nam Bộ và Ủy ban Kháng chiến Nam Bộ đã họp và phát động quân dân Sài Gòn - Gia Định đứng lên kháng chiến với tinh thần *"Độc lập hay là chết"*. Nam Bộ đi trước về sau, mở đầu cho cuộc kháng chiến 9 năm.
 
