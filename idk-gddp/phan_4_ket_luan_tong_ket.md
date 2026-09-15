@@ -44,21 +44,3 @@
 ### 3. Trách nhiệm xây dựng và phát triển TP.HCM
 * **Kế thừa tinh thần tiên phong:** Phát huy truyền thống năng động, dám nghĩ dám làm, đoàn kết và tương thân tương ái của con người phương Nam.
 * **Hành động thiết thực:** Nỗ lực học tập, rèn luyện tri thức, làm chủ công nghệ để góp sức xây dựng TP.HCM trở thành đô thị thông minh, hiện đại, văn minh và nghĩa tình.
-
----
-
-## III. GỢI Ý CẤU TRÚC Ý CHÍNH TRÌNH BÀY TRÊN SLIDE (DÀNH CHO NGƯỜI THUYẾT TRÌNH)
-
-* **Slide 1: Tiêu đề Phần 4 - Kết luận & Tổng kết**
-* **Slide 2: Nhìn lại một thế kỷ biến động (1859 - 1954)**
-  - *Vết hằn đau thương:* Ách thống trị, phân hóa xã hội.
-  - *Khí phách kiên cường:* Đi đầu đánh giặc ("Thành đồng Tổ quốc", 23/9/1945, phong trào 1950).
-* **Slide 3: Di sản định hình đô thị Sài Gòn**
-  - *Quy hoạch:* "Hòn ngọc Viễn Đông".
-  - *Công trình thế kỷ:* Nhà thờ Đức Bà, Bưu điện, Chợ Bến Thành.
-  - *Văn hóa:* Cái nôi báo chí chữ Quốc ngữ, giao thoa Đông - Tây.
-* **Slide 4: Thông điệp gửi thế hệ trẻ hôm nay**
-  - **Tri ân:** Nhớ về cội nguồn và xương máu tiền nhân.
-  - **Bảo tồn:** Chung tay gìn giữ các công trình di sản trước tốc độ đô thị hóa.
-  - **Phát triển:** Học tập, đổi mới sáng tạo để đưa TP.HCM vươn tầm quốc tế.
-* **Slide 5: Lời kết & Cảm ơn thầy cô, các bạn đã lắng nghe**
