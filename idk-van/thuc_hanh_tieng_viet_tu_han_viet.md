@@ -5,10 +5,10 @@
 
 ## BÀI 1: GIẢI THÍCH NGHĨA CỦA TỪ HÁN VIỆT IN ĐẬM (BT1, SGK TRANG 28)
 
-* **a. Tiền triều & Hàn sĩ:**
-  - **Tiền triều:** 
-    + *Chiết tự:* "Tiền" (trước), "triều" (triều đình, triều đại).
-    + *Ý nghĩa:* Triều đại trước, vương triều đã qua (trong tác phẩm, từ này chỉ triều đại trước thời nhà Nguyễn).
+* **a. Tiên triều & Hàn sĩ:**
+  - **Tiên triều:** 
+    + *Chiết tự:* "Tiên" (先 - trước, đời trước), "triều" (朝 - triều đình, triều đại).
+    + *Ý nghĩa:* Triều đại trước, triều vua trước (trong văn cảnh *Chuyện chức Phán sự đền Tản Viên*, từ này chỉ triều đại trước đã ghi nhận công lao cho viên tướng họ Thôi).
   - **Hàn sĩ:** 
     + *Chiết tự:* "Hàn" (nghèo, lạnh lẽo), "sĩ" (người có học thức, trí thức Nho học).
     + *Ý nghĩa:* Người học trò nghèo, kẻ sĩ nghèo trong xã hội xưa nhưng vẫn giữ được khí tiết trong sạch và lòng tự trọng.
