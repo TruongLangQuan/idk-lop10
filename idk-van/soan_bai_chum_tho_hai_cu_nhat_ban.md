@@ -1,46 +1,44 @@
 # SOẠN BÀI: CHÙM THƠ HAI-CƯ (HAIKU) NHẬT BẢN
 *(Mát-su-ô Ba-sô, Phu-cu-đa Chi-ô, Cô-ba-ya-si Ít-sa)*  
-**Môn:** Ngữ văn 10 – Tập 1 (Bộ sách Kết nối tri thức với cuộc sống – Bài 2: Vẻ đẹp của thơ ca)  
-**Tài liệu biên soạn:** Theo đúng cấu trúc Phiếu học tập `K10 - PHT HK1 - HS.docx` và SGK Ngữ văn 10 (trang 43 – 47).
+**Môn:** Ngữ văn 10 – Bộ sách Kết nối tri thức với cuộc sống (Tập 1 – Bài 2: Vẻ đẹp của thơ ca)  
+**Tài liệu theo sát:** Phiếu học tập học sinh `K10 - PHT HK1 - HS.docx` và SGK Ngữ văn 10 (trang 43 – 47).
 
 ---
 
-## NỘI DUNG 1: TÌM HIỂU TRI THỨC NGỮ VĂN
+## NỘI DUNG 1. TÌM HIỂU TRI THỨC NGỮ VĂN
 
-| Thuật ngữ / Yếu tố | Khái niệm & Đặc điểm bản chất (SGK trang 43 – 44) |
+*(Dùng để điền bảng hoặc vẽ sơ đồ tư duy trên Mapfy / ChatGPT theo yêu cầu PHT)*
+
+| Yếu tố / Khái niệm | Định nghĩa & Đặc điểm bản chất (Dễ học, ngắn gọn) |
 | :--- | :--- |
-| **Thơ & Thơ trữ tình** | - **Thơ:** Là hình thức tổ chức ngôn từ đặc biệt, tuân theo một mô hình thi luật hoặc nhịp điệu nhất định nhằm làm nổi bật mối quan hệ giữa âm điệu và ý nghĩa của ngôn từ; có khả năng diễn tả những tình cảm mãnh liệt hoặc ấn tượng, rung động tinh tế của con người.<br>- **Thơ trữ tình:** Là loại tác phẩm thơ có dung lượng thường nhỏ, thể hiện trực tiếp cảm xúc, tâm trạng và thế giới nội tâm của nhân vật trữ tình. |
-| **Nhân vật trữ tình** | Là người trực tiếp bộc lộ rung động, cảm xúc và suy tư trong bài thơ trước một khung cảnh hay sự tình đời sống nào đó (còn gọi là *chủ thể trữ tình*). Nhân vật trữ tình có mối liên hệ mật thiết với tác giả nhưng không hoàn toàn đồng nhất với con người tiểu sử của tác giả. |
-| **Hình ảnh thơ** | Là các sự vật, hiện tượng, trạng thái đời sống được tái tạo một cách cụ thể, sống động bằng ngôn từ nghệ thuật; khơi dậy cảm giác (đặc biệt là thị giác, thính giác) và gợi ra những ý nghĩa tinh thần sâu sắc cho người đọc. |
-| **Vần thơ** | Sự cộng hưởng, hòa âm theo quy luật ngữ âm giữa một số âm tiết trong một dòng thơ hay ở cuối các dòng thơ. Vần có chức năng liên kết các dòng thơ, tạo nhịp điệu, nhạc tính và giọng điệu riêng cho bài thơ. |
-| **Nhịp thơ (Nhịp điệu)** | Những điểm ngắt, ngừng theo chu kì nhất định trên văn bản thơ do tác giả chủ động bố trí. Nhịp điệu gợi ra cảm giác về sự vận động của sự sống và thể hiện nhịp đập cảm xúc của chủ thể trữ tình. |
-| **Nhạc điệu** | Cách tổ chức các yếu tố âm thanh của ngôn từ (gieo vần, ngắt nhịp, điệp âm, phối hợp thanh điệu bằng - trắc...) để lời thơ gợi ra cảm giác về âm nhạc, tạo nên âm hưởng vang ngân trong tâm trí người đọc. |
-| **Đối** | Cách tổ chức lời văn thành hai vế cân xứng và sóng đôi với nhau cả về ý và lời. Gồm hai loại: *đối cân* (thuận chiều, tương đồng) và *đối chọi* (tương phản, ngược chiều). |
-| **Thi luật & Thể thơ** | - **Thi luật:** Toàn bộ những quy tắc tổ chức ngôn từ trong thơ (gieo vần, ngắt nhịp, hòa thanh, đối, số câu, số chữ trong bài...).<br>- **Thể thơ:** Sự thống nhất giữa mô hình thi luật và loại hình nội dung tác phẩm thơ, được hình thành và duy trì ổn định qua lịch sử văn học. |
+| **Thơ & Thơ trữ tình** | - **Thơ:** Thể loại văn học giàu nhạc điệu, có vần và nhịp; dùng để bộc lộ tình cảm, cảm xúc tinh tế của con người.<br>- **Thơ trữ tình:** Thể thơ ngắn gọn, thể hiện trực tiếp tâm trạng, thế giới nội tâm của người viết. |
+| **Nhân vật trữ tình** | Người trực tiếp bộc lộ rung động, cảm xúc và suy ngẫm trong bài thơ (còn gọi là *chủ thể trữ tình*). |
+| **Hình ảnh thơ** | Sự vật, cảnh vật đời sống được tái hiện qua ngôn từ nghệ thuật; gợi cảm xúc, kích thích thị giác, thính giác và gợi mở ý nghĩa sâu sắc. |
+| **Vần thơ** | Sự lặp lại các âm tiết tương tự nhau (vần chân, vần lưng) giúp liên kết các dòng thơ và tạo nhạc điệu êm ái. |
+| **Nhịp thơ (Nhịp điệu)** | Chỗ ngắt, nghỉ theo chu kỳ trong câu thơ, tạo nên tiết tấu và nhịp đập cảm xúc của bài thơ. |
+| **Nhạc điệu** | Âm hưởng trầm bổng, vang ngân của bài thơ được tạo nên bởi sự kết hợp nhịp nhàng giữa vần, nhịp và thanh điệu bằng – trắc. |
+| **Đối** | Cách sắp đặt từ ngữ, hình ảnh tương xứng (đối cân) hoặc trái ngược nhau (đối chọi) để tạo sự hài hòa và nhấn mạnh ý nghĩa. |
+| **Thi luật** | Toàn bộ các quy định, luật lệ tổ chức lời thơ (số câu, số chữ, cách gieo vần, ngắt nhịp, đối...). |
+| **Thể thơ** | Dạng thức cấu trúc ổn định của bài thơ dựa trên các quy tắc thi luật (như: lục bát, song thất lục bát, thơ tự do, thơ Hai-cư...). |
 
 ---
 
-## NỘI DUNG 2: TÌM HIỂU CHUNG VỀ THƠ HAI-CƯ (HAIKU)
+## NỘI DUNG 2. TÌM HIỂU CHUNG VỀ THƠ HAI-CƯ
 
 ### 1. Đặc điểm của thể thơ Hai-cư
-* **Nguồn gốc & Vị trí:** Là thể thơ truyền thống có vị trí quan trọng bậc nhất trong văn học Nhật Bản; được xem là một trong những hình thức thơ cô đọng, ngắn nhất thế giới.
-* **Hình thức & Dung lượng:**
-  - Trong nguyên bản tiếng Nhật, bài thơ chỉ gồm **3 dòng** với tổng cộng **17 âm tiết (on)** ngắt theo cấu trúc nhịp kinh điển: **5 – 7 – 5**.
-  - Bản dịch tiếng Việt tuy không thể bắt chước hoàn toàn cấu trúc âm tiết tiếng Nhật nhưng luôn đảm bảo sự ngắn gọn, hàm súc, gồm 3 câu ngắn.
-* **Quy tắc thi pháp độc đáo:**
-  - **Quý ngữ (Kigo):** Bắt buộc phải có từ chỉ mùa (mùa xuân, hạ, thu, đông) hoặc dấu hiệu đặc trưng của thời tiết, hoa cỏ, muôn thú gắn với mùa.
-  - **Mĩ cảm Thiền tông (Zen):** Thơ Hai-cư thấm đượm triết lý Phật giáo Thiền tông và Thần đạo Nhật Bản: hướng tới sự thanh tịnh (*Sabi* - tịch lặng), giản dị (*Wabi* - mộc mạc), u huyền (*Yugen* - sâu kín), cảm thương vạn vật (*Mono no aware*).
-  - **Khoảnh khắc "bừng ngộ" (Satori):** Thơ ghi lại một khoảnh khắc bất chợt của hiện tại, nơi con người bỗng nhiên thức nhận được mối liên hệ huyền diệu, giao cảm giữa tiểu vũ trụ (vạn vật nhỏ bé) và đại vũ trụ (thiên nhiên vô tận).
-  - **Tính chất gợi mở & Khoảng lặng:** Thơ thiên về "chấm phá", khơi gợi chứ không miêu tả hay diễn giải; tạo ra "khoảng trống hư không" để người đọc tự đồng sáng tạo và chiêm nghiệm.
+* **Hình thức cực ngắn:** Gồm đúng **3 dòng** với tổng cộng **17 âm tiết** (ngắt theo nhịp 5 – 7 – 5 trong tiếng Nhật). Đây là thể thơ ngắn nhất thế giới.
+* **Quý ngữ (Kigo):** Bắt buộc phải có từ ngữ chỉ mùa (xuân, hạ, thu, đông) hoặc dấu hiệu thiên nhiên, thời tiết gắn liền với một mùa.
+* **Nghệ thuật chấm phá & Khoảng lặng:** Thơ Hai-cư chỉ "gợi chứ không tả", lời thơ ít ỏi nhưng gợi nhiều liên tưởng ("ý tại ngôn ngoại"), để lại khoảng lặng cho người đọc tự ngẫm nghĩ và đồng sáng tạo.
+* **Cảm thức Thiền tông:** Tôn vinh sự tĩnh lặng, mộc mạc; ghi lại khoảnh khắc giao cảm bừng ngộ bất chợt giữa con người nhỏ bé và vũ trụ bao la.
 
-### 2. Ba tác giả lớn trong chùm thơ
-1. **Mát-su-ô Ba-sô (Matsuo Basho, 1644 – 1694):** Bậc thầy vĩ đại nhất của thơ Hai-cư Nhật Bản. Ông có công lớn trong việc hoàn thiện thể thơ này, đưa nó từ thể loại trào phúng dân gian trở thành đỉnh cao nghệ thuật thi ca thấm đẫm chất Thiền.
-2. **Phu-cu-đa Chi-ô (Fukuda Chiyo-ni, 1703 – 1775):** Nữ thi sĩ lỗi lạc thời Edo. Bà đã khẳng định vị thế và tiếng nói độc đáo, tinh tế, giàu lòng nhân ái của phụ nữ trong truyền thống thơ Hai-cư vốn trước đó bị nam giới áp đảo.
-3. **Cô-ba-ya-si Ít-sa (Kobayashi Issa, 1763 – 1828):** Nhà thơ kiêm tu sĩ Phật giáo, họa sĩ tài hoa. Thơ ông nổi bật với tình yêu thương bao la dành cho những sinh linh nhỏ bé, yếu đuối, bình dị nhất trong cuộc sống với giọng điệu hồn hậu, hóm hỉnh mà xót xa.
+### 2. Một số tác giả nổi tiếng
+1. **Mát-su-ô Ba-sô (1644 – 1694):** Bậc thầy vĩ đại nhất của thơ Hai-cư; người đưa thể thơ này lên đỉnh cao nghệ thuật thi ca Nhật Bản.
+2. **Phu-cu-đa Chi-ô (1703 – 1775):** Nữ thi sĩ lỗi lạc; khẳng định tiếng nói tinh tế, tràn đầy tình thương yêu và lòng trắc ẩn của phụ nữ.
+3. **Cô-ba-ya-si Ít-sa (1763 – 1828):** Nhà thơ nhân hậu; tác phẩm ấm áp tình yêu thương dành cho những con vật nhỏ bé, bình dị, yếu ớt trong cuộc sống.
 
 ---
 
-## NỘI DUNG 3: TÌM HIỂU CHI TIẾT CÁC BÀI THƠ HAI-CƯ
+## NỘI DUNG 3. TÌM HIỂU MỘT SỐ BÀI THƠ HAI-CƯ
 
 ```
 VĂN BẢN 1 (Ba-sô):
@@ -63,80 +61,83 @@ Trèo núi Phu-gi.
 
 ### HOẠT ĐỘNG 1: NHẬN DIỆN HÌNH ẢNH TRUNG TÂM (CÂU 1 SGK)
 
-| Bài thơ | Hình ảnh trung tâm | Đặc điểm chung của các hình ảnh & Nhận xét nghệ thuật |
+| Bài thơ | Hình ảnh trung tâm | Đặc điểm chung & Nhận xét nghệ thuật |
 | :---: | :--- | :--- |
-| **Bài 1** *(Ba-sô)* | - **Cành khô** (cành cây khẳng khiu, trơ trọi).<br>- **Cánh quạ đậu** (điểm nhấn sinh động, đen thẫm). | **Đặc điểm chung:**<br>1. Đều là những hình ảnh vô cùng **nhỏ bé, bình dị, quen thuộc** của tự nhiên đời thường (cành cây, cánh quạ, đóa hoa dại leo dây gàu, con ốc sên).<br>2. Đều là hình ảnh mang tính **chấm phá**, chắt lọc tối đa từ ngữ.<br>3. Chứa đựng chiều sâu triết lý: cái nhỏ bé luôn soi bóng và gắn kết hữu cơ với cái vĩ đại (chiều thu, giếng nước, núi non).<br><br>**Nhận xét nghệ thuật:**<br>- Bút pháp tượng trưng, gợi nhiều hơn tả.<br>- Sử dụng quý ngữ tinh tế (*chiều thu*, *hoa triêu nhan* - mùa hè/thu, *con ốc* - mùa hè). |
-| **Bài 2** *(Chi-ô)* | - **Hoa triêu nhan** (loài hoa dại màu tím biếc nở ban mai).<br>- **Dây gàu** bên giếng nước. |
-| **Bài 3** *(Ít-sa)* | - **Con ốc nhỏ** (chậm chạp, mong manh).<br>- **Núi Phu-gi** (ngọn núi thiêng hùng vĩ). |
+| **Số 1** *(Ba-sô)* | - **Cành khô**<br>- **Cánh quạ đậu** | **1. Đặc điểm chung các hình ảnh:**<br>- Đều là những hình ảnh vô cùng **nhỏ bé, mộc mạc, bình dị** của thiên nhiên đời thường (cành cây khô, cánh quạ, đóa hoa dại leo dây gàu, con ốc sên).<br>- Mang tính **chấm phá**, chắt lọc từng nét vẽ.<br>- Đặt cái nhỏ bé bên cạnh không gian, thời gian bao la (chiều thu, giếng nước, ngọn núi thiêng).<br><br>**2. Nhận xét nghệ thuật:**<br>- Bút pháp gợi nhiều hơn tả.<br>- Sử dụng **quý ngữ** đắt giá (*chiều thu* - mùa thu; *hoa triêu nhan* - mùa hè/thu; *con ốc* - mùa hè). |
+| **Số 2** *(Chi-ô)* | - **Hoa triêu nhan**<br>- **Dây gàu bên giếng** |
+| **Số 3** *(Ít-sa)* | - **Con ốc nhỏ**<br>- **Núi Phu-gi** |
 
 ---
 
-### HOẠT ĐỘNG 2: PHÂN TÍCH HÌNH ẢNH & MỐI TƯƠNG QUAN (CÂU 2, 3, 4 SGK)
+### HOẠT ĐỘNG 2: PHÂN TÍCH HÌNH ẢNH – MỐI TƯƠNG QUAN HÌNH ẢNH (CÂU 2, 3, 4 SGK)
+
+#### Bảng định hướng phân tích:
+* **Hình ảnh trung tâm:** Xác định hình ảnh then chốt của bài.
+* **Chuỗi hình ảnh – Mối tương quan:** Chỉ ra mối quan hệ đối lập hoặc hòa hợp (nhỏ bé $\leftrightarrow$ mênh mông; động $\leftrightarrow$ tĩnh).
+* **Khơi gợi – Phát hiện:** Gợi ra không gian, thời gian, bài học ứng xử tự nhiên – con người và cảm xúc của nhân vật trữ tình.
+
+---
 
 #### 1. Bài thơ số 1 của Ba-sô
 * **Mối quan hệ giữa hình ảnh trung tâm với thời gian và không gian:**
-  - *Hình ảnh trung tâm:* "Cành khô" khẳng khiu, trơ trọi kết hợp với "cánh quạ" đen sẫm đang đậu im lìm.
-  - *Thời gian:* "Chiều thu" – thời khắc hoàng hôn tàn tạ của một ngày và mùa thu sắp tàn của một năm (quý ngữ).
-  - *Không gian:* Bầu trời chiều mênh mông, vắng lặng, lạnh lẽo, gam màu đơn sắc trầm mặc (đen của quạ, xám khô của cành cây trên nền trời chiều le lói).
-  - *Mối tương quan:* Sự đối lập mà hòa hợp tuyệt đối giữa cái tĩnh lặng của không gian rộng lớn và sự ngưng đọng của một điểm ảnh nhỏ bé (con quạ). Cánh quạ đậu trên cành khô như hóa thạch vào vĩnh hằng.
+  - *Hình ảnh:* "Cành khô" trơ trụi và "cánh quạ" đen sẫm đang đậu im lìm.
+  - *Thời gian:* "Chiều thu" – hoàng hôn của một ngày thu vắng lặng, sắp tàn (quý ngữ).
+  - *Không gian:* Bầu trời chiều mênh mông, tĩnh mịch, lạnh lẽo.
+  - *Mối quan hệ:* Sự kết hợp giữa cành khô gầy guộc và cánh quạ đen tạo nên một nét chấm phá đơn sơ mà bất động giữa nền trời thu rộng lớn; tất cả chìm vào sự tịch mịch ngưng đọng.
 * **Cảm xúc khơi gợi ở người đọc:**
-  - Cảm giác cô đơn, tịch mịch (*Sabi*), buồn man mác trước quy luật biến chuyển của thời gian.
-  - Đồng thời đưa tâm hồn người đọc chạm đến sự tĩnh lặng tuyệt đối, giải phóng mọi ồn ào trần thế để tìm về sự an nhiên, hòa mình vào cõi hư không của vũ trụ.
+  - Nỗi buồn man mác, cô đơn trước dòng chảy tàn tạ của thời gian.
+  - Sự an yên, lắng đọng tuyệt đối trong tâm hồn, gạt bỏ mọi ồn ã đời thường để hòa mình vào thiên nhiên.
 
 #### 2. Bài thơ số 2 của Chi-ô
-* **Phát hiện của bài thơ:**
-  - Sáng sớm ra giếng múc nước sinh hoạt, nhà thơ bất ngờ phát hiện một dây **hoa triêu nhan** (hoa bìm bìm biếc) đã nở rộ từ đêm và đang quấn quýt lấy chiếc dây gàu múc nước.
-* **Vì sao phát hiện này lại dẫn dắt thi sĩ sang "xin nước nhà bên"?**
-  - Vì nếu giật dây gàu để múc nước, nhà thơ sẽ làm đứt lìa dây leo, làm giập nát những đóa hoa triêu nhan tinh khôi đang hé nở đón ánh bình minh.
-  - Hành động "đành xin nước nhà bên" là một quyết định từ chối sự tiện lợi của bản thân để bảo vệ vẻ đẹp mong manh của tự nhiên. Từ "đành" chứa đựng sự nhún nhường, nâng niu đầy yêu thương và trân quý.
+* **Hình ảnh trung tâm:** Đóa hoa triêu nhan (hoa bìm bìm màu tím biếc) nở ban mai quấn quanh dây gàu múc nước.
+* **Phát hiện của thi sĩ & Lý do "xin nước nhà bên":**
+  - *Phát hiện:* Buổi sáng ra giếng lấy nước, nhà thơ bất ngờ thấy nhành hoa triêu nhan đã leo bám nở rộ trên dây gàu từ đêm qua.
+  - *Lý do "đành xin nước nhà bên":* Nhà thơ không nỡ giật dây gàu vì sợ làm rụng, làm giập nát cánh hoa mỏng manh. Từ "đành" thể hiện sự nhún nhường đầy nâng niu, tôn trọng sự sống.
 * **Ý nghĩa triết lý trong cách ứng xử với thiên nhiên:**
-  - **Tôn trọng sự sống:** Con người không phải là chúa tể thống trị muôn loài, mà là một thành viên sống hài hòa, bình đẳng với tự nhiên.
-  - **Ý thức nhường nhịn sự sống:** Sẵn sàng hy sinh một chút tiện nghi đời thường để che chở cho cái Đẹp và sự sống của một nhành hoa dại nhỏ bé. Đó là đỉnh cao của cái Thiện và lòng trắc ẩn (*Awaré*).
+  - **Tôn trọng và yêu thương sự sống:** Con người không phải chủ nhân chi phối muôn loài, mà là người bạn sống hòa hợp, bình đẳng với cây cỏ.
+  - **Lòng trắc ẩn cao đẹp:** Sẵn sàng chịu chút bất tiện đời thường để chở che, bảo vệ cái Đẹp của tự nhiên.
 
 #### 3. Bài thơ số 3 của Ít-sa
+* **Hình ảnh trung tâm:** Chú ốc sên nhỏ bé đang nhích từng bước trèo lên núi Phu-gi.
 * **Tương quan giữa hai hình ảnh "con ốc" và "núi Phu-gi":**
-  - *Con ốc nhỏ:* Thân phận nhỏ bé, yếu ớt, di chuyển chậm chạp từng milimet, mong manh dễ tổn thương.
-  - *Núi Phu-gi (Phú Sĩ):* Biểu tượng thiêng liêng của nước Nhật – ngọn núi lửa khổng lồ, cao ngút ngàn (3.776m), uy nghi, vĩnh cửu và khắc nghiệt.
-  - *Tương quan:* Sự đối lập cực độ giữa một bên là **sự hữu hạn, nhỏ bé đến cùng cực** và một bên là **sự vĩ đại, bất biến của vũ trụ**.
+  - *Con ốc nhỏ:* Thân hình bé bỏng, yếu đuối, di chuyển chậm rì rì.
+  - *Núi Phu-gi:* Ngọn núi thiêng khổng lồ, cao ngút ngàn (hơn 3.700m), biểu tượng cho sự bất biến, kỳ vĩ của vũ trụ.
+  - *Tương quan:* Sự tương phản cực độ giữa cái hữu hạn, nhỏ bé của sinh linh với cái vĩ đại, hùng vĩ của thiên nhiên.
 * **Cảm nhận về hành trình "chậm rì" của con ốc:**
-  - Điệp từ "Chậm rì, chậm rì" gợi nhịp điệu kiên trì, nhẫn nại, không vội vã nhưng không hề dừng bước.
-  - Con ốc không tự ti trước sự khổng lồ của ngọn núi thiêng; nó đang từng bước, từng bước chinh phục đỉnh cao bằng tất cả sinh lực của mình.
-  - *Bài học nhân sinh:* Cuộc đời con người cũng giống như con ốc nhỏ trèo núi lớn. Điều quan trọng không phải là đi nhanh hay chậm, mà là sự bền bỉ, kiên định với mục tiêu sống, thanh thản bước đi bằng chính đôi chân của mình.
+  - Điệp ngữ "Chậm rì, chậm rì" gợi sự kiên nhẫn, điềm tĩnh, không sốt ruột, không bỏ cuộc.
+  - Chú ốc không nản lòng trước đỉnh núi cao vời vợi, mà tự tin dùng chính sức mình để tiến bước.
+  - *Bài học nhân sinh:* Cuộc sống của con người cũng vậy; điều quan trọng không phải là đi nhanh hay chậm, mà là sự kiên định, bền bỉ tiến về mục tiêu phía trước.
 
 ---
 
-### HOẠT ĐỘNG 3: ĐÁNH GIÁ GIÁ TRỊ THẨM MĨ & TỔNG KẾT THƠ HAI-CƯ (CÂU 5, 6, 7 SGK)
+### HOẠT ĐỘNG 3: ĐÁNH GIÁ GIÁ TRỊ THẨM MĨ CÁC BÀI THƠ (CÂU 5, 6, 7 SGK)
 
-#### 1. Ý nghĩa triết lý sâu xa của ba bài thơ
-1. **Bài 1:** Triết lý về sự tĩnh lặng vô thường của tạo hóa; con người cần học cách lắng đọng tâm hồn để hòa điệu cùng vũ trụ bao la.
-2. **Bài 2:** Triết lý về lòng trắc ẩn, tình yêu thương và thái độ ứng xử khiêm nhường, hòa hợp giữa con người với tự nhiên.
-3. **Bài 3:** Triết lý về ý chí sống, nghị lực kiên cường và thái độ sống ung dung, tự tại trước hành trình vạn dặm của kiếp người.
+#### 1. Ý nghĩa triết lý của ba bài thơ
+* **Bài 1:** Triết lý về sự tĩnh lặng vô thường của tạo hóa; con người cần biết lắng lòng để hòa điệu cùng vũ trụ.
+* **Bài 2:** Triết lý về sự trắc ẩn và lối sống hòa hợp, nhường nhịn, yêu thương muôn loài.
+* **Bài 3:** Triết lý về nghị lực sống kiên cường, nhẫn nại, không bao giờ bỏ cuộc.
 
-#### 2. Tổng kết giá trị nghệ thuật thơ Hai-cư
-* Ngôn từ cực kỳ cô đọng, kiệm lời ("ý tại ngôn ngoại" – lời hết mà ý chưa cùng).
-* Nghệ thuật chấm phá bậc thầy, giàu sức gợi mở liên tưởng.
-* Sự kết hợp tuyệt mỹ giữa thơ ca, hội họa và triết học Thiền tông phương Đông.
+#### 2. Tổng kết về thơ Hai-cư
+* **Về nội dung:** Thể hiện tình yêu thiên nhiên sâu sắc và những bài học nhân sinh nhẹ nhàng, thấm thía.
+* **Về nghệ thuật:** Dung lượng cực ngắn, ngôn từ hàm súc; nghệ thuật chấm phá đặc sắc; giàu sức gợi và nhiều khoảng lặng suy tưởng.
 
 ---
 
-### HOẠT ĐỘNG 4: RÚT KINH NGHIỆM ĐỌC THƠ HAI-CƯ (3 BƯỚC CHUẨN)
+### HOẠT ĐỘNG 4: RÚT KINH NGHIỆM ĐỌC THƠ HAI-CƯ (CHỐT LẠI 3 BƯỚC)
 
-* **Bước 1: Giải mã hình thức & Quý ngữ (Kigo)**
-  - Đọc kỹ số lượng từ ngữ, xác định từ chỉ mùa (mùa xuân, hạ, thu, đông) hoặc các dấu hiệu tự nhiên tương ứng để nắm bắt thời gian, không gian nghệ thuật.
-* **Bước 2: Tìm kiếm hình ảnh trung tâm & Mối tương quan**
-  - Xác định các hình ảnh xuất hiện trong bài thơ; phát hiện mối quan hệ tương phản hoặc tương đồng giữa chúng (nhỏ bé – rộng lớn, động – tĩnh, hữu hạn – vĩnh cửu).
-* **Bước 3: Lắng nghe khoảng lặng & Thấu cảm triết lý (Bừng ngộ)**
-  - Điền vào "khoảng trống" của bài thơ bằng trí tưởng tượng của bản thân; suy ngẫm về thông điệp nhân sinh, tình cảm và cách ứng xử mà nhà thơ gửi gắm qua khoảnh khắc bừng sáng ấy.
+* **Bước 1: Tìm quý ngữ (Kigo) và hoàn cảnh:** Xác định từ chỉ mùa hoặc hình ảnh thời tiết để nắm bắt không gian, thời gian của bài thơ.
+* **Bước 2: Xác định hình ảnh trung tâm và tương quan:** Tìm hình ảnh chính trong 3 câu thơ; phát hiện mối quan hệ đối lập (lớn – nhỏ, động – tĩnh, hữu hạn – vô cùng).
+* **Bước 3: Lắng nghe khoảng lặng và suy ngẫm triết lý:** Tưởng tượng lấp đầy khoảng trống của lời thơ; rút ra cảm xúc, thông điệp nhân sinh mà tác giả gửi gắm.
 
 ---
 
 ## HOẠT ĐỘNG 5: LUYỆN TẬP – VẬN DỤNG
 
-### 1. Viết tự do (Đoạn văn khoảng 150 chữ chia sẻ cảm nhận)
-**Đề tài:** Cảm nhận về hình ảnh chú ốc nhỏ leo núi Phu-gi trong bài thơ của Ít-sa.
+### 1. Viết tự do (Đoạn văn ngắn khoảng 150 chữ)
+**Đề bài:** Cảm nhận của em về hành trình "chậm rì" của chú ốc nhỏ trèo núi Phu-gi trong bài thơ của Ít-sa.
 
-**Đoạn văn tham khảo:**
-> *Trong chùm thơ Hai-cư Nhật Bản, bài thơ của thi hào Ít-sa về chú ốc nhỏ trèo núi Phu-gi đã để lại trong em những dư ba sâu lắng nhất. Thi sĩ đặt hai hình ảnh vào thế tương phản gay gắt: một bên là "con ốc nhỏ" mong manh, yếu ớt với bước đi "chậm rì, chậm rì"; một bên là "núi Phu-gi" sừng sững, kỳ vĩ, ngút ngàn tuyết phủ. Tưởng chừng đó là một nghịch lý ngông cuồng, nhưng không, đó lại là khúc ca tuyệt đẹp về ý chí và nghị lực sống. Chú ốc không hề bi quan, nản lòng trước đỉnh núi cao vời vợi, cũng không hấp tấp, vội vàng. Nó cứ kiên định, thản nhiên nhích từng milimet bằng trọn vẹn sinh lực tự thân. Hình ảnh ấy trở thành một ẩn dụ sâu sắc cho kiếp nhân sinh: giữa cuộc đời rộng lớn đầy thử thách, mỗi chúng ta có thể chỉ là một thân phận nhỏ bé, nhưng chỉ cần ta giữ vững niềm tin, kiên trì và ung dung tiến bước thì không đỉnh núi nào là không thể vượt qua.*
+**Đoạn văn mẫu (khoảng 150 từ – chuẩn học sinh lớp 10):**
+> *Bài thơ Hai-cư của tác giả Ít-sa về chú ốc sên trèo núi Phu-gi đã để lại cho em nhiều ấn tượng sâu sắc. Nhà thơ khéo léo đặt hình ảnh "con ốc nhỏ" yếu ớt, chậm chạp bên cạnh "núi Phu-gi" khổng lồ, cao ngút ngàn, tạo nên sự tương phản vô cùng thú vị. Điệp từ "chậm rì, chậm rì" không chỉ gợi tả bước đi thong thả, nhẫn nại của chú ốc, mà còn thể hiện thái độ sống bình thản, kiên định. Đứng trước ngọn núi thiêng cao vợi, chú ốc không hề tự ti hay nản lòng, mà vẫn bền bỉ nhích từng chút một bằng chính sức lực của mình. Hình ảnh con ốc nhỏ trèo núi mang lại bài học nhân sinh quý báu: con người sống ở đời, dù xuất phát điểm nhỏ bé hay gặp muôn vàn khó khăn, chỉ cần giữ vững ước mơ, kiên trì và không bỏ cuộc thì nhất định sẽ vươn tới đỉnh cao thành công.*
 
 ---
 
@@ -147,18 +148,18 @@ Trèo núi Phu-gi.
 > *Con ếch nhảy vào*  
 > *Vang tiếng nước xao.*
 
-* **Phân tích ngắn:** "Ao cũ" gợi không gian tĩnh mịch, ngưng đọng ngàn năm. Một chuyển động bất ngờ: "con ếch nhảy vào" phá vỡ sự yên lặng trong chốc lát bằng "tiếng nước xao", rồi vạn vật lại chìm sâu vào cõi tịch lặng vô cùng. Bài thơ thể hiện khoảnh khắc bừng ngộ về sự tương tác giữa cái động và cái tĩnh, sự giao hòa giữa sự sống hữu hạn và thiên nhiên vĩnh cửu.
+* **Phân tích ngắn:** "Ao cũ" gợi không gian tĩnh mịch ngàn năm. Một chú ếch bất ngờ nhảy vào làm xao động mặt nước bằng "tiếng nước xao", rồi vạn vật lại chìm vào cõi tĩnh lặng muôn thuở. Nghệ thuật lấy động tả tĩnh đã làm bừng sáng sự giao hòa kỳ diệu của tự nhiên.
 
 #### Bài 2 (Ba-sô):
 > *Vắng lặng u trầm*  
 > *Thấm sâu vào đá*  
 > *Tiếng ve ngâm.*
 
-* **Phân tích ngắn:** Quý ngữ "tiếng ve" báo hiệu mùa hè. Tiếng ve kêu râm ran không làm không gian ồn ào mà trái lại, dường như "thấm sâu vào đá" làm nổi bật sự vắng lặng, u trầm tuyệt đối của chốn rừng thiền. Nghệ thuật lấy động tả tĩnh đạt đến độ thượng thừa.
+* **Phân tích ngắn:** Quý ngữ "tiếng ve" báo hiệu mùa hè oi ả. Thế nhưng tiếng ve ở đây không ồn ào mà như "thấm sâu vào đá", càng làm tăng thêm vẻ thanh tịnh, u uẩn và trang nghiêm nơi rừng thiền.
 
-#### Bài 3 (Buson):
+#### Bài 3 (Bu-son):
 > *Mưa xuân rơi*  
 > *Đôi áo tơi*  
 > *Bên nhau đi tới.*
 
-* **Phân tích ngắn:** Quý ngữ "mưa xuân" mang lại không khí ấm áp, tươi mới của đất trời. Giữa màn mưa xuân lất phất, hai bóng người khoác "áo tơi" cùng sánh bước bên nhau. Bài thơ gieo vào lòng người đọc cảm giác ấm áp, ngọt ngào về tình người và sự gắn kết thủy chung giữa cuộc đời.
+* **Phân tích ngắn:** Quý ngữ "mưa xuân" gợi bầu không khí tươi non, ấm áp. Giữa làn mưa lất phất của đất trời, hình ảnh hai người mặc áo tơi sóng bước bên nhau gợi lên tình bạn, tình người thủy chung, gắn bó và đầy ấm áp giữa dòng đời.
