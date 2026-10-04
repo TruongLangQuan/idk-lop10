@@ -143,11 +143,34 @@
 ### 2. Giá trị nghệ thuật
 - Mẫu mực về thi luật của thơ Thất ngôn bát cú Đường luật.
 - Bút pháp **tả cảnh ngụ tình** đạt đến đỉnh cao; phối hợp nhuần nhuyễn giữa không gian rộng lớn và tâm trạng trĩu nặng; giữa tĩnh và động, vi mô và vĩ mô.
-- Nghệ thuật dùng từ ngữ đắc địa, giàu sức gợi cảm, đa tầng nghĩa.
+- Nghệ thuật dùng từ ngữ đắc địa, giàu sức gợi cảm, đa tầng nghĩa; đỉnh cao là nghệ thuật "điểm nhãn tự" (mắt thơ).
 
 ---
 
-### 3. Trả lời chi tiết 7 câu hỏi SGK (trang 49 – 50)
+### 3. Phân tích "Nhãn tự" (Mắt thơ) trong bài thơ Thu hứng
+
+**"Nhãn tự" (眼字 - Mắt thơ)** là từ ngữ đắc địa, tinh tế nhất, được coi là linh hồn làm bừng sáng ý thơ và kết đọng toàn bộ cảm xúc, tư tưởng của tác phẩm. Trong kiệt tác *Thu hứng*, nhãn tự được thể hiện sâu sắc ở hai bình diện:
+
+#### a) Nhãn tự của toàn bài (Tâm điểm cảm xúc & Tư tưởng cốt lõi)
+- **Chữ "HỆ" (繫 - Buộc, thắt chặt) trong câu 6: *"Cô chu nhất hệ cố viên tâm"***
+  + **Nghĩa thực:** Con thuyền lẻ loi trôi dạt của kẻ tha hương bị buộc chặt nơi bến bờ Quỳ Châu.
+  + **Nghĩa biểu tượng:** "Hệ" ở đây không chỉ là sợi dây neo thuyền thực tế, mà chính là **sợi dây tâm tưởng thắt chặt tấm lòng nhớ về quê hương, vườn cũ (*cố viên tâm*)** của Đỗ Phủ.
+  + Thuyền là phương tiện để trở về quê, nhưng nay bị buộc chặt lại một chỗ, tượng trưng cho tình cảnh bế tắc, bất lực, tuổi già bệnh tật lưu lạc không thể hồi hương. Nỗi nhớ quê hương, nỗi đau thời thế vì vậy càng bị dồn nén, quặn thắt khôn nguôi.
+  + Chữ "hệ" là cái then cài kết nối hoàn hảo giữa *ngoại cảnh* và *tâm cảnh*, là điểm hội tụ cảm xúc của 4 câu sau và của toàn thể bài thơ.
+- **Chữ "LỆ" (淚 - Giọt nước mắt) trong câu 5: *"Tùng cúc lưỡng khai tha nhật lệ"***
+  + Vừa là giọt sương thu long lanh đọng trên đài hoa cúc, vừa là dòng lệ sầu xót xa tuôn rơi suốt hai năm lưu lạc của nhà thơ. Cảnh và tình cùng "rơi lệ", tạo nên nhãn tự thấm đẫm bi kịch nhân sinh.
+
+#### b) Nhãn tự đắc địa trong từng câu / cặp câu (Làm bừng sáng cấu tứ)
+- **Câu 1 – Chữ "ĐIÊU THƯƠNG" (凋傷 - Tàn phá, làm tiêu điều, xơ xác):**  
+  *Ngọc lộ điêu thương phong thụ lâm*. Sương móc trắng xóa không chỉ rơi "lác đác" mà mang tính huỷ hoại khắc nghiệt làm tiêu điều cả rừng phong. Chữ "điêu thương" là nhãn tự mở ra toàn bộ sắc thái bi tráng, hoang tàn, u uất của mùa thu Quỳ Châu.
+- **Cặp Thực (câu 3 - 4) – Cặp động từ đối lập "DŨNG" (湧 - Vọt lên trùm trời) và "ÂM" (陰 - Sà xuống tối sầm mặt đất):**  
+  *Giang gian ba lãng kiêm thiên dũng / Tái thượng phong vân tiếp địa âm*. Sự chuyển động dữ dội theo chiều dọc giữa lòng sông và cửa ải làm hiện lên khung cảnh vũ trụ chao đảo, nghiêng ngả – tấm gương phản chiếu thời cuộc tao loạn của triều Đường.
+- **Câu 8 (câu kết) – Chữ "CẤP" (急 - Dồn dập, giục giã, hối hả):**  
+  *Bạch Đế thành cao cấp mộ châm*. Âm thanh dồn dập nện vải may áo mùa đông từ thành cao lúc chiều tà khép lại bài thơ, đánh thức nỗi bơ vơ lạnh giá của kẻ lưu lạc nơi đất khách và nỗi lo âu non sông còn chìm trong khói lửa.
+
+---
+
+### 4. Trả lời chi tiết 7 câu hỏi SGK (trang 49 – 50)
 
 #### Câu 1: Mô tả một số đặc điểm cơ bản của thơ Đường luật được thể hiện trong bài thơ Thu hứng.
 * Bài thơ viết theo thể **thất ngôn bát cú Đường luật**, gồm 8 câu, mỗi câu 7 chữ.
