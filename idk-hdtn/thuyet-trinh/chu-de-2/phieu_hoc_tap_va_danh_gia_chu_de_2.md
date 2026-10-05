@@ -34,7 +34,7 @@
 
 > **Yêu cầu:** *Hãy chọn một tình huống áp lực/khó khăn gần đây và chuyển đổi góc nhìn của em:*
 
-| 🔴 Tình huống / Suy nghĩ tiêu cực ban đầu | 🟢 Góc nhìn mới tích cực hơn |
+| Tình huống / Suy nghĩ tiêu cực ban đầu | Góc nhìn mới tích cực hơn |
 | :--- | :--- |
 | **Tình huống:** Nhận kết quả bài kiểm tra môn Toán đầu năm lớp 10 bị điểm kém hơn nhiều so với kỳ vọng.<br><br>**Suy nghĩ ban đầu:**<br>- *"Mình học kém quá, chắc không theo kịp khối THPT."*<br>- *"Chương trình lớp 10 quá khó, mình mất gốc rồi."*<br>- *"Bố mẹ và thầy cô sẽ thất vọng về mình."* | **Chuyển đổi góc nhìn:**<br>- Điểm kém lần này chỉ là **tín hiệu cảnh báo** cho thấy cách học cấp 2 không còn phù hợp với phương pháp tư duy cấp 3, không quyết định năng lực của mình.<br>- Đây là cơ hội tốt để sớm nhận ra lỗ hổng kiến thức ngay từ đầu năm thay vì để đến khi thi học kì.<br>- **Hành động cụ thể:** Bình tĩnh xem lại các lỗi sai, chủ động nhờ bạn giỏi và thầy cô giảng lại, phân bổ 45 phút mỗi ngày làm lại bài tập. |
 
