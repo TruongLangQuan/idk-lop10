@@ -5,33 +5,6 @@
 ---
 
 # PHẦN II: ĐIỀU CHỈNH TƯ DUY THEO HƯỚNG TÍCH CỰC
-*(Trích từ Phiếu học tập: Khám phá và rèn luyện bản thân - SGK Hoạt động trải nghiệm, hướng nghiệp 10 KNTT, tr. 15 – 18)*
-
----
-
-## A. CƠ SỞ LÝ THUYẾT THEO SGK (KẾT NỐI TRI THỨC)
-
-### 1. Khái niệm & Tác động của tư duy tích cực (SGK Hoạt động 2, tr. 15)
-- **Tư duy tích cực:** Là thói quen nhìn nhận vấn đề, sự việc, con người theo hướng lạc quan, đa chiều, tập trung vào giải pháp, cơ hội học hỏi và hoàn thiện thay vì chỉ nhìn vào mặt tiêu cực, khó khăn hay đổ lỗi.
-- **Tác động đến giao tiếp, ứng xử:**
-  - Giúp cá nhân duy trì sự bình tĩnh, kiểm soát cảm xúc, tránh những lời nói, hành vi gây tổn thương cho bản thân và người khác.
-  - Thấu hiểu và gắn kết các mối quan hệ bạn bè, thầy cô, gia đình; giữ vững tinh thần hợp tác, tôn trọng lẫn nhau.
-
-### 2. Nguyên tắc điều chỉnh tư duy theo hướng tích cực (SGK gợi ý, tr. 16)
-- **Bình tĩnh, không nóng vội:** Khi đối diện sự cố/áp lực, hít thở sâu, không phản ứng ngay lập tức theo cảm xúc nhất thời.
-- **Đặt mình vào vị trí của người khác:** Thấu cảm lý do, hoàn cảnh, trách nhiệm của đối phương (ví dụ: góc nhìn của cha mẹ, thầy cô, bạn bè).
-- **Tập trung vào giải pháp thay vì nguyên cớ:** Tự hỏi *"Mình có thể làm gì để cải thiện tình hình?"* thay vì *"Tại sao điều tồi tệ này lại xảy ra với mình?"*.
-
----
-
-## B. NỘI DUNG ĐIỀN PHIẾU HỌC TẬP (PHẦN II)
-
-> **Đề bài trong phiếu:**  
-> *Hãy chọn một tình huống áp lực/khó khăn gần đây và chuyển đổi góc nhìn của em:*
-
-Dưới đây là **5 mẫu tình huống điển hình** (bám sát chương trình SGK và đời sống học sinh lớp 10) để lựa chọn điền vào phiếu học tập hoặc làm tư liệu báo cáo thuyết trình:
-
----
 
 ### TÌNH HUỐNG MẪU 1: Áp lực điểm số không như ý khi vào lớp 10 *(Khuyên dùng)*
 
