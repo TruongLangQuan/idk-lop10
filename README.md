@@ -7,7 +7,7 @@
 
 | Thư mục | Môn học | Nội dung chính |
 | :--- | :--- | :--- |
-| [`idk-van/`](idk-van/) | **Ngữ văn 10** | SGK Ngữ văn 10 Tập 1, Phiếu học tập HK1, các bài soạn văn bản (*Hiền tài là nguyên khí quốc gia, Yêu và đồng cảm, Mùa xuân chín, Thu hứng, Thơ hai-cư*), dàn ý & văn mẫu (*Chuyện người con gái Nam Xương, Chữ người tử tù*), kịch bản thuyết trình & câu hỏi phản biện. |
+| [`idk-van/`](idk-van/) | **Ngữ văn 10** | SGK Ngữ văn 10 Tập 1, Phiếu học tập HK1, các bài soạn văn bản (*Hiền tài là nguyên khí quốc gia, Yêu và đồng cảm, Chữ bầu lên nhà thơ, Mùa xuân chín, Thu hứng, Thơ hai-cư*), dàn ý & văn mẫu (*Chuyện người con gái Nam Xương, Chữ người tử tù*), kịch bản thuyết trình & câu hỏi phản biện. |
 | [`idk-toan/`](idk-toan/) | **Toán học 10** | SGK Toán 10 Tập 1, thư mục đề bài ảnh chụp (`de-bai/`), lời giải chi tiết các dạng bài tập hàm số, bất phương trình, hình học. |
 | [`idk-hoa/`](idk-hoa/) | **Hóa học 10** | SGK Hóa học 10, bài soạn lý thuyết (Bài 1, 2, 3, 5), bộ ảnh đề ôn (`de-on/`), giải chi tiết đề ôn chương Nguyên tử và Bảng tuần hoàn. |
 | [`idk-sinh/`](idk-sinh/) | **Sinh học 10** | SGK Sinh học 10, bài soạn chi tiết (Bài 1 đến Bài 8: *Bài 6 Thực hành, Bài 7 Tế bào nhân sơ, Bài 8 Tế bào nhân thực*), giải trọn bộ đề ôn Bài 5 (Các phân tử sinh học), thư mục ảnh bài tập (`screenshot/`). |
@@ -25,7 +25,8 @@
 - **Bài soạn văn bản:**
   - `soan_bai_hien_tai_la_nguyen_khi_quoc_gia.md`: Bài soạn đầy đủ toàn bài.
   - `soan_bai_nhom_3_4_hien_tai_la_nguyen_khi_quoc_gia.md`: Bài soạn chuyên sâu cho Nhóm 3 & Nhóm 4.
-  - `soan_bai_yeu_va_dong_cam.md`: Soạn bài chi tiết văn bản *Yêu và đồng cảm* (Phong Tử Khải) bám sát 4 nhóm thảo luận PHT và SGK.
+  - `soan_bai_yeu_va_dong_cam.md`: Soạn bài chi tiết văn bản *Yêu và đồng cảm* (Phong Tử Khải) bám sát 4 nhóm thảo luận PHT, bộ câu hỏi phản biện chuyên sâu và SGK.
+  - `soan_bai_chu_bau_len_nha_tho.md`: Soạn bài chi tiết văn bản *Chữ bầu lên nhà thơ* (Lê Đạt) bám sát PHT và SGK.
   - `nhom-3-4.txt`: Tóm tắt gạch đầu dòng mở rộng cho Nhóm 3 & Nhóm 4.
   - `script_thuyet_trinh_nhom_3_4.txt`: Lời thoại kịch bản thuyết trình trước lớp.
   - `bo_cau_hoi_phan_bien_hien_tai_la_nguyen_khi_quoc_gia.md`: Bộ câu hỏi phản biện và đáp án.

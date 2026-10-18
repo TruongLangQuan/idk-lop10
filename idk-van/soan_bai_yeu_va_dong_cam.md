@@ -129,7 +129,67 @@
 
 ---
 
-## 4. HƯỚNG DẪN TRẢ LỜI CÂU HỎI SAU KHI ĐỌC (SGK TRANG 81)
+## 4. HỆ THỐNG CÂU HỎI PHẢN BIỆN CHUYÊN SÂU DÀNH CHO 4 NHÓM THUYẾT TRÌNH
+*(Dành cho giáo viên, học sinh dùng để chất vấn, tranh luận và bảo vệ luận điểm khi thuyết trình trên lớp)*
+
+### A. Dành cho NHÓM 1: Câu chuyện khởi đầu và dư âm để lại
+* **Câu hỏi 1 (Về tính chủ quan và áp đặt cảm xúc của tác giả):**
+  - *Chất vấn nhóm thuyết trình:* "Nhóm bạn khẳng định chú bé xếp lại chân bàn, đôi giày, chiếc ghế vì có 'tấm lòng đồng cảm bao la', sợ chân bàn bị đau, chiếc giày bị cô đơn. Nhưng liệu đây có phải là sự suy diễn áp đặt mang tính chủ quan của người lớn (tác giả) vào tâm lý một đứa trẻ hay không? Nếu hành động đó thực chất chỉ là một phản xạ vô thức thích sự ngay ngắn, thẳng hàng hoặc bắt chước người lớn, thì luận điểm của nhóm bạn có còn thuyết phục không?"
+  - *Gợi ý trả lời / Thế đối đáp bảo vệ luận điểm:*
+    + Hành động của trẻ thơ bắt nguồn từ tâm lý "vạn vật hữu linh" (tự nhiên trao linh hồn cho vạn vật) – một đặc điểm tâm lý học lứa tuổi được khoa học công nhận, rất khác với người lớn (người lớn dọn dẹp vì ngăn nắp, trẻ con dọn dẹp vì coi đồ vật là bạn bè có cảm giác).
+    + Trong văn nghị luận nghệ thuật, mẩu chuyện đời thường chính là "điểm tựa cảm xúc" để tác giả khơi mở một chân lý thẩm mỹ: Nghệ thuật luôn khởi sinh khi con người nhìn thế giới bằng lăng kính của tình thương và lòng trắc ẩn.
+* **Câu hỏi 2 (Về ranh giới giữa đồng cảm và sự ủy mị, phi thực tế):**
+  - *Chất vấn nhóm thuyết trình:* "Đồ vật vô tri như cái bàn, cái ghế vốn không có tế bào thần kinh, không biết đau hay lạnh. Nếu chúng ta cứ đồng cảm, lo sợ chiếc bàn bị đau hay chiếc ghế cô đơn, liệu có dẫn đến sự ngộ nhận, ủy mị và xa rời thực tế hay không? Sự đồng cảm này đem lại giá trị thiết thực gì cho đời sống?"
+  - *Gợi ý trả lời / Thế đối đáp bảo vệ luận điểm:*
+    + Đồng cảm với đồ vật không phải là sự mê muội hay ủy mị, mà là biểu hiện cao nhất của sự trân trọng sự sống và môi trường sống xung quanh. Khi một người biết thương một nhành cây, biết xót xa cho một đồ vật vô tri bị quăng quật, thì người đó chắc chắn sẽ không bao giờ có thể nhẫn tâm, tàn bạo đối với con người.
+    + Đó chính là cái gốc của ý thức giữ gìn của công, bảo vệ thiên nhiên và hình thành lối sống văn minh, nhân bản trong xã hội.
+
+---
+
+### B. Dành cho NHÓM 2: Chiêm nghiệm về cách nhìn đời của họa sĩ
+* **Câu hỏi 1 (Về sự cần thiết của cái nhìn thực dụng và khoa học):**
+  - *Chất vấn nhóm thuyết trình:* "Nhóm bạn ca ngợi cái nhìn thẩm mỹ, vô tư của họa sĩ trước cây cổ thụ và dường như xem nhẹ cái nhìn thực dụng của thương nhân, thợ mộc hay cái nhìn lý tính của nhà khoa học. Nhưng nếu không có thợ mộc đóng bàn ghế làm nhà, không có thương nhân buôn bán tạo ra của cải, không có nhà khoa học nghiên cứu quy luật tự nhiên, thì con người có thể tồn tại để người họa sĩ thảnh thơi vẽ tranh hay không? Phải chăng cách nhìn của nghệ sĩ chỉ là đặc quyền xa xỉ của những kẻ rảnh rỗi?"
+  - *Gợi ý trả lời / Thế đối đáp bảo vệ luận điểm:*
+    + Tác giả không hề bài trừ hay phủ nhận giá trị của kinh tế và khoa học. Xã hội loài người muốn tồn tại thì bắt buộc phải có của cải vật chất (cơm ăn, áo mặc, nhà ở do thương nhân, thợ mộc, nhà khoa học tạo nên).
+    + Nhưng nếu con người *chỉ* nhìn thế giới bằng con mắt thực dụng và toan tính thiệt hơn, cuộc sống sẽ trở nên khô khan, tàn nhẫn, thiên nhiên bị tàn phá kiệt quệ và tâm hồn bị tha hóa. Cái nhìn của nghệ sĩ là "liều thuốc cứu rỗi", giúp tái lập sự cân bằng, nhắc nhở con người sống hòa hợp với thiên nhiên và biết thưởng thức vẻ đẹp tinh thần.
+* **Câu hỏi 2 (Về nghịch lý giữa 'phi vụ lợi' và thị trường nghệ thuật):**
+  - *Chất vấn nhóm thuyết trình:* "Nhóm bạn nói người nghệ sĩ nhìn đời bằng con mắt phi vụ lợi, không màng tiền bạc. Nhưng trong thực tế, các bức tranh của các danh họa (kể cả Phong Tử Khải) đều được bán đấu giá với số tiền rất lớn, và nghệ sĩ cũng cần tiền để mưu sinh. Liệu có sự mâu thuẫn hay đạo đức giả giữa lý thuyết 'phi vụ lợi' và thực tế cơm áo gạo tiền của người làm nghệ thuật?"
+  - *Gợi ý trả lời / Thế đối đáp bảo vệ luận điểm:*
+    + Cần phân biệt rạch ròi giữa **"khoảnh khắc sáng tạo nghệ thuật"** và **"hoạt động thương mại sau sáng tạo"**.
+    + Khi đứng trước trang giấy và cầm bút vẽ, nếu tâm trí người nghệ sĩ chỉ toan tính xem bức tranh này bán được bao nhiêu tiền, thì bức tranh đó chỉ là món hàng thương mại vô hồn. Người nghệ sĩ chân chính chỉ sáng tạo khi tâm hồn hoàn toàn đắm chìm trong rung động thuần khiết. Giá trị kinh tế của tác phẩm sau này chỉ là sự thừa nhận xứng đáng của xã hội đối với tài năng và tâm huyết của họ, chứ không phải mục đích ban đầu khi họ sáng tác.
+
+---
+
+### C. Dành cho NHÓM 3: Vai trò của đồng cảm trong sáng tạo nghệ thuật
+* **Câu hỏi 1 (Về mối quan hệ giữa Lòng đồng cảm và Kỹ thuật nghệ thuật):**
+  - *Chất vấn nhóm thuyết trình:* "Nhóm bạn khẳng định 'Không có đồng cảm thì không có nghệ thuật'. Nhưng nếu một người có tấm lòng đồng cảm vô cùng bao la với cuộc đời nhưng lại không có năng khiếu, không nắm được kỹ thuật vẽ, không biết luật phối màu hay cách hành văn, thì người đó có tạo nên tác phẩm nghệ thuật không? Giữa 'Kỹ thuật điêu luyện' và 'Lòng đồng cảm', yếu tố nào giữ vai trò quyết định?"
+  - *Gợi ý trả lời / Thế đối đáp bảo vệ luận điểm:*
+    + Cả hai yếu tố đều cần thiết, nhưng **Lòng đồng cảm giữ vai trò quyết định linh hồn** của tác phẩm.
+    + Kỹ thuật chỉ là phương tiện, công cụ (cái xác); còn lòng đồng cảm mới là nội dung, là sự sống (linh hồn). Một người giỏi kỹ thuật nhưng vô cảm thì chỉ tạo ra những tác phẩm khéo léo, sao chép vô hồn. Ngược lại, người có rung động mãnh liệt dù nét vẽ mộc mạc, chữ viết giản dị vẫn có thể chạm đến trái tim người thưởng thức. Kỹ thuật có thể rèn luyện qua năm tháng, nhưng lòng trắc ẩn, đồng cảm thì phải xuất phát từ căn cốt tâm hồn.
+* **Câu hỏi 2 (Về ranh giới giữa đồng cảm và sự thỏa hiệp / cổ xúy cái ác):**
+  - *Chất vấn nhóm thuyết trình:* "Tác giả nói người nghệ sĩ phải biết đặt mình vào mọi đối tượng để đồng cảm. Vậy khi miêu tả cái ác, cái xấu trong xã hội, người nghệ sĩ có cần phải 'đồng cảm' với kẻ thủ ác hay không? Việc đồng cảm với kẻ xấu liệu có nguy cơ dẫn đến sự bao biện, thỏa hiệp hoặc làm lu mờ ranh giới đúng - sai về mặt đạo đức?"
+  - *Gợi ý trả lời / Thế đối đáp bảo vệ luận điểm:*
+    + "Đồng cảm" của nghệ sĩ trước cái ác không phải là "đồng tình" hay "đồng lõa", mà là **nỗ lực thấu suốt căn nguyên tâm lý và bi kịch dẫn đến cái ác** (như Nam Cao đồng cảm với bi kịch tha hóa của Chí Phèo).
+    + Bằng cách soi chiếu sâu sắc vào bóng tối tâm can con người, nghệ sĩ giúp người đọc nhìn thấu bản chất của tội lỗi, từ đó thức tỉnh lương tri, ngăn ngừa cái ác và tìm cách cảm hóa con người hướng thiện. Đó là sự đồng cảm nhân đạo sâu sắc nhất, chứ không hề dung túng cho cái xấu.
+
+---
+
+### D. Dành cho NHÓM 4: Bài học sáng tác từ cách nhìn thế giới của trẻ em
+* **Câu hỏi 1 (Nghịch lý: Trẻ em có thực sự là 'nghệ sĩ' khi thiếu trải nghiệm cuộc sống?):**
+  - *Chất vấn nhóm thuyết trình:* "Tác giả cho rằng 'Bản chất của nghệ sĩ là trẻ thơ' và trẻ em là những 'nghệ sĩ bẩm sinh'. Nhưng nghệ thuật đỉnh cao đòi hỏi chiều sâu tư tưởng, vốn sống phong phú và những chiêm nghiệm đau đớn về kiếp nhân sinh – điều mà một đứa trẻ không thể nào có được. Liệu việc ví người nghệ sĩ với trẻ con có làm tầm thường hóa tầm vóc của nghệ thuật hay không?"
+  - *Gợi ý trả lời / Thế đối đáp bảo vệ luận điểm:*
+    + Tác giả không hề đánh đồng năng lực trí tuệ của nghệ sĩ với đứa trẻ, mà đang nhấn mạnh đến **"thái độ thẩm mỹ nguyên sơ"**.
+    + Trẻ em là nghệ sĩ ở khía cạnh: **cái nhìn thuần khiết, lòng trắc ẩn tự nhiên, trí tưởng tượng bay bổng và sự gắn kết không vụ lợi với vạn vật**.
+    + Một người nghệ sĩ lớn là sự kết hợp kỳ diệu giữa: **trí tuệ, kỹ thuật, vốn sống của một người trưởng thành từng trải** VÀ **trái tim trong trẻo, biết rung động như một đứa trẻ**. Nếu đánh mất trái tim trẻ thơ, người nghệ sĩ sẽ chỉ còn lại sự toan tính, già nua và khô cứng.
+* **Câu hỏi 2 (Tính khả thi của việc 'giữ tâm hồn trẻ thơ' trong thực tế khắc nghiệt):**
+  - *Chất vấn nhóm thuyết trình:* "Nhóm bạn đưa ra thông điệp người lớn cần giữ gìn tâm hồn trẻ thơ. Nhưng trong cuộc sống thực tế đầy rẫy sự cạnh tranh, lừa lọc và áp lực mưu sinh, nếu một người trưởng thành cứ giữ cái nhìn ngây thơ, cả tin như trẻ nhỏ thì chẳng phải sẽ trở nên ấu trĩ, dễ bị tổn thương và bị xã hội đào thải hay sao? Làm sao để vừa tồn tại thực tế vừa giữ được tâm hồn trẻ thơ?"
+  - *Gợi ý trả lời / Thế đối đáp bảo vệ luận điểm:*
+    + Giữ "tâm hồn trẻ thơ" không đồng nghĩa với sự ngây ngô, thiếu hiểu biết hay cả tin mù quáng về mặt nhận thức xã hội.
+    + Đó là việc **giữ gìn sự thánh thiện, trong sáng trong nhân cách và lòng trắc ẩn đối với cuộc đời**. Về mặt hành động, con người vẫn cần trang bị đầy đủ bản lĩnh, tri thức và kỹ năng sắc bén để sinh tồn; nhưng trong sâu thẳm tâm hồn, ta không để sự toan tính, danh lợi làm chai sạn trái tim, vẫn biết xúc động trước một nhành hoa, biết rơi nước mắt trước nỗi đau của người khác. Đó là bản lĩnh của một nhân cách cao cả, chứ không phải sự yếu đuối.
+
+---
+
+## 5. HƯỚNG DẪN TRẢ LỜI CÂU HỎI SAU KHI ĐỌC (SGK TRANG 81)
 
 ### Câu 1: Tìm những từ ngữ, câu văn thể hiện cách nhìn của nghệ sĩ đối với sự vật trong đoạn 1 và đoạn 2. Phân tích sự khác biệt giữa cách nhìn của người nghệ sĩ và cách nhìn của những người khác.
 - **Từ ngữ, câu văn thể hiện cách nhìn của nghệ sĩ:**
@@ -186,7 +246,7 @@
 
 ---
 
-## 5. TỔNG KẾT VĂN BẢN
+## 6. TỔNG KẾT VĂN BẢN
 
 ### A. Giá trị nội dung
 - Khẳng định bản chất cốt lõi của sáng tạo nghệ thuật đích thực bắt nguồn từ **tấm lòng đồng cảm và tình yêu thương bao la đối với muôn loài, vạn vật**.
@@ -200,7 +260,7 @@
 
 ---
 
-## 6. VIẾT KẾT NỐI VỚI ĐỌC (SGK TRANG 81)
+## 7. VIẾT KẾT NỐI VỚI ĐỌC (SGK TRANG 81)
 
 ### Đề bài:
 > **Viết đoạn văn (khoảng 150 chữ) trình bày suy nghĩ của em về sự cần thiết của lòng đồng cảm trong cuộc sống hiện đại.**
