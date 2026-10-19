@@ -86,6 +86,7 @@
   - `phan_tich_cau_truc_van_minh_ai_cap.md`: Phân tích toàn diện cấu trúc sư phạm, các tầng nấc logic nhân quả và toàn bộ nội dung cốt lõi của phần *Văn minh Ai Cập cổ đại* (Chủ đề 3 / Bài 5).
   - `game_van_minh_ai_cap.md`: Hệ thống minigame học tập tương tác cao (Trắc nghiệm Kahoot, Ô chữ bí mật Kim tự tháp, Đuổi hình bắt chữ lật mảnh ghép, Minigame Đúng/Sai thần Anubis kèm kịch bản MC).
   - `game_sap_xep_cau_ai_cap.md`: Bộ 20 câu hỏi trò chơi sắp xếp lại câu/từ (Sentence Unscramble) chia 4 chủ đề kèm bảng tra đáp án nhanh cho MC/giáo viên.
+  - `mo_ta_game_cung_co_ai_cap.txt`: Bản thiết kế và kế hoạch tổ chức hoạt động củng cố bài học bằng trò chơi (Tên game, dạng trò chơi, quy mô câu hỏi, mục tiêu, ma trận 4 chặng và thang điểm).
 
 ---
 
