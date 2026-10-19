@@ -9,7 +9,7 @@
 | :--- | :--- | :--- |
 | [`idk-van/`](idk-van/) | **Ngữ văn 10** | SGK Ngữ văn 10 Tập 1, Phiếu học tập HK1, các bài soạn văn bản (*Hiền tài là nguyên khí quốc gia, Yêu và đồng cảm, Chữ bầu lên nhà thơ, Mùa xuân chín, Thu hứng, Thơ hai-cư*), dàn ý & văn mẫu (*Chuyện người con gái Nam Xương, Chữ người tử tù*), kịch bản thuyết trình & câu hỏi phản biện. |
 | [`idk-toan/`](idk-toan/) | **Toán học 10** | SGK Toán 10 Tập 1, thư mục đề bài ảnh chụp (`de-bai/`), lời giải chi tiết các dạng bài tập hàm số, bất phương trình, hình học. |
-| [`idk-hoa/`](idk-hoa/) | **Hóa học 10** | SGK Hóa học 10, bài soạn lý thuyết (Bài 1, 2, 3, 5), bộ ảnh đề ôn (`de-on/`), giải chi tiết đề ôn chương Nguyên tử và Bảng tuần hoàn. |
+| [`idk-hoa/`](idk-hoa/) | **Hóa học 10** | SGK Hóa học 10, bài soạn lý thuyết (Bài 1, 2, 3, 5, 6, 7, 8), bộ ảnh đề ôn (`de-on/`), giải chi tiết đề ôn chương Nguyên tử và Bảng tuần hoàn. |
 | [`idk-sinh/`](idk-sinh/) | **Sinh học 10** | SGK Sinh học 10, bài soạn chi tiết (Bài 1 đến Bài 8: *Bài 6 Thực hành, Bài 7 Tế bào nhân sơ, Bài 8 Tế bào nhân thực*), giải trọn bộ đề ôn Bài 5 (Các phân tử sinh học), thư mục ảnh bài tập (`screenshot/`). |
 | [`idk-tin/`](idk-tin/) | **Tin học 10** | SGK Tin học 10, bài thuyết trình PowerPoint Bài 7 (`Bai_7_Tin_Hoc_10_Thuc_Hanh_Thiet_Bi_So.pptx`), bài soạn Bài 9, bộ câu hỏi An toàn & Đạo đức số khi ứng dụng AI. |
 | [`idk-gddp/`](idk-gddp/) | **Giáo dục địa phương** | Chuyên đề lịch sử Sài Gòn – Gia Định (1859 - 1867), file thuyết trình PDF, video tư liệu lịch sử có phụ đề tiếng Việt (`videos/`), script tải YouTube. |
@@ -48,7 +48,7 @@
 
 ### 3. Hóa học (`idk-hoa/`)
 - **Tài liệu gốc:** `sach-giao-khoa-hoa-10-ket-noi-tri-thuc.pdf`
-- **Bài soạn:** `bai_1.md`, `bai_2.md`, `bai_3.md`, `bai_5.md`
+- **Bài soạn:** `bai_1.md`, `bai_2.md`, `bai_3.md`, `bai_5.md`, `bai_6.md`, `bai_7.md`, `bai_8.md`
 - **Đề ôn & Lời giải:**
   - `de-on/`: Ảnh chụp đề ôn tập Hóa 10.
   - `de-on/giai_chi_tiet_de_on.md` & `giai_de_on_tap_chuong_nguyen_tu.md`: Giải đề ôn tập Chương 1 (Nguyên tử).
