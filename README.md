@@ -84,6 +84,7 @@
 - **Chuyên đề & Phân tích:**
   - `bai_3_van_minh_ai_cap.md`: Tài liệu bài học tổng hợp toàn diện về nền văn minh Ai Cập cổ đại (khái niệm văn hóa/văn minh, cơ sở hình thành, lịch sử, chính trị, chữ viết, văn học, kiến trúc điêu khắc).
   - `phan_tich_cau_truc_van_minh_ai_cap.md`: Phân tích toàn diện cấu trúc sư phạm, các tầng nấc logic nhân quả và toàn bộ nội dung cốt lõi của phần *Văn minh Ai Cập cổ đại* (Chủ đề 3 / Bài 5).
+  - `game_van_minh_ai_cap.md`: Hệ thống minigame học tập tương tác cao (Trắc nghiệm Kahoot, Ô chữ bí mật Kim tự tháp, Đuổi hình bắt chữ lật mảnh ghép, Minigame Đúng/Sai thần Anubis kèm kịch bản MC).
 
 ---
 
