@@ -14,7 +14,7 @@
 | [`idk-tin/`](idk-tin/) | **Tin học 10** | SGK Tin học 10, bài thuyết trình PowerPoint Bài 7 (`Bai_7_Tin_Hoc_10_Thuc_Hanh_Thiet_Bi_So.pptx`), bài soạn Bài 9, bộ câu hỏi An toàn & Đạo đức số khi ứng dụng AI. |
 | [`idk-gddp/`](idk-gddp/) | **Giáo dục địa phương** | Chuyên đề lịch sử Sài Gòn – Gia Định (1859 - 1867), file thuyết trình PDF, video tư liệu lịch sử có phụ đề tiếng Việt (`videos/`), script tải YouTube. |
 | [`idk-hdtn/`](idk-hdtn/) | **Hoạt động trải nghiệm** | SGK Hoạt động trải nghiệm 10, tài liệu thuyết trình Chủ đề 1 (Truyền thống nhà trường) và Chủ đề 2 (Tư duy tích cực). |
-| [`idk-lich-su/`](idk-lich-su/) | **Lịch sử 10** | SGK Lịch sử 10 Kết nối tri thức với cuộc sống. |
+| [`idk-lich-su/`](idk-lich-su/) | **Lịch sử 10** | SGK Lịch sử 10 Kết nối tri thức với cuộc sống, tài liệu phân tích cấu trúc văn minh Ai Cập cổ đại (`phan_tich_cau_truc_van_minh_ai_cap.md`). |
 
 ---
 
@@ -78,6 +78,11 @@
 - **Chủ đề thuyết trình:**
   - `thuyet-trinh/chu-de-1-phat_huy_truyen_thong_nha_truong/`
   - `thuyet-trinh/chu-de-2/` (Điều chỉnh tư duy tích cực, phiếu học tập).
+
+### 8. Lịch sử (`idk-lich-su/`)
+- **Tài liệu gốc:** `sach-giao-khoa-lich-su-10-ket-noi-tri-thuc-voi-cuoc-song.pdf`
+- **Chuyên đề & Phân tích:**
+  - `phan_tich_cau_truc_van_minh_ai_cap.md`: Phân tích toàn diện cấu trúc sư phạm, các tầng nấc logic nhân quả và toàn bộ nội dung cốt lõi của phần *Văn minh Ai Cập cổ đại* (Chủ đề 3 / Bài 5).
 
 ---
 
