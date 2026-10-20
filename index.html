@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trò chơi Sắp Xếp Chữ - Văn Minh Ai Cập Cổ Đại</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    body {
+      background: #f8fafc;
+      color: #0f172a;
+      padding: 24px;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      max-width: 800px;
+      width: 100%;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 24px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    header {
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 16px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .stats {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: #64748b;
+      margin-top: 8px;
+    }
+    .stage-badge {
+      display: inline-block;
+      padding: 4px 10px;
+      background: #e2e8f0;
+      color: #1e293b;
+      font-weight: 600;
+      font-size: 13px;
+      border-radius: 4px;
+      margin-bottom: 12px;
+    }
+    .question-header {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .instruction {
+      font-size: 13px;
+      color: #64748b;
+      margin-bottom: 12px;
+    }
+    .zone {
+      min-height: 72px;
+      padding: 12px;
+      border-radius: 6px;
+      margin-bottom: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+    .target-zone {
+      background: #f1f5f9;
+      border: 2px dashed #cbd5e1;
+    }
+    .target-zone.empty::before {
+      content: "Nhấp hoặc kéo các từ bên dưới vào đây để ghép câu...";
+      color: #94a3b8;
+      font-size: 14px;
+      font-style: italic;
+    }
+    .source-zone {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+    }
+    .word-btn {
+      padding: 8px 14px;
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+      user-select: none;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .word-btn:hover {
+      background: #e2e8f0;
+      border-color: #94a3b8;
+    }
+    .target-zone .word-btn {
+      background: #2563eb;
+      color: #ffffff;
+      border-color: #1d4ed8;
+    }
+    .target-zone .word-btn:hover {
+      background: #1d4ed8;
+    }
+    .actions {
+      display: flex;
+      gap: 8px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+    button.action-btn {
+      padding: 10px 18px;
+      border-radius: 6px;
+      border: none;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .btn-check {
+      background: #16a34a;
+      color: #ffffff;
+    }
+    .btn-check:hover {
+      background: #15803d;
+    }
+    .btn-reset {
+      background: #e2e8f0;
+      color: #334155;
+    }
+    .btn-reset:hover {
+      background: #cbd5e1;
+    }
+    .btn-nav {
+      background: #0f172a;
+      color: #ffffff;
+    }
+    .btn-nav:hover {
+      background: #334155;
+    }
+    .feedback {
+      margin-top: 16px;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 14px;
+      display: none;
+    }
+    .feedback.correct {
+      background: #dcfce7;
+      color: #166534;
+      border: 1px solid #bbf7d0;
+      display: block;
+    }
+    .feedback.incorrect {
+      background: #fee2e2;
+      color: #991b1b;
+      border: 1px solid #fecaca;
+      display: block;
+    }
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 24px;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 16px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>GAME SẮP XẾP TỪ THÀNH CÂU (WORD UNSCRAMBLE)</h1>
+    <div class="stats">
+      <span>Tiến độ: <strong id="progress-text">1 / 20</strong></span>
+      <span>Điểm số: <strong id="score-text">0</strong></span>
+    </div>
+  </header>
+
+  <div id="stage-badge" class="stage-badge">CHẶNG 1</div>
+  <div id="question-title" class="question-header">Câu 1</div>
+
+  <div class="instruction">1. Câu đang ghép: (Nhấp vào từ để xóa khỏi câu)</div>
+  <div id="target-zone" class="zone target-zone empty"></div>
+
+  <div class="instruction">2. Kho từ xáo trộn: (Nhấp vào từ để đưa lên câu)</div>
+  <div id="source-zone" class="zone source-zone"></div>
+
+  <div class="actions">
+    <button class="action-btn btn-check" onclick="checkAnswer()">Kiểm tra đáp án</button>
+    <button class="action-btn btn-reset" onclick="resetCurrentQuestion()">Làm lại câu này</button>
+  </div>
+
+  <div id="feedback" class="feedback"></div>
+
+  <div class="nav-buttons">
+    <button class="action-btn btn-nav" id="btn-prev" onclick="navigate(-1)">← Câu trước</button>
+    <button class="action-btn btn-nav" id="btn-next" onclick="navigate(1)">Câu sau →</button>
+  </div>
+</div>
+
+<script>
+const questions = [
+  // CHẶNG 1
+  { stage: "CHẶNG 1: MẬT MÃ DÒNG SÔNG MẸ", words: ["Đông", "lục", "Bắc", "địa", "tại", "cổ", "đại", "hình", "Phi", "thành", "châu", "Ai Cập"], answer: "Ai Cập cổ đại hình thành tại Đông Bắc châu lục Phi." },
+  { stage: "CHẶNG 1: MẬT MÃ DÒNG SÔNG MẸ", words: ["đời", "phù", "Nông", "nghiệp", "sông", "nhờ", "bồi", "sa", "Nin", "đắp", "ra"], answer: "Nông nghiệp ra đời nhờ phù sa sông Nin bồi đắp." },
+  { stage: "CHẶNG 1: MẬT MÃ DÒNG SÔNG MẸ", words: ["Herodotus", "tặng", "sử", "quà", "Ai Cập", "là", "xác", "của", "sông", "Nin", "nhận"], answer: "Sử Herodotus xác nhận Ai Cập là quà tặng sông Nin." },
+  { stage: "CHẶNG 1: MẬT MÃ DÒNG SÔNG MẸ", words: ["mạc", "hai", "bao", "Sa", "bọc", "Đông", "Tây", "Sahara", "phía", "mặt"], answer: "Sa mạc Sahara bao bọc hai mặt phía Đông Tây." },
+  { stage: "CHẶNG 1: MẬT MÃ DÒNG SÔNG MẸ", words: ["Hải", "biển", "mở", "Bắc", "với", "Địa", "ra", "Phía", "Trung", "lối"], answer: "Phía Bắc mở ra lối với biển Địa Trung Hải." },
+
+  // CHẶNG 2
+  { stage: "CHẶNG 2: VƯƠNG TRIỀU PHARAOH BẤT TỬ", words: ["vua", "3200", "thống", "TCN", "nhất", "Menes", "Năm", "quốc", "gia"], answer: "Năm 3200 TCN vua Menes thống nhất quốc gia." },
+  { stage: "CHẶNG 2: VƯƠNG TRIỀU PHARAOH BẤT TỬ", words: ["quyền", "chuyên", "lập", "chế", "thể", "trung", "ương", "chủ", "tập", "Quân"], answer: "Quân chủ chuyên chế trung ương tập quyền thể lập." },
+  { stage: "CHẶNG 2: VƯƠNG TRIỀU PHARAOH BẤT TỬ", words: ["tối", "Pharaoh", "cao", "ngai", "vàng", "chiếm", "quyền", "lực", "giữ"], answer: "Pharaoh giữ ngai vàng chiếm quyền lực tối cao." },
+  { stage: "CHẶNG 2: VƯƠNG TRIỀU PHARAOH BẤT TỬ", words: ["Trời", "Mặt", "Pharaoh", "thần", "xem", "là", "hiện", "thân", "được"], answer: "Pharaoh được xem là hiện thân thần Mặt Trời." },
+  { stage: "CHẶNG 2: VƯƠNG TRIỀU PHARAOH BẤT TỬ", words: ["sản", "Lực", "dân", "chính", "là", "nông", "xã", "xuất", "công"], answer: "Lực lượng sản xuất chính là nông dân công xã." },
+  { stage: "CHẶNG 2: VƯƠNG TRIỀU PHARAOH BẤT TỬ", words: ["trị", "dưới", "lệ", "tầng", "thuộc", "Nô", "lệ", "bị", "cùng", "thống"], answer: "Nô lệ thuộc tầng lớp bị thống trị dưới cùng." },
+  { stage: "CHẶNG 2: VƯƠNG TRIỀU PHARAOH BẤT TỬ", words: ["mới", "thành", "độ", "Mã", "La", "sụp", "Năm", "30", "tỉnh", "TCN", "suy"], answer: "Năm 30 TCN suy độ sụp thành tỉnh La Mã mới." },
+
+  // CHẶNG 3
+  { stage: "CHẶNG 3: DI SẢN TRÊN ĐẤT SÉT VÀ ĐẦM LẦY", words: ["tượng", "sáng", "Chữ", "hình", "tạo", "đã", "sớm", "được", "viết"], answer: "Chữ viết tượng hình đã được sáng tạo sớm." },
+  { stage: "CHẶNG 3: DI SẢN TRÊN ĐẤT SÉT VÀ ĐẦM LẦY", words: ["Thoth", "Thần", "chữ", "truyền", "sáng", "thông", "tạo", "tuệ", "viết"], answer: "Thần Thoth truyền thông tuệ sáng tạo chữ viết." },
+  { stage: "CHẶNG 3: DI SẢN TRÊN ĐẤT SÉT VÀ ĐẦM LẦY", words: ["thành", "Papyrus", "thảo", "mộc", "giấy", "chế", "viết", "mềm", "mại"], answer: "Papyrus thảo mộc chế thành giấy viết mềm mại." },
+  { stage: "CHẶNG 3: DI SẢN TRÊN ĐẤT SÉT VÀ ĐẦM LẦY", words: ["Chết", "Người", "phẩm", "giáo", "Sách", "tôn", "tiêu", "tác", "biểu", "của"], answer: "Sách của Người Chết tiêu biểu tác phẩm tôn giáo." },
+  { stage: "CHẶNG 3: DI SẢN TRÊN ĐẤT SÉT VÀ ĐẦM LẦY", words: ["vang", "lừng", "dân", "em", "Chuyện", "anh", "văn", "học", "hai", "gian"], answer: "Chuyện hai anh em lừng vang văn học dân gian." },
+
+  // CHẶNG 4
+  { stage: "CHẶNG 4: KỲ QUAN VƯỢT THỜI GIAN", words: ["Pharaoh", "vị", "lăng", "Kim", "mộ", "xây", "tự", "táp", "cho", "chốn"], answer: "Kim tự táp xây làm chốn lăng mộ các vị Pharaoh." },
+  { stage: "CHẶNG 4: KỲ QUAN VƯỢT THỜI GIAN", words: ["vĩ", "Khufu", "đại", "tự", "nhất", "táp", "Kim", "kỳ", "quan", "là"], answer: "Kim tự táp Khufu là kỳ quan vĩ đại nhất." },
+  { stage: "CHẶNG 4: KỲ QUAN VƯỢT THỜI GIAN", words: ["Giza", "khắc", "điêu", "Sư", "thành", "Nhân", "kiệt", "tác", "Tượng"], answer: "Tượng Nhân Sư Giza trở thành kiệt tác điêu khắc." }
+];
+
+let currentIndex = 0;
+let currentSourceWords = [];
+let currentTargetWords = [];
+let score = 0;
+let solved = new Set();
+
+function loadQuestion(index) {
+  currentIndex = index;
+  const q = questions[index];
+
+  document.getElementById("progress-text").textContent = (index + 1) + " / " + questions.length;
+  document.getElementById("stage-badge").textContent = q.stage;
+  document.getElementById("question-title").textContent = "Câu " + (index + 1) + " (" + q.words.length + " từ)";
+
+  currentSourceWords = [...q.words];
+  currentTargetWords = [];
+
+  const feedback = document.getElementById("feedback");
+  feedback.className = "feedback";
+  feedback.style.display = "none";
+
+  renderWords();
+  updateNavButtons();
+}
+
+function renderWords() {
+  const sourceZone = document.getElementById("source-zone");
+  const targetZone = document.getElementById("target-zone");
+
+  sourceZone.innerHTML = "";
+  targetZone.innerHTML = "";
+
+  currentSourceWords.forEach((word, idx) => {
+    const btn = document.createElement("button");
+    btn.className = "word-btn";
+    btn.textContent = word;
+    btn.onclick = () => selectWord(idx);
+    sourceZone.appendChild(btn);
+  });
+
+  currentTargetWords.forEach((word, idx) => {
+    const btn = document.createElement("button");
+    btn.className = "word-btn";
+    btn.textContent = word;
+    btn.onclick = () => deselectWord(idx);
+    targetZone.appendChild(btn);
+  });
+
+  if (currentTargetWords.length === 0) {
+    targetZone.classList.add("empty");
+  } else {
+    targetZone.classList.remove("empty");
+  }
+}
+
+function selectWord(idx) {
+  const word = currentSourceWords.splice(idx, 1)[0];
+  currentTargetWords.push(word);
+  renderWords();
+}
+
+function deselectWord(idx) {
+  const word = currentTargetWords.splice(idx, 1)[0];
+  currentSourceWords.push(word);
+  renderWords();
+}
+
+function resetCurrentQuestion() {
+  loadQuestion(currentIndex);
+}
+
+function normalize(str) {
+  return str.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "").replace(/\s+/g, " ").trim().toLowerCase();
+}
+
+function checkAnswer() {
+  const q = questions[currentIndex];
+  const userSentence = currentTargetWords.join(" ");
+  const feedback = document.getElementById("feedback");
+
+  if (currentTargetWords.length !== q.words.length) {
+    feedback.className = "feedback incorrect";
+    feedback.textContent = "Bạn chưa dùng hết tất cả các từ trong kho từ!";
+    return;
+  }
+
+  if (normalize(userSentence) === normalize(q.answer)) {
+    feedback.className = "feedback correct";
+    feedback.textContent = "CHÍNH XÁC! Đáp án: " + q.answer;
+    if (!solved.has(currentIndex)) {
+      solved.add(currentIndex);
+      score += 10;
+      document.getElementById("score-text").textContent = score;
+    }
+  } else {
+    feedback.className = "feedback incorrect";
+    feedback.textContent = "CHƯA ĐÚNG! Bạn hãy sắp xếp lại hoặc xem lại trật tự ngữ pháp.";
+  }
+}
+
+function navigate(direction) {
+  const newIndex = currentIndex + direction;
+  if (newIndex >= 0 && newIndex < questions.length) {
+    loadQuestion(newIndex);
+  }
+}
+
+function updateNavButtons() {
+  document.getElementById("btn-prev").disabled = currentIndex === 0;
+  document.getElementById("btn-next").disabled = currentIndex === questions.length - 1;
+}
+
+// Khởi chạy câu đầu tiên
+loadQuestion(0);
+</script>
+
+</body>
+</html>
