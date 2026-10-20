@@ -87,6 +87,7 @@
   - `game_van_minh_ai_cap.md`: Hệ thống minigame học tập tương tác cao (Trắc nghiệm Kahoot, Ô chữ bí mật Kim tự tháp, Đuổi hình bắt chữ lật mảnh ghép, Minigame Đúng/Sai thần Anubis kèm kịch bản MC).
   - `game_sap_xep_cau_ai_cap.md`: Bộ 20 câu hỏi trò chơi sắp xếp lại câu/từ (Sentence Unscramble) chia 4 chủ đề kèm bảng tra đáp án nhanh cho MC/giáo viên.
   - `mo_ta_game_cung_co_ai_cap.txt`: Bản thiết kế và kế hoạch tổ chức hoạt động củng cố bài học bằng trò chơi (Tên game, dạng trò chơi, quy mô câu hỏi, mục tiêu, ma trận 4 chặng và thang điểm).
+  - `game_tuong_tac_ai_cap.html`: Ứng dụng web trò chơi tương tác trực tiếp (Word Unscramble 20 câu 4 chặng, click chọn từ, kiểm tra đáp án và tính điểm).
 
 ---
 
