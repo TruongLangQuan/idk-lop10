@@ -3,246 +3,361 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trò chơi Sắp Xếp Chữ - Văn Minh Ai Cập Cổ Đại</title>
+  <title>Mảnh Ghép Sông Nin - Game Tương Tác Âm Thanh & Pháo Hoa</title>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
   <style>
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
     }
     body {
-      background: #f8fafc;
-      color: #0f172a;
-      padding: 24px;
+      background: linear-gradient(135deg, #1e1b18 0%, #2c241b 100%);
+      color: #fdfbf7;
+      min-height: 100vh;
+      padding: 24px 16px;
       display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
     }
-    .container {
-      max-width: 800px;
+    .game-card {
+      max-width: 900px;
       width: 100%;
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 8px;
-      padding: 24px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      background: #252019;
+      border: 2px solid #d4af37;
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 12px 36px rgba(0,0,0,0.5), 0 0 20px rgba(212, 175, 55, 0.2);
     }
     header {
-      border-bottom: 2px solid #e2e8f0;
+      border-bottom: 2px solid #54442b;
       padding-bottom: 16px;
       margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
     }
     h1 {
-      font-size: 20px;
-      font-weight: 700;
-      margin-bottom: 4px;
+      font-size: 22px;
+      font-weight: 800;
+      color: #f6d365;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
     .stats {
       display: flex;
-      justify-content: space-between;
-      font-size: 14px;
-      color: #64748b;
-      margin-top: 8px;
+      gap: 16px;
+      font-size: 15px;
+      color: #e2d9cc;
     }
-    .stage-badge {
-      display: inline-block;
-      padding: 4px 10px;
-      background: #e2e8f0;
-      color: #1e293b;
+    .stat-badge {
+      background: #3d3222;
+      border: 1px solid #8c734b;
+      padding: 6px 14px;
+      border-radius: 20px;
       font-weight: 600;
+    }
+    .stat-badge strong {
+      color: #f6d365;
+    }
+    .stage-title {
       font-size: 13px;
-      border-radius: 4px;
-      margin-bottom: 12px;
+      color: #d4af37;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      letter-spacing: 1.5px;
     }
     .question-header {
-      font-size: 16px;
-      font-weight: 600;
+      font-size: 18px;
+      font-weight: 700;
+      color: #ffffff;
       margin-bottom: 16px;
     }
-    .instruction {
+    .rule-note {
+      font-size: 14px;
+      color: #cbd5e1;
+      background: rgba(212, 175, 55, 0.1);
+      border-left: 4px solid #d4af37;
+      padding: 8px 12px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+    }
+    .zone-label {
       font-size: 13px;
-      color: #64748b;
-      margin-bottom: 12px;
+      font-weight: 600;
+      color: #c5b399;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
     }
     .zone {
-      min-height: 72px;
-      padding: 12px;
-      border-radius: 6px;
-      margin-bottom: 16px;
+      min-height: 84px;
+      padding: 14px;
+      border-radius: 12px;
+      margin-bottom: 20px;
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 10px;
       align-items: center;
+      transition: all 0.25s ease;
     }
     .target-zone {
-      background: #f1f5f9;
-      border: 2px dashed #cbd5e1;
+      background: #1a1713;
+      border: 2px dashed #8c734b;
     }
     .target-zone.empty::before {
-      content: "Nhấp hoặc kéo các từ bên dưới vào đây để ghép câu...";
-      color: #94a3b8;
-      font-size: 14px;
+      content: "Chạm/nhấp vào từ bên dưới theo đúng thứ tự câu...";
+      color: #8c7f70;
+      font-size: 15px;
       font-style: italic;
     }
     .source-zone {
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
+      background: #2f271c;
+      border: 1px solid #54442b;
     }
     .word-btn {
-      padding: 8px 14px;
-      background: #ffffff;
-      border: 1px solid #cbd5e1;
-      border-radius: 4px;
-      font-size: 15px;
-      font-weight: 500;
+      padding: 12px 20px;
+      background: linear-gradient(180deg, #ecd599 0%, #d4af37 100%);
+      color: #2b1f0c;
+      border: 1px solid #fff3b0;
+      border-radius: 8px;
+      font-size: 17px;
+      font-weight: 700;
       cursor: pointer;
       user-select: none;
-      transition: background 0.15s, border-color 0.15s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.1s, box-shadow 0.1s, background 0.2s;
     }
     .word-btn:hover {
-      background: #e2e8f0;
-      border-color: #94a3b8;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(212, 175, 55, 0.4);
+    }
+    .word-btn:active {
+      transform: translateY(1px);
     }
     .target-zone .word-btn {
-      background: #2563eb;
-      color: #ffffff;
-      border-color: #1d4ed8;
+      background: linear-gradient(180deg, #4ade80 0%, #22c55e 100%);
+      color: #052e16;
+      border-color: #86efac;
+      cursor: default;
     }
-    .target-zone .word-btn:hover {
-      background: #1d4ed8;
+    .shake-error {
+      animation: shake 0.4s cubic-bezier(.36,.07,.19,.97) both;
+      background: #ef4444 !important;
+      color: #ffffff !important;
+      border-color: #fca5a5 !important;
     }
-    .actions {
-      display: flex;
-      gap: 8px;
-      margin-top: 20px;
-      flex-wrap: wrap;
+    @keyframes shake {
+      10%, 90% { transform: translate3d(-2px, 0, 0); }
+      20%, 80% { transform: translate3d(4px, 0, 0); }
+      30%, 50%, 70% { transform: translate3d(-6px, 0, 0); }
+      40%, 60% { transform: translate3d(6px, 0, 0); }
     }
-    button.action-btn {
-      padding: 10px 18px;
-      border-radius: 6px;
-      border: none;
-      font-size: 14px;
-      font-weight: 600;
-      cursor: pointer;
-    }
-    .btn-check {
-      background: #16a34a;
-      color: #ffffff;
-    }
-    .btn-check:hover {
-      background: #15803d;
-    }
-    .btn-reset {
-      background: #e2e8f0;
-      color: #334155;
-    }
-    .btn-reset:hover {
-      background: #cbd5e1;
-    }
-    .btn-nav {
-      background: #0f172a;
-      color: #ffffff;
-    }
-    .btn-nav:hover {
-      background: #334155;
-    }
-    .feedback {
-      margin-top: 16px;
-      padding: 12px;
-      border-radius: 6px;
-      font-size: 14px;
+    .alert-banner {
       display: none;
+      padding: 14px;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 16px;
+      animation: fadeIn 0.3s;
     }
-    .feedback.correct {
-      background: #dcfce7;
-      color: #166534;
-      border: 1px solid #bbf7d0;
+    .alert-banner.wrong {
       display: block;
+      background: #7f1d1d;
+      color: #fecaca;
+      border: 1px solid #ef4444;
     }
-    .feedback.incorrect {
-      background: #fee2e2;
-      color: #991b1b;
-      border: 1px solid #fecaca;
+    .alert-banner.success {
       display: block;
+      background: #14532d;
+      color: #bbf7d0;
+      border: 1px solid #22c55e;
     }
-    .nav-buttons {
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .controls {
       display: flex;
       justify-content: space-between;
-      margin-top: 24px;
-      border-top: 1px solid #e2e8f0;
+      align-items: center;
+      margin-top: 16px;
       padding-top: 16px;
+      border-top: 1px solid #54442b;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .btn {
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s;
+    }
+    .btn-nav {
+      background: #3d3222;
+      color: #fdfbf7;
+      border: 1px solid #8c734b;
+    }
+    .btn-nav:hover:not(:disabled) {
+      background: #54442b;
+    }
+    .btn-nav:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+    .btn-reset {
+      background: #78350f;
+      color: #fef3c7;
+      border: 1px solid #d97706;
+    }
+    .btn-reset:hover {
+      background: #92400e;
+    }
+    .audio-toggle {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      color: #d4af37;
+      cursor: pointer;
+      user-select: none;
     }
   </style>
 </head>
 <body>
 
-<div class="container">
+<div class="game-card">
   <header>
-    <h1>GAME SẮP XẾP TỪ THÀNH CÂU (WORD UNSCRAMBLE)</h1>
+    <div>
+      <div id="stage-badge" class="stage-title">CHẶNG 1: MẬT MÃ DÒNG SÔNG MẸ</div>
+      <h1>MẢNH GHÉP SÔNG NIN</h1>
+    </div>
     <div class="stats">
-      <span>Tiến độ: <strong id="progress-text">1 / 20</strong></span>
-      <span>Điểm số: <strong id="score-text">0</strong></span>
+      <div class="stat-badge">Tiến độ: <strong id="progress-text">1 / 20</strong></div>
+      <div class="stat-badge">Điểm: <strong id="score-text">0</strong></div>
+      <label class="audio-toggle">
+        <input type="checkbox" id="tts-toggle" checked> 🔊 Giọng đọc
+      </label>
     </div>
   </header>
 
-  <div id="stage-badge" class="stage-badge">CHẶNG 1</div>
-  <div id="question-title" class="question-header">Câu 1</div>
-
-  <div class="instruction">1. Câu đang ghép: (Nhấp vào từ để xóa khỏi câu)</div>
-  <div id="target-zone" class="zone target-zone empty"></div>
-
-  <div class="instruction">2. Kho từ xáo trộn: (Nhấp vào từ để đưa lên câu)</div>
-  <div id="source-zone" class="zone source-zone"></div>
-
-  <div class="actions">
-    <button class="action-btn btn-check" onclick="checkAnswer()">Kiểm tra đáp án</button>
-    <button class="action-btn btn-reset" onclick="resetCurrentQuestion()">Làm lại câu này</button>
+  <div class="rule-note">
+    ⚡ <strong>Cơ chế tự động:</strong> Khi bạn nhấp vào ô, máy sẽ <strong>phát âm từ đó</strong>. Nếu chọn <strong>đúng thứ tự</strong>, từ sẽ nhảy lên trên và cố định. Nếu chọn <strong>sai</strong>, hệ thống sẽ báo đỏ và tự động <strong>bắt đầu lại câu</strong>!
   </div>
 
-  <div id="feedback" class="feedback"></div>
+  <div id="question-title" class="question-header">Câu 1</div>
 
-  <div class="nav-buttons">
-    <button class="action-btn btn-nav" id="btn-prev" onclick="navigate(-1)">← Câu trước</button>
-    <button class="action-btn btn-nav" id="btn-next" onclick="navigate(1)">Câu sau →</button>
+  <div class="zone-label">
+    <span>1. Hàng câu đã ghép đúng:</span>
+  </div>
+  <div id="target-zone" class="zone target-zone empty"></div>
+
+  <div class="zone-label">
+    <span>2. Các mảnh ghép chữ xáo trộn: (Bấm vào từ tiếp theo)</span>
+  </div>
+  <div id="source-zone" class="zone source-zone"></div>
+
+  <div id="alert-banner" class="alert-banner"></div>
+
+  <div class="controls">
+    <button class="btn btn-nav" id="btn-prev" onclick="navigate(-1)">← Câu trước</button>
+    <button class="btn btn-reset" onclick="resetCurrentQuestion()">↺ Chơi lại câu này</button>
+    <button class="btn btn-nav" id="btn-next" onclick="navigate(1)">Câu sau →</button>
   </div>
 </div>
 
 <script>
+// Tổng hợp 20 câu hỏi chuẩn xác
 const questions = [
   // CHẶNG 1
-  { stage: "CHẶNG 1: MẬT MÃ DÒNG SÔNG MẸ", words: ["Đông", "lục", "Bắc", "địa", "tại", "cổ", "đại", "hình", "Phi", "thành", "châu", "Ai Cập"], answer: "Ai Cập cổ đại hình thành tại Đông Bắc châu lục Phi." },
-  { stage: "CHẶNG 1: MẬT MÃ DÒNG SÔNG MẸ", words: ["đời", "phù", "Nông", "nghiệp", "sông", "nhờ", "bồi", "sa", "Nin", "đắp", "ra"], answer: "Nông nghiệp ra đời nhờ phù sa sông Nin bồi đắp." },
-  { stage: "CHẶNG 1: MẬT MÃ DÒNG SÔNG MẸ", words: ["Herodotus", "tặng", "sử", "quà", "Ai Cập", "là", "xác", "của", "sông", "Nin", "nhận"], answer: "Sử Herodotus xác nhận Ai Cập là quà tặng sông Nin." },
-  { stage: "CHẶNG 1: MẬT MÃ DÒNG SÔNG MẸ", words: ["mạc", "hai", "bao", "Sa", "bọc", "Đông", "Tây", "Sahara", "phía", "mặt"], answer: "Sa mạc Sahara bao bọc hai mặt phía Đông Tây." },
-  { stage: "CHẶNG 1: MẬT MÃ DÒNG SÔNG MẸ", words: ["Hải", "biển", "mở", "Bắc", "với", "Địa", "ra", "Phía", "Trung", "lối"], answer: "Phía Bắc mở ra lối với biển Địa Trung Hải." },
+  { stage: "CHẶNG 1: MẬT MÃ DÒNG SÔNG MẸ", words: ["Đông", "lục", "Bắc", "địa", "tại", "cổ", "đại", "hình", "Phi", "thành", "châu", "Ai Cập"], answerSequence: ["Ai Cập", "cổ", "đại", "hình", "thành", "tại", "Đông", "Bắc", "châu", "lục", "Phi"] },
+  { stage: "CHẶNG 1: MẬT MÃ DÒNG SÔNG MẸ", words: ["đời", "phù", "Nông", "nghiệp", "sông", "nhờ", "bồi", "sa", "Nin", "đắp", "ra"], answerSequence: ["Nông", "nghiệp", "ra", "đời", "nhờ", "phù", "sa", "sông", "Nin", "bồi", "đắp"] },
+  { stage: "CHẶNG 1: MẬT MÃ DÒNG SÔNG MẸ", words: ["Herodotus", "tặng", "sử", "quà", "Ai Cập", "là", "xác", "của", "sông", "Nin", "nhận"], answerSequence: ["Sử", "Herodotus", "xác", "nhận", "Ai Cập", "là", "quà", "tặng", "sông", "Nin"] },
+  { stage: "CHẶNG 1: MẬT MÃ DÒNG SÔNG MẸ", words: ["mạc", "hai", "bao", "Sa", "bọc", "Đông", "Tây", "Sahara", "phía", "mặt"], answerSequence: ["Sa", "mạc", "Sahara", "bao", "bọc", "hai", "mặt", "phía", "Đông", "Tây"] },
+  { stage: "CHẶNG 1: MẬT MÃ DÒNG SÔNG MẸ", words: ["Hải", "biển", "mở", "Bắc", "với", "Địa", "ra", "Phía", "Trung", "lối"], answerSequence: ["Phía", "Bắc", "mở", "ra", "lối", "với", "biển", "Địa", "Trung", "Hải"] },
 
   // CHẶNG 2
-  { stage: "CHẶNG 2: VƯƠNG TRIỀU PHARAOH BẤT TỬ", words: ["vua", "3200", "thống", "TCN", "nhất", "Menes", "Năm", "quốc", "gia"], answer: "Năm 3200 TCN vua Menes thống nhất quốc gia." },
-  { stage: "CHẶNG 2: VƯƠNG TRIỀU PHARAOH BẤT TỬ", words: ["quyền", "chuyên", "lập", "chế", "thể", "trung", "ương", "chủ", "tập", "Quân"], answer: "Quân chủ chuyên chế trung ương tập quyền thể lập." },
-  { stage: "CHẶNG 2: VƯƠNG TRIỀU PHARAOH BẤT TỬ", words: ["tối", "Pharaoh", "cao", "ngai", "vàng", "chiếm", "quyền", "lực", "giữ"], answer: "Pharaoh giữ ngai vàng chiếm quyền lực tối cao." },
-  { stage: "CHẶNG 2: VƯƠNG TRIỀU PHARAOH BẤT TỬ", words: ["Trời", "Mặt", "Pharaoh", "thần", "xem", "là", "hiện", "thân", "được"], answer: "Pharaoh được xem là hiện thân thần Mặt Trời." },
-  { stage: "CHẶNG 2: VƯƠNG TRIỀU PHARAOH BẤT TỬ", words: ["sản", "Lực", "dân", "chính", "là", "nông", "xã", "xuất", "công"], answer: "Lực lượng sản xuất chính là nông dân công xã." },
-  { stage: "CHẶNG 2: VƯƠNG TRIỀU PHARAOH BẤT TỬ", words: ["trị", "dưới", "lệ", "tầng", "thuộc", "Nô", "lệ", "bị", "cùng", "thống"], answer: "Nô lệ thuộc tầng lớp bị thống trị dưới cùng." },
-  { stage: "CHẶNG 2: VƯƠNG TRIỀU PHARAOH BẤT TỬ", words: ["mới", "thành", "độ", "Mã", "La", "sụp", "Năm", "30", "tỉnh", "TCN", "suy"], answer: "Năm 30 TCN suy độ sụp thành tỉnh La Mã mới." },
+  { stage: "CHẶNG 2: VƯƠNG TRIỀU PHARAOH BẤT TỬ", words: ["vua", "3200", "thống", "TCN", "nhất", "Menes", "Năm", "quốc", "gia"], answerSequence: ["Năm", "3200", "TCN", "vua", "Menes", "thống", "nhất", "quốc", "gia"] },
+  { stage: "CHẶNG 2: VƯƠNG TRIỀU PHARAOH BẤT TỬ", words: ["quyền", "chuyên", "lập", "chế", "thể", "trung", "ương", "chủ", "tập", "Quân"], answerSequence: ["Quân", "chủ", "chuyên", "chế", "trung", "ương", "tập", "quyền", "thể", "lập"] },
+  { stage: "CHẶNG 2: VƯƠNG TRIỀU PHARAOH BẤT TỬ", words: ["tối", "Pharaoh", "cao", "ngai", "vàng", "chiếm", "quyền", "lực", "giữ"], answerSequence: ["Pharaoh", "giữ", "ngai", "vàng", "chiếm", "quyền", "lực", "tối", "cao"] },
+  { stage: "CHẶNG 2: VƯƠNG TRIỀU PHARAOH BẤT TỬ", words: ["Trời", "Mặt", "Pharaoh", "thần", "xem", "là", "hiện", "thân", "được"], answerSequence: ["Pharaoh", "được", "xem", "là", "hiện", "thân", "thần", "Mặt", "Trời"] },
+  { stage: "CHẶNG 2: VƯƠNG TRIỀU PHARAOH BẤT TỬ", words: ["sản", "Lực", "lượng", "dân", "chính", "là", "nông", "xã", "xuất", "công"], answerSequence: ["Lực", "lượng", "sản", "xuất", "chính", "là", "nông", "dân", "công", "xã"] },
+  { stage: "CHẶNG 2: VƯƠNG TRIỀU PHARAOH BẤT TỬ", words: ["trị", "dưới", "lệ", "tầng", "thuộc", "Nô", "lớp", "bị", "cùng", "thống"], answerSequence: ["Nô", "lệ", "thuộc", "tầng", "lớp", "bị", "thống", "trị", "dưới", "cùng"] },
+  { stage: "CHẶNG 2: VƯƠNG TRIỀU PHARAOH BẤT TỬ", words: ["mới", "thành", "độ", "La Mã", "sụp", "Năm", "30", "tỉnh", "TCN", "suy"], answerSequence: ["Năm", "30", "TCN", "suy", "độ", "sụp", "thành", "tỉnh", "La Mã", "mới"] },
 
   // CHẶNG 3
-  { stage: "CHẶNG 3: DI SẢN TRÊN ĐẤT SÉT VÀ ĐẦM LẦY", words: ["tượng", "sáng", "Chữ", "hình", "tạo", "đã", "sớm", "được", "viết"], answer: "Chữ viết tượng hình đã được sáng tạo sớm." },
-  { stage: "CHẶNG 3: DI SẢN TRÊN ĐẤT SÉT VÀ ĐẦM LẦY", words: ["Thoth", "Thần", "chữ", "truyền", "sáng", "thông", "tạo", "tuệ", "viết"], answer: "Thần Thoth truyền thông tuệ sáng tạo chữ viết." },
-  { stage: "CHẶNG 3: DI SẢN TRÊN ĐẤT SÉT VÀ ĐẦM LẦY", words: ["thành", "Papyrus", "thảo", "mộc", "giấy", "chế", "viết", "mềm", "mại"], answer: "Papyrus thảo mộc chế thành giấy viết mềm mại." },
-  { stage: "CHẶNG 3: DI SẢN TRÊN ĐẤT SÉT VÀ ĐẦM LẦY", words: ["Chết", "Người", "phẩm", "giáo", "Sách", "tôn", "tiêu", "tác", "biểu", "của"], answer: "Sách của Người Chết tiêu biểu tác phẩm tôn giáo." },
-  { stage: "CHẶNG 3: DI SẢN TRÊN ĐẤT SÉT VÀ ĐẦM LẦY", words: ["vang", "lừng", "dân", "em", "Chuyện", "anh", "văn", "học", "hai", "gian"], answer: "Chuyện hai anh em lừng vang văn học dân gian." },
+  { stage: "CHẶNG 3: DI SẢN TRÊN ĐẤT SÉT VÀ ĐẦM LẦY", words: ["tượng", "sáng", "Chữ", "hình", "tạo", "đã", "sớm", "được", "viết"], answerSequence: ["Chữ", "viết", "tượng", "hình", "đã", "được", "sáng", "tạo", "sớm"] },
+  { stage: "CHẶNG 3: DI SẢN TRÊN ĐẤT SÉT VÀ ĐẦM LẦY", words: ["Thoth", "Thần", "chữ", "truyền", "sáng", "thông", "tạo", "tuệ", "viết"], answerSequence: ["Thần", "Thoth", "truyền", "thông", "tuệ", "sáng", "tạo", "chữ", "viết"] },
+  { stage: "CHẶNG 3: DI SẢN TRÊN ĐẤT SÉT VÀ ĐẦM LẦY", words: ["thành", "Papyrus", "thảo", "mộc", "giấy", "chế", "viết", "mềm", "mại"], answerSequence: ["Papyrus", "thảo", "mộc", "chế", "thành", "giấy", "viết", "mềm", "mại"] },
+  { stage: "CHẶNG 3: DI SẢN TRÊN ĐẤT SÉT VÀ ĐẦM LẦY", words: ["Chết", "Người", "phẩm", "giáo", "Sách", "tôn", "tiêu", "tác", "biểu", "của"], answerSequence: ["Sách", "của", "Người", "Chết", "tiêu", "biểu", "tác", "phẩm", "tôn", "giáo"] },
+  { stage: "CHẶNG 3: DI SẢN TRÊN ĐẤT SÉT VÀ ĐẦM LẦY", words: ["vang", "lừng", "dân", "em", "Chuyện", "anh", "văn", "học", "hai", "gian"], answerSequence: ["Chuyện", "hai", "anh", "em", "lừng", "vang", "văn", "học", "dân", "gian"] },
 
   // CHẶNG 4
-  { stage: "CHẶNG 4: KỲ QUAN VƯỢT THỜI GIAN", words: ["Pharaoh", "vị", "lăng", "Kim", "mộ", "xây", "tự", "táp", "cho", "chốn"], answer: "Kim tự táp xây làm chốn lăng mộ các vị Pharaoh." },
-  { stage: "CHẶNG 4: KỲ QUAN VƯỢT THỜI GIAN", words: ["vĩ", "Khufu", "đại", "tự", "nhất", "táp", "Kim", "kỳ", "quan", "là"], answer: "Kim tự táp Khufu là kỳ quan vĩ đại nhất." },
-  { stage: "CHẶNG 4: KỲ QUAN VƯỢT THỜI GIAN", words: ["Giza", "khắc", "điêu", "Sư", "thành", "Nhân", "kiệt", "tác", "Tượng"], answer: "Tượng Nhân Sư Giza trở thành kiệt tác điêu khắc." }
+  { stage: "CHẶNG 4: KỲ QUAN VƯỢT THỜI GIAN", words: ["Pharaoh", "vị", "lăng", "Kim", "mộ", "xây", "tự", "tháp", "cho", "chốn"], answerSequence: ["Kim", "tự", "tháp", "xây", "làm", "chốn", "lăng", "mộ", "các", "vị", "Pharaoh"] },
+  { stage: "CHẶNG 4: KỲ QUAN VƯỢT THỜI GIAN", words: ["vĩ", "Khufu", "đại", "tự", "nhất", "tháp", "Kim", "kỳ", "quan", "là"], answerSequence: ["Kim", "tự", "tháp", "Khufu", "là", "kỳ", "quan", "vĩ", "đại", "nhất"] },
+  { stage: "CHẶNG 4: KỲ QUAN VƯỢT THỜI GIAN", words: ["Giza", "khắc", "điêu", "Sư", "thành", "Nhân", "kiệt", "tác", "Tượng"], answerSequence: ["Tượng", "Nhân", "Sư", "Giza", "trở", "thành", "kiệt", "tác", "điêu", "khắc"] }
 ];
 
 let currentIndex = 0;
-let currentSourceWords = [];
 let currentTargetWords = [];
+let availableWords = [];
 let score = 0;
 let solved = new Set();
+let audioCtx = null;
+
+// Phát âm thanh giọng đọc tiếng Việt
+function speakWord(word) {
+  if (!document.getElementById("tts-toggle").checked) return;
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel(); // Dừng câu trước nếu có
+    const utter = new SpeechSynthesisUtterance(word);
+    utter.lang = 'vi-VN';
+    utter.rate = 0.95;
+    window.speechSynthesis.speak(utter);
+  }
+}
+
+// Âm thanh Web Audio tổng hợp
+function playTone(freq, type, duration) {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.type = type;
+    osc.frequency.value = freq;
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.start();
+    gain.gain.exponentialRampToValueAtTime(0.00001, audioCtx.currentTime + duration);
+    osc.stop(audioCtx.currentTime + duration);
+  } catch(e) {}
+}
+
+function playSuccessTone() {
+  playTone(523.25, 'sine', 0.15); // C5
+  setTimeout(() => playTone(659.25, 'sine', 0.2), 120); // E5
+}
+
+function playErrorTone() {
+  playTone(180, 'sawtooth', 0.35);
+}
+
+function playVictorySound() {
+  playTone(523.25, 'triangle', 0.2);
+  setTimeout(() => playTone(659.25, 'triangle', 0.2), 150);
+  setTimeout(() => playTone(783.99, 'triangle', 0.2), 300);
+  setTimeout(() => playTone(1046.50, 'triangle', 0.4), 450);
+}
 
 function loadQuestion(index) {
   currentIndex = index;
@@ -250,15 +365,13 @@ function loadQuestion(index) {
 
   document.getElementById("progress-text").textContent = (index + 1) + " / " + questions.length;
   document.getElementById("stage-badge").textContent = q.stage;
-  document.getElementById("question-title").textContent = "Câu " + (index + 1) + " (" + q.words.length + " từ)";
+  document.getElementById("question-title").textContent = "Câu " + (index + 1) + " (" + q.answerSequence.length + " từ)";
 
-  currentSourceWords = [...q.words];
+  // Xáo trộn kho từ ban đầu
+  availableWords = [...q.words].sort(() => Math.random() - 0.5);
   currentTargetWords = [];
 
-  const feedback = document.getElementById("feedback");
-  feedback.className = "feedback";
-  feedback.style.display = "none";
-
+  hideAlert();
   renderWords();
   updateNavButtons();
 }
@@ -270,19 +383,11 @@ function renderWords() {
   sourceZone.innerHTML = "";
   targetZone.innerHTML = "";
 
-  currentSourceWords.forEach((word, idx) => {
+  // Render các từ đã ghép đúng ở hàng trên
+  currentTargetWords.forEach(word => {
     const btn = document.createElement("button");
     btn.className = "word-btn";
     btn.textContent = word;
-    btn.onclick = () => selectWord(idx);
-    sourceZone.appendChild(btn);
-  });
-
-  currentTargetWords.forEach((word, idx) => {
-    const btn = document.createElement("button");
-    btn.className = "word-btn";
-    btn.textContent = word;
-    btn.onclick = () => deselectWord(idx);
     targetZone.appendChild(btn);
   });
 
@@ -291,51 +396,100 @@ function renderWords() {
   } else {
     targetZone.classList.remove("empty");
   }
+
+  // Render kho từ còn lại ở hàng dưới
+  availableWords.forEach((word, idx) => {
+    const btn = document.createElement("button");
+    btn.className = "word-btn";
+    btn.textContent = word;
+    btn.onclick = () => onWordClick(word, idx, btn);
+    sourceZone.appendChild(btn);
+  });
 }
 
-function selectWord(idx) {
-  const word = currentSourceWords.splice(idx, 1)[0];
-  currentTargetWords.push(word);
-  renderWords();
+function onWordClick(word, idx, btnElem) {
+  const q = questions[currentIndex];
+  const expectedNextWord = q.answerSequence[currentTargetWords.length];
+
+  // Phát âm từ được ấn
+  speakWord(word);
+
+  // So sánh từ được bấm với từ tiếp theo cần ghép
+  const cleanClicked = word.toLowerCase().trim();
+  const cleanExpected = expectedNextWord ? expectedNextWord.toLowerCase().trim() : "";
+
+  if (cleanClicked === cleanExpected) {
+    // ĐÚNG: Từ nhảy lên hàng trên và đứng yên
+    playSuccessTone();
+    currentTargetWords.push(word);
+    availableWords.splice(idx, 1);
+    renderWords();
+
+    // Kiểm tra nếu đã hoàn thành trọn vẹn cả câu
+    if (currentTargetWords.length === q.answerSequence.length) {
+      onQuestionComplete();
+    }
+  } else {
+    // SAI: Rung lắc đỏ, phát âm thanh cảnh báo và bắt đầu lại từ đầu
+    playErrorTone();
+    btnElem.classList.add("shake-error");
+
+    showAlert(`❌ SAI THỨ TỰ! Bạn vừa bấm "${word}". Thứ tự tiếp theo chưa đúng, câu sẽ bắt đầu lại!`, "wrong");
+
+    setTimeout(() => {
+      // Đưa toàn bộ từ ở hàng trên quay trở lại kho từ dưới
+      availableWords = [...q.words].sort(() => Math.random() - 0.5);
+      currentTargetWords = [];
+      renderWords();
+    }, 900);
+  }
 }
 
-function deselectWord(idx) {
-  const word = currentTargetWords.splice(idx, 1)[0];
-  currentSourceWords.push(word);
-  renderWords();
+function onQuestionComplete() {
+  playVictorySound();
+
+  // Bắn pháo hoa rực rỡ
+  if (typeof confetti === 'function') {
+    confetti({
+      particleCount: 120,
+      spread: 80,
+      origin: { y: 0.6 }
+    });
+  }
+
+  if (!solved.has(currentIndex)) {
+    solved.add(currentIndex);
+    score += 10;
+    document.getElementById("score-text").textContent = score;
+  }
+
+  showAlert("🎉 XUẤT SẮC! BẠN ĐÃ SẮP XẾP CHÍNH XÁC TOÀN BỘ CÂU!", "success");
+
+  // Giọng đọc chúc mừng cả câu
+  if (document.getElementById("tts-toggle").checked && 'speechSynthesis' in window) {
+    setTimeout(() => {
+      const fullSentence = questions[currentIndex].answerSequence.join(" ");
+      const utter = new SpeechSynthesisUtterance(fullSentence);
+      utter.lang = 'vi-VN';
+      window.speechSynthesis.speak(utter);
+    }, 600);
+  }
+}
+
+function showAlert(msg, type) {
+  const banner = document.getElementById("alert-banner");
+  banner.textContent = msg;
+  banner.className = `alert-banner ${type}`;
+}
+
+function hideAlert() {
+  const banner = document.getElementById("alert-banner");
+  banner.className = "alert-banner";
+  banner.textContent = "";
 }
 
 function resetCurrentQuestion() {
   loadQuestion(currentIndex);
-}
-
-function normalize(str) {
-  return str.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "").replace(/\s+/g, " ").trim().toLowerCase();
-}
-
-function checkAnswer() {
-  const q = questions[currentIndex];
-  const userSentence = currentTargetWords.join(" ");
-  const feedback = document.getElementById("feedback");
-
-  if (currentTargetWords.length !== q.words.length) {
-    feedback.className = "feedback incorrect";
-    feedback.textContent = "Bạn chưa dùng hết tất cả các từ trong kho từ!";
-    return;
-  }
-
-  if (normalize(userSentence) === normalize(q.answer)) {
-    feedback.className = "feedback correct";
-    feedback.textContent = "CHÍNH XÁC! Đáp án: " + q.answer;
-    if (!solved.has(currentIndex)) {
-      solved.add(currentIndex);
-      score += 10;
-      document.getElementById("score-text").textContent = score;
-    }
-  } else {
-    feedback.className = "feedback incorrect";
-    feedback.textContent = "CHƯA ĐÚNG! Bạn hãy sắp xếp lại hoặc xem lại trật tự ngữ pháp.";
-  }
 }
 
 function navigate(direction) {
@@ -350,7 +504,7 @@ function updateNavButtons() {
   document.getElementById("btn-next").disabled = currentIndex === questions.length - 1;
 }
 
-// Khởi chạy câu đầu tiên
+// Khởi động
 loadQuestion(0);
 </script>
 
