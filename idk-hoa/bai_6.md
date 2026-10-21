@@ -73,17 +73,55 @@
 
 ---
 
-### BẢNG TỔNG KẾT QUY LUẬT TUẦN HOÀN BÀI 6
+### BẢNG TỔNG KẾT QUY LUẬT TUẦN HOÀN BÀI 6 (CHI TIẾT VÀ ĐẦY ĐỦ NHẤT)
 
-| Tính chất của nguyên tử | Trong một chu kì (Từ trái sang phải) | Trong một nhóm A (Từ trên xuống dưới) |
-| :--- | :---: | :---: |
-| **Điện tích hạt nhân ($Z$)** | Tăng dần | Tăng dần |
-| **Số lớp electron** | Không đổi | Tăng dần |
-| **Số electron lớp ngoài cùng** | Tăng dần (từ 1 đến 8) | Không đổi (= STT nhóm A) |
-| **Bán kính nguyên tử ($r$)** | **Giảm dần** | **Tăng dần** |
-| **Độ âm điện ($\chi$)** | **Tăng dần** | **Giảm dần** |
-| **Tính kim loại** | **Giảm dần** | **Tăng dần** |
-| **Tính phi kim** | **Tăng dần** | **Giảm dần** |
+#### 1. Bảng quy luật biến đổi các đặc trưng và tính chất nguyên tử
+
+| STT | Đại lượng / Tính chất | Trong một chu kì (Chiều từ Trái $\rightarrow$ Phải) | Bản chất / Nguyên nhân giải thích (Chu kì) | Trong một nhóm A (Chiều từ Trên $\downarrow$ Dưới) | Bản chất / Nguyên nhân giải thích (Nhóm A) | Giá trị Cực trị trong BTH |
+| :-: | :--- | :---: | :--- | :---: | :--- | :---: |
+| **1** | **Điện tích hạt nhân ($Z$)** | **Tăng dần** | Số proton tăng từ $Z$ lên $Z+1$ qua mỗi ô nguyên tố. | **Tăng dần** | Số proton tăng vọt qua từng chu kì. | $\text{H} (Z=1)$ bé nhất; $\text{Og} (Z=118)$ lớn nhất |
+| **2** | **Số lớp electron ($n$)** | **Không đổi** | Bằng đúng số thứ tự của chu kì (cùng số lớp electron). | **Tăng dần** | Mỗi chu kì mới bắt đầu bằng việc điền electron vào một lớp mới ($n$ tăng). | Chu kì 1 (1 lớp); Chu kì 7 (7 lớp) |
+| **3** | **Số electron lớp ngoài cùng** | **Tăng dần** (từ 1 đến 8) | Electron điền dần vào các phân lớp $s, p$ lớp ngoài cùng (nhóm IA $\rightarrow$ VIIIA). | **Không đổi** | Có cấu hình electron lớp ngoài cùng tương tự nhau ($ns^x np^y$). | $1e$ (nhóm IA); $8e$ (nhóm VIIIA, trừ He có $2e$) |
+| **4** | **Lực hút hạt nhân lên e ngoài cùng ($Z_{eff}$)** | **Tăng mạnh** | $Z$ tăng nhưng số lớp $e$ không đổi $\rightarrow$ điện tích hạt nhân hiệu dụng tăng mạnh. | **Giảm dần** | Mặc dù $Z$ tăng nhưng số lớp $e$ bên trong tăng gây hiệu ứng chắn (shielding effect) mạnh. | Càng về bên phải càng hút mạnh |
+| **5** | **Bán kính nguyên tử ($r$)** | **GIẢM DẦN** | Cùng số lớp electron nhưng $Z_{eff}$ tăng làm hạt nhân kéo mây electron lại gần tâm hơn. | **TĂNG DẦN** | Số lớp electron tăng dần, electron ngoài cùng xa hạt nhân và bị các lớp trong chắn lực hút. | **Lớn nhất:** $\text{Cs}$ (hoặc $\text{Fr}$)<br>**Nhỏ nhất:** $\text{He}$ (hoặc $\text{F}$) |
+| **6** | **Năng lượng ion hóa thứ nhất ($I_1$)** | **TĂNG DẦN** (nói chung) | Bán kính giảm, $Z_{eff}$ tăng $\rightarrow$ electron ngoài cùng liên kết rất chặt, cần nhiều năng lượng để bứt $e$. | **GIẢM DẦN** | Bán kính tăng, electron ngoài cùng liên kết lỏng lẻo với hạt nhân $\rightarrow$ rất dễ bị bứt ra. | **Lớn nhất:** $\text{He}$<br>**Nhỏ nhất:** $\text{Cs}$ (hoặc $\text{Fr}$) |
+| **7** | **Độ âm điện ($\chi$)** | **TĂNG DẦN** | Bán kính nguyên tử giảm, điện tích hạt nhân tăng $\rightarrow$ khả năng hút cặp electron liên kết càng mạnh. | **GIẢM DẦN** | Bán kính nguyên tử tăng, lực hút của hạt nhân lên cặp electron dùng chung bị suy yếu. | **Lớn nhất:** $\text{F}$ ($\chi \approx 3,98$)<br>**Nhỏ nhất:** $\text{Cs}$ ($\chi = 0,79$) |
+| **8** | **Tính kim loại (Tính khử / Khả năng nhường e)** | **GIẢM DẦN** | Lực hút của hạt nhân tăng, bán kính giảm $\rightarrow$ nguyên tử càng **khó nhường electron**. | **TĂNG DẦN** | Số lớp $e$ tăng, bán kính tăng $\rightarrow$ electron ngoài cùng liên kết lỏng lẻo, nguyên tử càng **dễ nhường e**. | **Kim loại mạnh nhất:** $\text{Cs}$ (không tính nguyên tố phóng xạ) |
+| **9** | **Tính phi kim (Tính oxi hóa / Khả năng nhận e)** | **TĂNG DẦN** | Lực hút hạt nhân tăng, bán kính giảm $\rightarrow$ nguyên tử càng **dễ thu/nhận electron**. | **GIẢM DẦN** | Bán kính tăng, lực hút hạt nhân yếu $\rightarrow$ nguyên tử càng **khó thu/nhận thêm electron**. | **Phi kim mạnh nhất:** $\text{F}$ (Fluorine) |
+| **10** | **Bán kính ion so với nguyên tử** | • $r_{\text{cation}} < r_{\text{nguyên tử}}$: Mất bớt $e$, lớp $e$ giảm hoặc $Z/e$ tăng $\rightarrow$ hạt nhân hút chặt hơn.<br>• $r_{\text{anion}} > r_{\text{nguyên tử}}$: Nhận thêm $e$, lực đẩy electron tăng $\rightarrow$ đám mây phình to.<br>• Dãy đẳng electron: $Z$ càng lớn thì bán kính ion càng nhỏ ($r_{\text{Al}^{3+}} < r_{\text{Mg}^{2+}} < r_{\text{Na}^+} < r_{\text{F}^-} < r_{\text{O}^{2-}}$). | | | | |
+
+---
+
+#### 2. Bảng mở rộng: Mối liên hệ tuần hoàn sang hợp chất của nguyên tố (Bài 6 & 7)
+
+| Đại lượng / Tính chất hợp chất | Trong một chu kì (Chiều từ Trái $\rightarrow$ Phải) | Trong một nhóm A (Chiều từ Trên $\downarrow$ Dưới) | Ví dụ minh họa điển hình (Chu kì 3 / Nhóm IA / Nhóm VIIA) |
+| :--- | :---: | :---: | :--- |
+| **Hóa trị cao nhất trong Oxide** | **Tăng dần từ I $\rightarrow$ VII** (= STT nhóm A) | Không đổi (= STT nhóm A) | $\text{Na}_2\text{O}^{\text{I}} \rightarrow \text{Mg}\text{O}^{\text{II}} \rightarrow \text{Al}_2\text{O}_3^{\text{III}} \rightarrow \text{Si}\text{O}_2^{\text{IV}} \rightarrow \text{P}_2\text{O}_5^{\text{V}} \rightarrow \text{S}\text{O}_3^{\text{VI}} \rightarrow \text{Cl}_2\text{O}_7^{\text{VII}}$ |
+| **Hóa trị với Hydrogen (Phi kim)** | **Giảm dần từ IV $\rightarrow$ I** ($= 8 - \text{STT nhóm}$) | Không đổi | $\text{SiH}_4^{\text{IV}} \rightarrow \text{PH}_3^{\text{III}} \rightarrow \text{H}_2\text{S}^{\text{II}} \rightarrow \text{HCl}^{\text{I}}$ |
+| **Tính Base của Oxide cao nhất** | **Giảm dần** | **Tăng dần** | $\text{Na}_2\text{O}$ (kiềm mạnh) $\rightarrow \text{MgO}$ (base yếu) $\rightarrow \text{Al}_2\text{O}_3$ (lưỡng tính) |
+| **Tính Acid của Oxide cao nhất** | **Tăng dần** | **Giảm dần** | $\text{SiO}_2$ (acid rất yếu) $\rightarrow \text{P}_2\text{O}_5 \rightarrow \text{SO}_3 \rightarrow \text{Cl}_2\text{O}_7$ (acid rất mạnh) |
+| **Tính Base của Hydroxide tương ứng** | **Giảm dần** | **Tăng dần** | $\text{NaOH}$ (base mạnh) $\rightarrow \text{Mg(OH)}_2$ (base yếu) $\rightarrow \text{Al(OH)}_3$ (lưỡng tính) |
+| **Tính Acid của Hydroxide tương ứng** | **Tăng dần** | **Giảm dần** | $\text{H}_2\text{SiO}_3$ (rất yếu) $\rightarrow \text{H}_3\text{PO}_4$ (TB) $\rightarrow \text{H}_2\text{SO}_4$ (mạnh) $\rightarrow \text{HClO}_4$ (rất mạnh) |
+
+---
+
+#### 3. Quy tắc ghi nhớ nhanh & Sơ đồ hai nhóm đại lượng đối lập
+
+Để không bao giờ bị nhầm lẫn dấu chiều tăng/giảm trong các bài kiểm tra, hãy nhớ nguyên tắc **"Hai phe đối lập"**:
+
+* **Nhóm 1 — "Phe Tăng theo Chu kì" (Đồng biến với Tính Phi kim):**
+  $$\text{Độ âm điện } (\chi) \sim \text{Tính phi kim} \sim \text{Năng lượng ion hóa } (I_1) \sim \text{Tính acid của hợp chất}$$
+  $\rightarrow$ Trong một chu kì: **TĂNG DẦN**.  
+  $\rightarrow$ Trong một nhóm A: **GIẢM DẦN**.
+
+* **Nhóm 2 — "Phe Giảm theo Chu kì" (Đồng biến với Tính Kim loại):**
+  $$\text{Bán kính nguyên tử } (r) \sim \text{Tính kim loại} \sim \text{Tính base của hợp chất}$$
+  $\rightarrow$ Trong một chu kì: **GIẢM DẦN**.  
+  $\rightarrow$ Trong một nhóm A: **TĂNG DẦN**.
+
+* **Quy tắc hai góc cực trị của Bảng tuần hoàn:**
+  * **Góc Đông Bắc (Phía trên, bên phải):** Đỉnh cao của **Phi kim** $\rightarrow$ Nguyên tố **$\text{F}$ (Fluorine)** có độ âm điện lớn nhất ($\chi = 3,98$), tính phi kim mạnh nhất.
+  * **Góc Tây Nam (Phía dưới, bên trái):** Đỉnh cao của **Kim loại** $\rightarrow$ Nguyên tố **$\text{Cs}$ (Cesium)** có bán kính nguyên tử lớn nhất, độ âm điện nhỏ nhất ($\chi = 0,79$), tính kim loại mạnh nhất.
 
 ---
 
