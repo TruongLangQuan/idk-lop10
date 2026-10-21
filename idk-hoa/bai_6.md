@@ -197,6 +197,96 @@ flowchart TD
 
 ---
 
+#### 6. Dây chuyền liên hệ nhân – quả cụ thể theo Chu kì và theo Nhóm A
+
+Để thấy rõ đại lượng này kéo theo đại lượng kia biến đổi như thế nào, ta xét chuỗi phản ứng dây chuyền riêng biệt trong hai trường hợp:
+
+##### A. Trong MỘT CHU KÌ (Đi từ Trái sang Phải theo chiều $Z$ tăng):
+
+```mermaid
+flowchart LR
+    Z1["1. Z tăng, số lớp n không đổi"] --> F1["2. Lực hút hạt nhân Z_eff TĂNG"]
+    F1 --> R1["3. Bán kính r GIẢM"]
+    R1 --> E1["4. Năng lượng I_1 & Độ âm điện χ TĂNG"]
+    E1 --> P1["5. Tính Kim loại GIẢM, Tính Phi kim TĂNG"]
+    P1 --> C1["6. Tính Base GIẢM, Tính Acid TĂNG"]
+```
+
+* **Dây chuyền logic:**
+  1. Các nguyên tử có **cùng số lớp electron** ($n = \text{const}$), nhưng **điện tích hạt nhân $Z$ tăng dần**.
+  2. $\rightarrow$ **Lực hút tĩnh điện của hạt nhân lên electron lớp ngoài cùng tăng mạnh** ($Z_{eff} \uparrow$).
+  3. $\rightarrow$ Hạt nhân kéo các electron lớp ngoài cùng lại gần tâm hơn $\rightarrow$ **Bán kính nguyên tử ($r$) giảm dần**.
+  4. $\rightarrow$ Do electron ở sát hạt nhân hơn và bị hút chặt:
+     * Muốn bứt electron ra cần tốn nhiều năng lượng hơn $\rightarrow$ **Năng lượng ion hóa ($I_1$) tăng dần**.
+     * Hạt nhân hút mạnh cặp electron dùng chung khi liên kết $\rightarrow$ **Độ âm điện ($\chi$) tăng dần**.
+  5. $\rightarrow$ Từ việc electron bị giữ chặt và lực hút hạt nhân mạnh:
+     * Nguyên tử **khó nhường electron** hơn $\rightarrow$ **Tính kim loại giảm dần**.
+     * Nguyên tử **dễ nhận/thu electron** hơn $\rightarrow$ **Tính phi kim tăng dần**.
+  6. $\rightarrow$ Kéo theo sự biến đổi tính chất của các hợp chất (oxide & hydroxide cao nhất):
+     * Khả năng phân li ra ion $OH^-$ giảm $\rightarrow$ **Tính base giảm dần**.
+     * Khả năng phân li ra ion $H^+$ tăng $\rightarrow$ **Tính acid tăng dần**.
+
+* **Ví dụ minh chứng ở Chu kì 3:**
+  $$\begin{array}{ccccccccc}
+  \text{Nguyên tố:} & \text{Na (11)} & \rightarrow & \text{Mg (12)} & \rightarrow & \text{Al (13)} & \rightarrow & \text{Si (14)} \rightarrow \text{P (15)} \rightarrow \text{S (16)} & \rightarrow & \text{Cl (17)} \\
+  \text{Bán kính } r: & 186\text{ pm} & > & 160\text{ pm} & > & 143\text{ pm} & > & 118\text{ pm} \dots & > & 99\text{ pm} \\
+  \text{Độ âm điện } \chi: & 0,93 & < & 1,31 & < & 1,61 & < & 1,90 \dots & < & 3,16 \\
+  \text{Tính kim loại:} & \text{Rất mạnh} & > & \text{Mạnh} & > & \text{Trung bình} & > & \text{Phi kim} & & \\
+  \text{Hydroxide:} & \text{NaOH (base mạnh)} & > & \text{Mg(OH)}_2\text{ (base yếu)} & > & \text{Al(OH)}_3\text{ (lưỡng tính)} & \rightarrow & \dots \rightarrow \text{HClO}_4\text{ (acid rất mạnh)}
+  \end{array}$$
+
+---
+
+##### B. Trong MỘT NHÓM A (Đi từ Trên xuống Dưới theo chiều $Z$ tăng):
+
+```mermaid
+flowchart LR
+    Z2["1. Số lớp e (n) TĂNG DẦN"] --> F2["2. Hiệu ứng chắn TĂNG, lực hút GIẢM"]
+    F2 --> R2["3. Bán kính r TĂNG DẦN"]
+    R2 --> E2["4. Năng lượng I_1 & Độ âm điện χ GIẢM"]
+    E2 --> P2["5. Tính Kim loại TĂNG, Tính Phi kim GIẢM"]
+    P2 --> C2["6. Tính Base TĂNG, Tính Acid GIẢM"]
+```
+
+* **Dây chuyền logic:**
+  1. Xuống mỗi chu kì mới, nguyên tử có thêm một lớp electron mới $\rightarrow$ **Số lớp electron ($n$) tăng dần**.
+  2. $\rightarrow$ Các lớp electron bên trong che chắn lực hút của hạt nhân (hiệu ứng chắn áp đảo sự tăng của $Z$) $\rightarrow$ **Lực liên kết giữa hạt nhân và electron ngoài cùng suy yếu**.
+  3. $\rightarrow$ Electron lớp ngoài cùng ở xa hạt nhân hơn $\rightarrow$ **Bán kính nguyên tử ($r$) tăng dần**.
+  4. $\rightarrow$ Do electron ở xa tâm và liên kết lỏng lẻo:
+     * Chỉ cần năng lượng nhỏ là bứt được electron ra $\rightarrow$ **Năng lượng ion hóa ($I_1$) giảm dần**.
+     * Hạt nhân khó hút cặp electron liên kết về phía mình $\rightarrow$ **Độ âm điện ($\chi$) giảm dần**.
+  5. $\rightarrow$ Từ việc electron ngoài cùng dễ bứt và hạt nhân hút yếu:
+     * Nguyên tử **càng dễ nhường electron** $\rightarrow$ **Tính kim loại tăng dần**.
+     * Nguyên tử **càng khó thu/nhận electron** $\rightarrow$ **Tính phi kim giảm dần**.
+  6. $\rightarrow$ Kéo theo sự biến đổi tính chất hợp chất:
+     * Dễ tách ion $OH^-$ hơn $\rightarrow$ **Tính base của oxide & hydroxide tăng dần**.
+     * Khó giải phóng ion $H^+$ hơn $\rightarrow$ **Tính acid của oxide & hydroxide giảm dần**.
+
+* **Ví dụ minh chứng ở Nhóm IA (Kim loại kiềm) & Nhóm VIIA (Halogen):**
+  * *Nhóm IA (Tính kim loại tăng dần từ trên xuống):*
+    $$\text{Li } (r = 152\text{ pm}, \chi = 0,98) < \text{Na } (r = 186\text{ pm}, \chi = 0,93) < \text{K } (r = 227\text{ pm}, \chi = 0,82) < \text{Cs } (r = 265\text{ pm}, \chi = 0,79)$$
+    $\Rightarrow$ Tính base tăng: $\text{LiOH} < \text{NaOH} < \text{KOH} < \text{CsOH}$.
+  * *Nhóm VIIA (Tính phi kim giảm dần từ trên xuống):*
+    $$\text{F } (r = 72\text{ pm}, \chi = 3,98) > \text{Cl } (r = 99\text{ pm}, \chi = 3,16) > \text{Br } (r = 114\text{ pm}, \chi = 2,96) > \text{I } (r = 133\text{ pm}, \chi = 2,66)$$
+    $\Rightarrow$ Tính phi kim giảm: $\text{F}_2 > \text{Cl}_2 > \text{Br}_2 > \text{I}_2$.
+
+---
+
+##### C. Bảng so sánh đối chiếu hai dây chuyền Chu kì và Nhóm A
+
+| Tiêu chí | Trong một CHU KÌ (Trái $\rightarrow$ Phải) | Trong một NHÓM A (Trên $\downarrow$ Dưới) |
+| :--- | :--- | :--- |
+| **Yếu tố quyết định** | **$Z_{eff}$ tăng mạnh** (do $n$ không đổi, $Z$ tăng) | **Số lớp $n$ tăng** (hiệu ứng chắn áp đảo $Z$) |
+| **Bán kính nguyên tử ($r$)** | **GIẢM** (mây $e$ bị hút co lại) | **TĂNG** (thêm lớp $e$, mây $e$ phình to) |
+| **Năng lượng ion hóa ($I_1$)** | **TĂNG** (hút chặt $\rightarrow$ khó bứt $e$) | **GIẢM** (ở xa tâm $\rightarrow$ dễ bứt $e$) |
+| **Độ âm điện ($\chi$)** | **TĂNG** (hút cặp $e$ dùng chung mạnh hơn) | **GIẢM** (lực hút lên cặp $e$ dùng chung yếu đi) |
+| **Khả năng nhường $e$** | Khó nhường hơn $\rightarrow$ **Tính kim loại GIẢM** | Dễ nhường hơn $\rightarrow$ **Tính kim loại TĂNG** |
+| **Khả năng nhận $e$** | Dễ nhận hơn $\rightarrow$ **Tính phi kim TĂNG** | Khó nhận hơn $\rightarrow$ **Tính phi kim GIẢM** |
+| **Tính chất Base** | **GIẢM DẦN** ($\text{NaOH} \rightarrow \text{Al(OH)}_3$) | **TĂNG DẦN** ($\text{LiOH} \rightarrow \text{CsOH}$) |
+| **Tính chất Acid** | **TĂNG DẦN** ($\text{H}_2\text{SiO}_3 \rightarrow \text{HClO}_4$) | **GIẢM DẦN** ($\text{HClO}_4 \rightarrow \text{HIO}_4$) |
+
+---
+
 ## B. HƯỚNG DẪN TRẢ LỜI CÂU HỎI VÀ BÀI TẬP SGK
 
 ### Câu hỏi 1 (SGK trang 36):
