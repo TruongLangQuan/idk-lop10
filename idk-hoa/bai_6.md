@@ -125,6 +125,78 @@
 
 ---
 
+#### 4. Bản chất & Chuỗi liên hệ nhân – quả giữa từng đại lượng
+
+Mọi quy luật tuần hoàn không tồn tại độc lập mà liên kết chặt chẽ theo một **chuỗi nhân – quả dây chuyền (Domino Effect)** bắt nguồn từ cấu tạo nguyên tử:
+
+```mermaid
+flowchart TD
+    A["1. Điện tích hạt nhân (Z) & Số lớp e (n)"] --> B["2. Lực hút tĩnh điện hạt nhân hiệu dụng (Z_eff)"]
+    B --> C["3. Bán kính nguyên tử (r)"]
+    C --> D1["4a. Năng lượng ion hóa (I_1)"]
+    C --> D2["4b. Độ âm điện (χ)"]
+    D1 --> E1["5a. Tính Kim loại (Dễ nhường e)"]
+    D2 --> E2["5b. Tính Phi kim (Dễ nhận e)"]
+    E1 --> F1["6a. Tính Base của Oxide & Hydroxide"]
+    E2 --> F2["6b. Tính Acid của Oxide & Hydroxide"]
+```
+
+##### Chi tiết mối liên hệ giữa từng cặp đại lượng:
+
+1. **Mối liên hệ giữa $(Z, n) \longrightarrow$ Lực hút hạt nhân hiệu dụng ($Z_{eff}$) $\longrightarrow$ Bán kính ($r$):**
+   * *Trong chu kì:* Số lớp $n$ không đổi, $Z$ tăng $\rightarrow$ Lực hút tĩnh điện giữa hạt nhân và electron ngoài cùng tăng mạnh $\rightarrow$ Mây electron bị kéo siết chặt về phía tâm $\rightarrow$ **Bán kính nguyên tử $r$ giảm**.
+   * *Trong nhóm A:* Số lớp $n$ tăng $\rightarrow$ Các lớp electron bên trong chắn lực hút của hạt nhân (hiệu ứng chắn) $\rightarrow$ Lực hút lên electron lớp ngoài cùng giảm $\rightarrow$ **Bán kính nguyên tử $r$ tăng**.
+
+2. **Mối liên hệ giữa Bán kính ($r$) $\longrightarrow$ Năng lượng ion hóa ($I_1$) & Độ âm điện ($\chi$):**
+   * Định luật Coulomb: $F = k \cdot \frac{|q_1 \cdot q_2|}{r^2}$ (Lực hút tỉ lệ nghịch với bình phương khoảng cách $r$).
+   * **Khi bán kính $r$ càng nhỏ:** Electron ở rất sát hạt nhân $\rightarrow$ Lực hút cực mạnh:
+     * Muốn bứt electron ra ngoài cần năng lượng rất lớn $\rightarrow$ **Năng lượng ion hóa $I_1$ càng cao** ($I_1$ tỉ lệ nghịch với $r$).
+     * Hạt nhân hút mạnh cặp electron dùng chung trong liên kết $\rightarrow$ **Độ âm điện $\chi$ càng lớn** ($\chi$ tỉ lệ nghịch với $r$).
+   * **Khi bán kính $r$ càng lớn:** Electron ở xa hạt nhân $\rightarrow$ Lực giữ lỏng lẻo $\rightarrow$ **$I_1$ càng nhỏ** và **$\chi$ càng nhỏ**.
+
+3. **Mối liên hệ giữa Bán kính ($r$), Năng lượng ion hóa ($I_1$), Độ âm điện ($\chi$) $\longrightarrow$ Tính Kim loại & Phi kim:**
+   * **Tính Kim loại (Xu hướng nhường electron):**
+     * Nguyên tử càng dễ nhường electron khi: Bán kính $r$ càng **lớn**, lực giữ $e$ càng **yếu** (năng lượng ion hóa $I_1$ càng **thấp**), và độ âm điện $\chi$ càng **nhỏ**.
+     * $\Rightarrow$ **Tính kim loại tỉ lệ thuận với $r$; tỉ lệ nghịch với $I_1$ và $\chi$.**
+   * **Tính Phi kim (Xu hướng nhận electron):**
+     * Nguyên tử càng dễ thu/hút electron khi: Bán kính $r$ càng **nhỏ**, lực hút hạt nhân càng **mạnh**, độ âm điện $\chi$ càng **lớn**, và $I_1$ càng **lớn**.
+     * $\Rightarrow$ **Tính phi kim tỉ lệ thuận với $\chi$ và $I_1$; tỉ lệ nghịch với $r$.**
+
+4. **Mối liên hệ giữa Tính Kim loại / Phi kim $\longrightarrow$ Tính Acid / Base của Hợp chất:**
+   * Trong hợp chất hydroxide có liên kết dạng: $R - O - H$.
+   * **Nếu $R$ là kim loại mạnh** ($r$ lớn, $\chi$ nhỏ):
+     * Nguyên tử $R$ dễ nhường mật độ electron cho $O$, liên kết $R-O$ mang tính ion và rất dễ bị phân cắt theo kiểu:
+       $$R - O - H \longrightarrow R^+ + OH^- \quad \Longrightarrow \text{Thể hiện TÍNH BASE MẠNH}$$
+     * $\Rightarrow$ **Kim loại càng mạnh $\longrightarrow$ Oxide và Hydroxide có tính base càng mạnh.**
+   * **Nếu $R$ là phi kim mạnh** ($r$ nhỏ, $\chi$ lớn):
+     * Nguyên tử $R$ hút mạnh mật độ electron về phía mình, làm liên kết $R-O$ bền chắc, đồng thời kéo mây electron của liên kết $O-H$ phân cực mạnh về phía $O$, khiến liên kết $O-H$ dễ bị đứt theo kiểu:
+       $$R - O - H \longrightarrow RO^- + H^+ \quad \Longrightarrow \text{Thể hiện TÍNH ACID MẠNH}$$
+     * $\Rightarrow$ **Phi kim càng mạnh $\longrightarrow$ Oxide và Hydroxide có tính acid càng mạnh.**
+
+5. **Mối liên hệ giữa Bán kính nguyên tử ($r$) và Bán kính ion ($r_{\text{ion}}$):**
+   * Khi tạo **Cation** ($M \rightarrow M^{n+} + ne$): Nguyên tử kim loại mất electron ngoài cùng, số lớp electron giảm hoặc tỉ số $Z/e$ tăng $\rightarrow$ Lực hút hạt nhân lên các electron còn lại mạnh hơn $\rightarrow \mathbf{r_{\text{cation}} < r_{\text{nguyên tử}}}$.
+   * Khi tạo **Anion** ($X + me \rightarrow X^{m-}$): Nguyên tử phi kim nhận thêm electron, điện tích hạt nhân giữ nguyên nhưng lực đẩy giữa các electron tăng lên $\rightarrow$ Mây electron phình to ra $\rightarrow \mathbf{r_{\text{anion}} > r_{\text{nguyên tử}}}$.
+   * Dãy đẳng electron: Cùng số electron, hạt nhân nào có $Z$ lớn hơn sẽ hút mạnh hơn $\rightarrow$ Bán kính nhỏ hơn:
+     $$r_{\text{Al}^{3+}} (Z=13) < r_{\text{Mg}^{2+}} (Z=12) < r_{\text{Na}^+} (Z=11) < r_{\text{F}^-} (Z=9) < r_{\text{O}^{2-}} (Z=8) < r_{\text{N}^{3-}} (Z=7)$$
+
+---
+
+#### 5. Bảng ma trận tương quan chéo giữa các đại lượng
+
+| Đại lượng xét | Bán kính ($r$) | Độ âm điện ($\chi$) | Năng lượng ion hóa ($I_1$) | Tính Kim loại | Tính Phi kim | Tính Base hợp chất | Tính Acid hợp chất |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Bán kính ($r$)** | — | **Nghịch** | **Nghịch** | **Thuận** | **Nghịch** | **Thuận** | **Nghịch** |
+| **Độ âm điện ($\chi$)** | **Nghịch** | — | **Thuận** | **Nghịch** | **Thuận** | **Nghịch** | **Thuận** |
+| **Năng lượng ion hóa ($I_1$)** | **Nghịch** | **Thuận** | — | **Nghịch** | **Thuận** | **Nghịch** | **Thuận** |
+| **Tính Kim loại** | **Thuận** | **Nghịch** | **Nghịch** | — | **Nghịch** | **Thuận** | **Nghịch** |
+| **Tính Phi kim** | **Nghịch** | **Thuận** | **Thuận** | **Nghịch** | — | **Nghịch** | **Thuận** |
+| **Tính Base hợp chất** | **Thuận** | **Nghịch** | **Nghịch** | **Thuận** | **Nghịch** | — | **Nghịch** |
+| **Tính Acid hợp chất** | **Nghịch** | **Thuận** | **Thuận** | **Nghịch** | **Thuận** | **Nghịch** | — |
+
+*(Ghi chú: **Thuận** = Cùng tăng hoặc cùng giảm; **Nghịch** = Đại lượng này tăng thì đại lượng kia giảm).*
+
+---
+
 ## B. HƯỚNG DẪN TRẢ LỜI CÂU HỎI VÀ BÀI TẬP SGK
 
 ### Câu hỏi 1 (SGK trang 36):
