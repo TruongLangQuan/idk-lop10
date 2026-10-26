@@ -1,0 +1,21 @@
+services:
+  idk-lop10-web:
+    build: .
+    image: idk-lop10-web:latest
+    container_name: idk-lop10-web
+    restart: unless-stopped
+    ports:
+      - "3010:3010"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      - OMNIROUTE_URL=http://host.docker.internal:20128/v1
+      - OMNIROUTE_KEY=sk-3bee253d3225390d-33c2f8-c31e5814
+      - OMNIROUTE_MODEL=auto/gemini
+      - DOCS_PATH=/data/documents
+      - STORAGE_PATH=/data/storage
+    volumes:
+      - /data/idk-backups/idk-lop10:/data/documents:ro
+      - /data/idk-lop10-web-data:/data/storage
+      - /srv/idk-lop10-web/server.py:/app/server.py
+      - /srv/idk-lop10-web/public:/app/public
