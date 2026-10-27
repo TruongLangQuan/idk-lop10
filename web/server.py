@@ -90,7 +90,7 @@ def extract_file_content(path: Path, max_chars: int = 40000) -> str:
             return f"[Lỗi đọc PDF: {e}]"
     return ""
 
-@app.get("/health")
+@app.api_route("/health", methods=["GET", "HEAD"])
 def health():
     return {"status": "ok", "service": "idk-lop10-ai-notebook"}
 
