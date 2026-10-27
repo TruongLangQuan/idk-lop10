@@ -35,6 +35,17 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.middleware("http")
+async def add_cache_headers(request, call_next):
+    response = await call_next(request)
+    # Force browsers not to cache HTML, CSS, JS during development
+    path = request.url.path
+    if path == "/" or path.endswith((".html", ".js", ".css")):
+        response.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
+        response.headers["Pragma"] = "no-cache"
+        response.headers["Expires"] = "0"
+    return response
+
 SUBJECT_META = {
     "idk-van": {"name": "Ngữ văn 10", "icon": "book-open", "color": "emerald"},
     "idk-toan": {"name": "Toán học 10", "icon": "calculator", "color": "blue"},
