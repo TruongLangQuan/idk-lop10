@@ -41,7 +41,7 @@
   <script src="https://cdn.jsdelivr.net/npm/marked@12.0.1/marked.min.js"></script>
 
   <!-- Custom Modular Stylesheet -->
-  <link rel="stylesheet" href="/css/style.css?v=20261027b">
+  <link rel="stylesheet" href="/css/style.css?v=20261027c">
 </head>
 <body class="bg-appbg text-slate-200 h-screen flex flex-col antialiased select-none">
 
@@ -75,6 +75,18 @@
         <span class="w-2 h-2 rounded-full bg-blue-500"></span>
         <span id="sourcesCountText">0 tài liệu đã chọn</span>
       </div>
+
+      <!-- K12 Exam Button -->
+      <button onclick="QuizEngine.loadK12Exam()" title="Vào phòng luyện thi trắc nghiệm K12Online (Hóa 10 Chương 2)" class="flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold px-3 py-1.5 rounded-lg text-xs shadow-md shadow-blue-900/30 transition-all transform active:scale-95">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        <span>Luyện thi K12 (Hóa 10)</span>
+      </button>
 
       <!-- Socratic Mode Toggle -->
       <div class="flex items-center gap-2 bg-cardbg border border-borderbase px-3 py-1.5 rounded-lg">
@@ -387,35 +399,228 @@
           </div>
         </div>
 
-        <!-- ================= TAB 2: QUIZ ================= -->
+        <!-- ================= TAB 2: QUIZ / EXAM ================= -->
         <div id="tab-quiz" class="hidden space-y-4">
-          <div class="flex items-center justify-between">
-            <div>
-              <h3 class="text-xs font-semibold text-white">Luyện tập Trắc nghiệm</h3>
-              <p class="text-[11px] text-slate-400">5 câu hỏi đối chiếu chuẩn nội dung tài liệu</p>
-            </div>
-            <button onclick="generateQuiz()" id="generateQuizBtn" class="px-3 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-medium transition-all shadow flex items-center gap-1.5">
-              <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="12" y1="5" x2="12" y2="19"></line>
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-              </svg>
-              <span>Tạo đề mới</span>
-            </button>
+          <div>
+            <h3 class="text-xs font-semibold text-white">Khảo Thí & Luyện Tập THPT</h3>
+            <p class="text-[11px] text-slate-400">Chuẩn cấu trúc Đề thi & Phiếu OMR Bộ GD&ĐT 2025</p>
           </div>
 
-          <!-- Score tracker -->
-          <div id="quizScoreCard" class="hidden p-3 rounded-xl bg-cardbg border border-borderbase flex items-center justify-between text-xs">
-            <span class="text-slate-400">Kết quả kiểm tra:</span>
-            <span id="quizScoreText" class="font-semibold text-blue-400 text-sm">0 / 5</span>
+          <!-- Mode Toggle: Thi thử vs Luyện tập -->
+          <div class="space-y-1.5">
+            <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-400 block">Chế độ kiểm tra</span>
+            <div class="p-1 rounded-xl bg-cardbg border border-borderbase flex gap-1">
+              <button onclick="QuizEngine.setMode('exam')" id="modeBtn-exam" class="flex-1 py-1.5 px-2.5 rounded-lg text-xs font-semibold bg-blue-600 text-white shadow transition-all flex items-center justify-center gap-1.5">
+                <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>Thi thử (Đếm giờ)</span>
+              </button>
+              <button onclick="QuizEngine.setMode('practice')" id="modeBtn-practice" class="flex-1 py-1.5 px-2.5 rounded-lg text-xs font-medium text-slate-400 hover:text-white transition-all flex items-center justify-center gap-1.5">
+                <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                <span>Luyện tập (Tự do)</span>
+              </button>
+            </div>
           </div>
 
-          <!-- Quiz Questions Container -->
-          <div id="quizQuestionsContainer" class="space-y-3">
-            <div class="text-center py-10 text-xs text-slate-500">
-              Chọn tài liệu từ cột bên trái và bấm "Tạo đề mới" để sinh câu hỏi trắc nghiệm kèm giải thích chuẩn xác.
+          <!-- Presets Selection -->
+          <div class="space-y-2">
+            <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-400 block">Chọn dạng đề thi</span>
+            <div class="grid grid-cols-1 gap-2">
+              <button onclick="QuizEngine.setPreset('standard_45')" data-preset="standard_45" class="quiz-preset-btn p-3 rounded-xl border border-blue-500 bg-blue-600 text-white text-left transition-all">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-bold">Đề 45 Phút Chuẩn BGD 2025</span>
+                  <span class="text-[10px] px-1.5 py-0.5 rounded bg-black/30 font-medium">45 phút</span>
+                </div>
+                <p class="text-[11px] opacity-85 mt-1 leading-snug">12 câu trắc nghiệm (Phần I) + 4 câu Đúng/Sai (Phần II) + 4 câu điền ngắn (Phần III).</p>
+              </button>
+
+              <button onclick="QuizEngine.setPreset('quick_15')" data-preset="quick_15" class="quiz-preset-btn p-3 rounded-xl border border-borderbase bg-panelbg text-slate-300 text-left hover:border-slate-600 transition-all">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-bold text-white">Đề 15 Phút Kiểm Tra Nhanh</span>
+                  <span class="text-[10px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 font-medium">15 phút</span>
+                </div>
+                <p class="text-[11px] text-slate-400 mt-1 leading-snug">10 câu trắc nghiệm nhiều phương án trọng tâm bài học.</p>
+              </button>
+
+              <button onclick="QuizEngine.setPreset('comprehensive_essay')" data-preset="comprehensive_essay" class="quiz-preset-btn p-3 rounded-xl border border-borderbase bg-panelbg text-slate-300 text-left hover:border-slate-600 transition-all">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-bold text-white">Đề Toàn Diện có Tự Luận</span>
+                  <span class="text-[10px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 font-medium">50 phút</span>
+                </div>
+                <p class="text-[11px] text-slate-400 mt-1 leading-snug">Gồm Trắc nghiệm, Đúng/Sai, Điền số và 1 câu Tự luận được AI chấm điểm.</p>
+              </button>
+
+              <button onclick="QuizEngine.setPreset('custom')" data-preset="custom" class="quiz-preset-btn p-3 rounded-xl border border-borderbase bg-panelbg text-slate-300 text-left hover:border-slate-600 transition-all">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-bold text-white">⚙️ Tùy Chỉnh Số Câu & Thời Gian</span>
+                  <span class="text-[10px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 font-medium">Custom</span>
+                </div>
+                <p class="text-[11px] text-slate-400 mt-1 leading-snug">Tự cấu hình số lượng từng phần theo nhu cầu ôn tập riêng.</p>
+              </button>
             </div>
+          </div>
+
+          <!-- Custom Fields (Hidden by default) -->
+          <div id="quizCustomFields" class="hidden p-3 rounded-xl bg-cardbg border border-borderbase space-y-2 text-xs">
+            <span class="text-[10px] font-bold text-blue-400 uppercase tracking-wider block">Cấu hình chi tiết</span>
+            <div class="grid grid-cols-2 gap-2">
+              <div>
+                <label class="text-[11px] text-slate-400 block mb-1">Số câu Phần I (MCQ):</label>
+                <input type="number" id="customMcqCount" value="12" min="1" max="40" class="w-full px-2.5 py-1.5 rounded bg-panelbg border border-borderbase text-white text-xs">
+              </div>
+              <div>
+                <label class="text-[11px] text-slate-400 block mb-1">Số câu Phần II (Đúng/Sai):</label>
+                <input type="number" id="customTfCount" value="4" min="0" max="10" class="w-full px-2.5 py-1.5 rounded bg-panelbg border border-borderbase text-white text-xs">
+              </div>
+              <div>
+                <label class="text-[11px] text-slate-400 block mb-1">Số câu Phần III (Điền số):</label>
+                <input type="number" id="customShortCount" value="4" min="0" max="15" class="w-full px-2.5 py-1.5 rounded bg-panelbg border border-borderbase text-white text-xs">
+              </div>
+              <div>
+                <label class="text-[11px] text-slate-400 block mb-1">Số câu Phần IV (Tự luận):</label>
+                <input type="number" id="customEssayCount" value="1" min="0" max="3" class="w-full px-2.5 py-1.5 rounded bg-panelbg border border-borderbase text-white text-xs">
+              </div>
+              <div class="col-span-2">
+                <label class="text-[11px] text-slate-400 block mb-1">Thời gian làm bài (Phút):</label>
+                <input type="number" id="customTimeLimit" value="45" min="5" max="120" class="w-full px-2.5 py-1.5 rounded bg-panelbg border border-borderbase text-white text-xs">
+              </div>
+            </div>
+          </div>
+
+          <!-- Difficulty selection -->
+          <div class="space-y-1.5">
+            <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-400 block">Mức độ nhận thức</span>
+            <select id="quizDifficultySelect" class="w-full px-3 py-2 rounded-xl bg-cardbg border border-borderbase text-xs text-white focus:outline-none focus:border-blue-500">
+              <option value="mixed">Cân đối (40% Nhận biết, 30% Thông hiểu, 30% Vận dụng)</option>
+              <option value="recognition">Cơ bản (Trọng tâm Nhận biết & Khái niệm cốt lõi)</option>
+              <option value="comprehension">Trung bình (Trọng tâm Thông hiểu & Giải thích)</option>
+              <option value="application">Nâng cao (Trọng tâm Vận dụng & Bài toán thực tế)</option>
+            </select>
+          </div>
+
+          <!-- Big Start Button -->
+          <button onclick="QuizEngine.startQuizGeneration()" id="generateQuizBtn" class="w-full py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold transition-all shadow-lg shadow-blue-900/30 flex items-center justify-center gap-2">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 11 12 14 22 4"></polyline>
+              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+            </svg>
+            <span>Bắt Đầu Vào Phòng Thi</span>
+          </button>
+        </div>
+
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- ================= FULLSCREEN EXAM ARENA (2 COLUMNS: QUESTIONS + OMR SHEET) ================= -->
+  <div id="examArenaModal" class="hidden fixed inset-0 z-50 bg-[#070b12] flex flex-col overflow-hidden text-slate-200">
+    
+    <!-- Top Header Bar -->
+    <header class="h-14 border-b border-borderbase bg-[#0a0f1d] px-4 md:px-6 flex items-center justify-between shrink-0 shadow-md">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-blue-950 border border-blue-500/40 flex items-center justify-center text-blue-400">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+        </div>
+        <div>
+          <h2 id="examTitle" class="text-xs md:text-sm font-bold text-white truncate max-w-xs md:max-w-md">Đề Kiểm Tra Chuẩn BGD 2025</h2>
+          <span class="text-[10px] text-slate-400 font-mono">idk-lop10 Examination Arena</span>
+        </div>
+      </div>
+
+      <!-- Center Status: Timer & Progress -->
+      <div class="flex items-center gap-4">
+        <!-- Countdown Timer -->
+        <div id="examTimerContainer" class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-700 flex items-center gap-2 text-xs font-mono font-bold text-blue-300">
+          <svg class="w-3.5 h-3.5 text-blue-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          <span id="examTimerDisplay">45:00</span>
+        </div>
+
+        <!-- Question Counter -->
+        <div class="hidden sm:flex items-center gap-1.5 text-xs text-slate-400 font-medium">
+          <span>Tiến độ:</span>
+          <span id="examProgressText" class="text-white font-bold font-mono">0 / 22 câu</span>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-2">
+        <button onclick="QuizEngine.submitExam()" id="submitExamBtn" class="px-4 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold transition-all shadow-md shadow-blue-900/30 flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          <span>Nộp Bài Thi</span>
+        </button>
+
+        <button onclick="QuizEngine.closeArena()" title="Thoát phòng thi" class="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main 2-Column Split View -->
+    <div class="flex-1 overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-0">
+      
+      <!-- Cột Trái: Đề bài độc lập (Chiếm 8 cột) -->
+      <div id="examQuestionsCol" class="lg:col-span-8 overflow-y-auto p-4 md:p-6 space-y-4 border-r border-borderbase/50">
+        <!-- Questions injected here by QuizEngine -->
+      </div>
+
+      <!-- Cột Phải: Phiếu OMR Answer Sheet (Chiếm 4 cột) -->
+      <div id="examOmrCol" class="lg:col-span-4 overflow-y-auto p-4 md:p-5 bg-[#090e1c]">
+        <!-- OMR Sheet injected here by QuizEngine -->
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= EXAM RESULT MODAL ================= -->
+  <div id="examResultModal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-panelbg border border-borderbase rounded-2xl w-full max-w-lg shadow-2xl overflow-hidden text-slate-200 animate-in fade-in zoom-in-95 duration-200">
+      
+      <div class="p-6 border-b border-borderbase text-center bg-cardbg space-y-2">
+        <span class="text-[10px] font-bold text-blue-400 uppercase tracking-widest block">KẾT QUẢ KHẢO THÍ CHUẨN THPT</span>
+        <div class="flex items-center justify-center gap-1.5">
+          <span id="resFinalGrade" class="text-4xl font-extrabold text-white">0.0</span>
+          <span class="text-xl font-bold text-slate-500">/ 10</span>
+        </div>
+        <p id="resRankText" class="text-xs font-semibold text-emerald-400"></p>
+        <div class="text-[11px] text-slate-400 font-mono">Điểm thô: <span id="resRawScore" class="text-slate-200">0 / 10</span></div>
+      </div>
+
+      <!-- Breakdown Table -->
+      <div class="p-5 space-y-3 text-xs">
+        <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">Chi tiết từng phần thi</span>
+        
+        <div class="grid grid-cols-2 gap-2">
+          <div class="p-2.5 rounded-xl bg-slate-900 border border-slate-800 flex justify-between items-center">
+            <span class="text-slate-400">Phần I (Nhiều lựa chọn):</span>
+            <span id="resPart1" class="font-bold text-blue-400 font-mono">0.0</span>
+          </div>
+          <div class="p-2.5 rounded-xl bg-slate-900 border border-slate-800 flex justify-between items-center">
+            <span class="text-slate-400">Phần II (Đúng / Sai):</span>
+            <span id="resPart2" class="font-bold text-purple-400 font-mono">0.0</span>
+          </div>
+          <div class="p-2.5 rounded-xl bg-slate-900 border border-slate-800 flex justify-between items-center">
+            <span class="text-slate-400">Phần III (Trả lời ngắn):</span>
+            <span id="resPart3" class="font-bold text-amber-400 font-mono">0.0</span>
+          </div>
+          <div class="p-2.5 rounded-xl bg-slate-900 border border-slate-800 flex justify-between items-center">
+            <span class="text-slate-400">Phần IV (Tự luận):</span>
+            <span id="resPart4" class="font-bold text-rose-400 font-mono">0.0</span>
           </div>
         </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="p-4 border-t border-borderbase bg-cardbg flex items-center justify-end gap-2.5">
+        <button onclick="QuizEngine.closeResultModal()" class="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold transition-all shadow">
+          Xem Lại & Sửa Lỗi Chi Tiết
+        </button>
+        <button onclick="QuizEngine.closeArena(); QuizEngine.closeResultModal();" class="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-medium transition-all">
+          Thoát Phòng Thi
+        </button>
+      </div>
+
+    </div>
+  </div>
 
       </div>
     </aside>
@@ -447,8 +652,8 @@
   </div>
 
   <!-- MODULAR JAVASCRIPT FILES -->
-  <script src="/js/app.js?v=20261027b"></script>
-  <script src="/js/podcast.js?v=20261027b"></script>
-  <script src="/js/quiz.js?v=20261027b"></script>
+  <script src="/js/app.js?v=20261027c"></script>
+  <script src="/js/podcast.js?v=20261027c"></script>
+  <script src="/js/quiz.js?v=20261027c"></script>
 </body>
 </html>

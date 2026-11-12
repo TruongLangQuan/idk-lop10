@@ -50,10 +50,13 @@ SUBJECT_META = {
     "idk-van": {"name": "Ngữ văn 10", "icon": "book-open", "color": "emerald"},
     "idk-toan": {"name": "Toán học 10", "icon": "calculator", "color": "blue"},
     "idk-hoa": {"name": "Hóa học 10", "icon": "flask-conical", "color": "purple"},
+    "idk-vat-li": {"name": "Vật lí 10", "icon": "atom", "color": "indigo"},
     "idk-sinh": {"name": "Sinh học 10", "icon": "dna", "color": "green"},
     "idk-lich-su": {"name": "Lịch sử 10", "icon": "landmark", "color": "amber"},
+    "idk-dia-li": {"name": "Địa lí 10", "icon": "globe", "color": "teal"},
     "idk-tin": {"name": "Tin học 10", "icon": "terminal", "color": "cyan"},
-    "idk-gddp": {"name": "GD Địa phương 10", "icon": "map-pin", "color": "rose"},
+    "idk-tieng-anh": {"name": "Tiếng Anh 10", "icon": "languages", "color": "sky"},
+    "idk-gddp": {"name": "GD Kinh tế & Pháp luật 10", "icon": "map-pin", "color": "rose"},
     "idk-hdtn": {"name": "HĐTN & Hướng nghiệp", "icon": "compass", "color": "orange"},
 }
 
@@ -458,10 +461,28 @@ def list_podcasts():
 class ToolRequest(BaseModel):
     selected_sources: List[str]
 
+class QuizRequest(BaseModel):
+    selected_sources: List[str]
+    preset: Optional[str] = "standard_45"  # "quick_15", "standard_45", "comprehensive_essay", "custom"
+    difficulty: Optional[str] = "mixed"     # "recognition", "comprehension", "application", "mixed"
+    num_mcq: Optional[int] = 12
+    num_tf: Optional[int] = 4
+    num_short: Optional[int] = 6
+    num_essay: Optional[int] = 0
+    time_limit_minutes: Optional[int] = 45
+
+class GradeEssayRequest(BaseModel):
+    question: str
+    student_answer: str
+    suggested_answer: Optional[str] = ""
+    rubric: Optional[str] = ""
+    max_score: Optional[float] = 2.0
+    source_context: Optional[str] = ""
+
 @app.post("/api/tools/quiz")
-async def generate_quiz(req: ToolRequest):
+async def generate_quiz(req: QuizRequest):
     if not req.selected_sources:
-        raise HTTPException(status_code=400, detail="Vui lòng chọn tài liệu để tạo trắc nghiệm.")
+        raise HTTPException(status_code=400, detail="Vui lòng chọn tài liệu để tạo đề trắc nghiệm.")
     
     docs = []
     for rel_p in req.selected_sources[:6]:
@@ -469,33 +490,163 @@ async def generate_quiz(req: ToolRequest):
         if fp.exists():
             docs.append(f"--- {fp.name} ---\n{extract_file_content(fp, 10000)}")
 
-    prompt = f"""Dựa vào nội dung tài liệu Lớp 10 sau đây, hãy tạo 5 câu hỏi trắc nghiệm ôn tập trọng tâm (mức độ từ thông hiểu đến vận dụng):
-{chr(10).join(docs)[:20000]}
+    # Adjust question counts based on preset
+    preset = req.preset or "standard_45"
+    if preset == "quick_15":
+        n_mcq, n_tf, n_short, n_essay = 10, 0, 0, 0
+        time_limit = 15
+        preset_name = "Đề 15 phút Kiểm tra Nhanh"
+    elif preset == "standard_45":
+        n_mcq, n_tf, n_short, n_essay = 12, 4, 4, 0
+        time_limit = 45
+        preset_name = "Đề 45 phút Chuẩn Bộ GD&ĐT 2025"
+    elif preset == "comprehensive_essay":
+        n_mcq, n_tf, n_short, n_essay = 10, 3, 3, 1
+        time_limit = 50
+        preset_name = "Đề Toàn diện có Tự luận"
+    else:  # custom
+        n_mcq = max(0, min(req.num_mcq or 10, 40))
+        n_tf = max(0, min(req.num_tf or 0, 10))
+        n_short = max(0, min(req.num_short or 0, 15))
+        n_essay = max(0, min(req.num_essay or 0, 4))
+        time_limit = max(5, min(req.time_limit_minutes or 45, 120))
+        preset_name = "Đề Khảo sát Tùy chỉnh"
 
-YÊU CẦU:
-Trả về DUY NHẤT một mảng JSON hợp lệ (không kèm markdown ```json ```, không có văn bản giải thích ngoài JSON):
-[
-  {{
-    "question": "Nội dung câu hỏi...",
-    "options": ["A. Lựa chọn 1", "B. Lựa chọn 2", "C. Lựa chọn 3", "D. Lựa chọn 4"],
-    "answer": 0,
-    "explanation": "Giải thích chi tiết vì sao đáp án đúng và phân tích các phương án sai...",
-    "source": "Tên bài/chủ đề"
-  }}
-]
+    diff_map = {
+        "recognition": "chú trọng Nhận biết (ghi nhớ định nghĩa, công thức cốt lõi)",
+        "comprehension": "chú trọng Thông hiểu (giải thích hiện tượng, so sánh)",
+        "application": "chú trọng Vận dụng & Vận dụng cao (bài toán thực tế, suy luận sâu)",
+        "mixed": "phân bổ cân đối: 40% Nhận biết, 30% Thông hiểu, 20% Vận dụng, 10% Vận dụng cao"
+    }
+    diff_desc = diff_map.get(req.difficulty, diff_map["mixed"])
+
+    prompt = f"""Bạn là chuyên gia khảo thí biên soạn đề thi Lớp 10 theo đúng Chương trình Giáo dục Phổ thông 2018 và Định dạng Đề thi Mới của Bộ GD&ĐT.
+Dựa vào nội dung tài liệu học tập sau:
+{chr(10).join(docs)[:22000]}
+
+HÃY SOẠN BỘ ĐỀ THI: "{preset_name}"
+- Mức độ: {diff_desc}
+- Cấu trúc yêu cầu:
+  + Phần I: {n_mcq} câu hỏi trắc nghiệm nhiều phương án (4 lựa chọn A, B, C, D; chỉ 1 đáp án đúng).
+  + Phần II: {n_tf} câu hỏi trắc nghiệm Đúng/Sai (Mỗi câu gồm 1 ngữ cảnh/dữ kiện chung và 4 mệnh đề con a, b, c, d; mỗi mệnh đề xác định là Đúng (true) hoặc Sai (false)).
+  + Phần III: {n_short} câu hỏi trắc nghiệm trả lời ngắn (Điền đáp số là số nguyên, số thập phân hoặc từ khóa ngắn gọn).
+  + Phần IV: {n_essay} câu hỏi tự luận (nếu số lượng > 0; yêu cầu lập luận, giải thích hoặc giải chi tiết).
+
+YÊU CẦU: Trả về DUY NHẤT một đối tượng JSON hợp lệ (không kèm markdown ```json ```, không kèm văn bản giải thích ngoài JSON):
+{{
+  "title": "{preset_name}",
+  "preset": "{preset}",
+  "time_limit_minutes": {time_limit},
+  "part1_mcq": [
+    {{
+      "id": 1,
+      "question": "Nội dung câu hỏi...",
+      "options": ["A. ...", "B. ...", "C. ...", "D. ..."],
+      "answer": 0,
+      "explanation": "Phân tích vì sao đáp án đúng và vì sao các phương án khác sai...",
+      "difficulty": "Nhận biết"
+    }}
+  ],
+  "part2_true_false": [
+    {{
+      "id": 1,
+      "question": "Thông tin dữ kiện chung...",
+      "sub_items": [
+        {{"id": "a", "text": "Mệnh đề a...", "answer": true}},
+        {{"id": "b", "text": "Mệnh đề b...", "answer": false}},
+        {{"id": "c", "text": "Mệnh đề c...", "answer": true}},
+        {{"id": "d", "text": "Mệnh đề d...", "answer": false}}
+      ],
+      "explanation": "Giải thích chi tiết cho từng mệnh đề a, b, c, d...",
+      "difficulty": "Thông hiểu"
+    }}
+  ],
+  "part3_short_answer": [
+    {{
+      "id": 1,
+      "question": "Câu hỏi tính toán hoặc điền kết quả...",
+      "answer": "12",
+      "acceptable_answers": ["12", "12.0"],
+      "explanation": "Lời giải từng bước ra đáp số...",
+      "difficulty": "Vận dụng"
+    }}
+  ],
+  "part4_essay": [
+    {{
+      "id": 1,
+      "question": "Đề bài câu hỏi tự luận...",
+      "suggested_answer": "Đáp án mẫu chi tiết và các ý đạt điểm...",
+      "rubric": "Tiêu chí chấm điểm từng ý",
+      "max_score": 2.0,
+      "difficulty": "Vận dụng cao"
+    }}
+  ]
+}}
 """
-    async with httpx.AsyncClient(timeout=60.0) as client:
+    async with httpx.AsyncClient(timeout=90.0) as client:
         res = await client.post(
             f"{OMNIROUTE_URL}/chat/completions",
             headers={"Authorization": f"Bearer {OMNIROUTE_KEY}"},
-            json={"model": OMNIROUTE_MODEL, "messages": [{"role": "user", "content": prompt}], "temperature": 0.4}
+            json={"model": OMNIROUTE_MODEL, "messages": [{"role": "user", "content": prompt}], "temperature": 0.3}
         )
         if res.status_code != 200:
             raise HTTPException(status_code=500, detail=res.text)
         txt = res.json()["choices"][0]["message"]["content"].strip()
         if txt.startswith("```"):
             txt = txt.split("\n", 1)[1].rsplit("```", 1)[0].strip()
-        return {"questions": json.loads(txt)}
+        
+        parsed = json.loads(txt)
+        # Ensure default arrays exist
+        parsed.setdefault("part1_mcq", [])
+        parsed.setdefault("part2_true_false", [])
+        parsed.setdefault("part3_short_answer", [])
+        parsed.setdefault("part4_essay", [])
+        parsed.setdefault("time_limit_minutes", time_limit)
+        parsed.setdefault("title", preset_name)
+        return parsed
+
+@app.post("/api/tools/grade-essay")
+async def grade_essay(req: GradeEssayRequest):
+    if not req.question or not req.student_answer:
+        raise HTTPException(status_code=400, detail="Thiếu câu hỏi hoặc bài làm của học sinh.")
+
+    prompt = f"""Bạn là giáo viên giám khảo chấm thi Lớp 10 công tâm và chuẩn mực.
+Hãy chấm điểm bài làm tự luận của học sinh dựa trên câu hỏi, đáp án gợi ý và tiêu chí chấm sau:
+
+CÂU HỎI:
+{req.question}
+
+ĐÁP ÁN GỢI Ý & TIÊU CHÍ CHẤM:
+{req.suggested_answer}
+{req.rubric}
+
+BÀI LÀM CỦA HỌC SINH:
+\"\"\"{req.student_answer}\"\"\"
+
+THANG ĐIỂM TỐI ĐA: {req.max_score} điểm.
+
+YÊU CẦU:
+Trả về DUY NHẤT một đối tượng JSON hợp lệ (không kèm markdown ```json ```):
+{{
+  "score": 1.75,
+  "max_score": {req.max_score},
+  "feedback": "Nhận xét tổng quan súc tích, mang tính xây dựng và chỉ rõ mức độ hiểu bài...",
+  "strengths": ["Ý đúng 1...", "Ý đúng 2..."],
+  "improvements": ["Lỗi sai hoặc ý cần bổ sung..."]
+}}
+"""
+    async with httpx.AsyncClient(timeout=45.0) as client:
+        res = await client.post(
+            f"{OMNIROUTE_URL}/chat/completions",
+            headers={"Authorization": f"Bearer {OMNIROUTE_KEY}"},
+            json={"model": OMNIROUTE_MODEL, "messages": [{"role": "user", "content": prompt}], "temperature": 0.2}
+        )
+        if res.status_code != 200:
+            raise HTTPException(status_code=500, detail=res.text)
+        txt = res.json()["choices"][0]["message"]["content"].strip()
+        if txt.startswith("```"):
+            txt = txt.split("\n", 1)[1].rsplit("```", 1)[0].strip()
+        return json.loads(txt)
 
 @app.post("/api/tools/flashcards")
 async def generate_flashcards(req: ToolRequest):

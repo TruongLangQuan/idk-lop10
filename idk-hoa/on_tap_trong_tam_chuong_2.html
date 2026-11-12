@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trọng Tâm Hóa Học 10 - Chương 2 Bảng Tuần Hoàn</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"></script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    @page {
+      size: A4;
+      margin: 15mm 15mm 15mm 15mm;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: #111827;
+      background-color: #ffffff;
+      padding: 0;
+      font-size: 13.5px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    h2 {
+      font-size: 15px;
+      color: #111827;
+      font-weight: 700;
+      margin: 16px 0 6px 0;
+      text-transform: uppercase;
+      border-bottom: 1px solid #d1d5db;
+      padding-bottom: 3px;
+    }
+
+    .container > h2:first-child {
+      margin-top: 0;
+    }
+
+    h3 {
+      font-size: 14px;
+      color: #1f2937;
+      font-weight: 700;
+      margin: 10px 0 4px 0;
+    }
+
+    h4 {
+      font-size: 13.5px;
+      color: #1f2937;
+      font-weight: 700;
+      margin: 8px 0 3px 0;
+    }
+
+    p {
+      margin-bottom: 4px;
+      color: #111827;
+    }
+
+    .indent-1 { padding-left: 18px; }
+    .indent-2 { padding-left: 36px; }
+    .indent-3 { padding-left: 54px; }
+
+    .font-bold { font-weight: 700; }
+    hr {
+      border: none;
+      border-top: 1px dashed #d1d5db;
+      margin: 14px 0;
+    }
+
+    @media print {
+      body { font-size: 12px; line-height: 1.5; }
+      h2 { page-break-after: avoid; margin-top: 14px; }
+      h3, h4 { page-break-after: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>1. Nguyên Tắc Sắp Xếp Bảng Tuần Hoàn (BTH)</h2>
+  <p>- Các nguyên tố được sắp xếp theo chiều tăng dần của điện tích hạt nhân nguyên tử ($Z$).</p>
+  <p>- Các nguyên tố có cùng số lớp electron trong nguyên tử xếp thành một hàng ngang (chu kỳ).</p>
+  <p>- Các nguyên tố có cấu hình electron tương tự nhau (cùng số electron hóa trị) xếp thành một cột dọc (nhóm).</p>
+
+  <hr>
+
+  <h2>2. Cấu Trúc Chi Tiết Bảng Tuần Hoàn</h2>
+  
+  <h3>a. Ô Nguyên Tố</h3>
+  <p>- Số thứ tự ô = Số hiệu nguyên tử ($Z$) = Số proton ($p$) = Số electron ($e$) = Điện tích hạt nhân ($+Z$).</p>
+  <p>- BTH hiện nay có tổng cộng 118 nguyên tố hóa học (từ ô số 1 Hydrogen đến ô 118 Oganesson).</p>
+  <p>- Tổng số hạt mang điện trong nguyên tử bằng $2Z$ ($p + e$); số hạt không mang điện là neutron ($n$).</p>
+  <p class="indent-1">+ Cation $M^{n+}$ có số hạt mang điện là: $2Z - n$.</p>
+  <p class="indent-1">+ Anion $X^{m-}$ có số hạt mang điện là: $2Z + m$.</p>
+
+  <h3>b. Chu Kỳ (7 Hàng Ngang)</h3>
+  <p>- Số thứ tự chu kỳ = Số lớp electron của nguyên tử.</p>
+  <p>- Chu kỳ nhỏ (Chu kỳ 1, 2, 3): Chỉ gồm các nguyên tố nhóm A (nguyên tố họ $s$ và $p$).</p>
+  <p class="indent-1">* Chu kỳ 1: Có 2 nguyên tố (H, He), 1 lớp electron.</p>
+  <p class="indent-1">* Chu kỳ 2: Có 8 nguyên tố (từ Li đến Ne), 2 lớp electron.</p>
+  <p class="indent-1">* Chu kỳ 3: Có 8 nguyên tố (từ Na đến Ar), 3 lớp electron.</p>
+  <p>- Chu kỳ lớn (Chu kỳ 4, 5, 6, 7): Gồm cả nguyên tố nhóm A và nhóm B.</p>
+  <p class="indent-1">* Chu kỳ 4: Có 18 nguyên tố (từ K đến Kr), 4 lớp electron.</p>
+  <p class="indent-1">* Chu kỳ 5: Có 18 nguyên tố (từ Rb đến Xe), 5 lớp electron.</p>
+  <p class="indent-1">* Chu kỳ 6: Có 32 nguyên tố (từ Cs đến Rn), gồm 14 nguyên tố họ Lantan, 6 lớp electron.</p>
+  <p class="indent-1">* Chu kỳ 7: Có 32 nguyên tố (từ Fr đến Og), gồm 14 nguyên tố họ Actini, 7 lớp electron.</p>
+  <p>- Quy luật đầu - cuối: Mọi chu kỳ (trừ chu kỳ 1) mở đầu bằng kim loại kiềm ($ns^1$) và kết thúc bằng khí hiếm ($ns^2np^6$, riêng He là $1s^2$).</p>
+
+  <h3>c. Nhóm Nguyên Tố (18 Cột Dọc: 8 Nhóm A và 8 Nhóm B)</h3>
+  <p>- Nhóm A (gồm 8 nhóm từ IA đến VIIIA - các nguyên tố họ $s$ và $p$):</p>
+  <p class="indent-1">+ Số thứ tự nhóm A = Số electron hóa trị = Số electron lớp ngoài cùng.</p>
+  <p class="indent-1">+ IA ($ns^1$): Kim loại kiềm (trừ H) | IIA ($ns^2$): Kim loại kiềm thổ | IIIA ($ns^2np^1$) | IVA ($ns^2np^2$) | VA ($ns^2np^3$) | VIA ($ns^2np^4$): Chalcogen | VIIA ($ns^2np^5$): Halogen | VIIIA ($ns^2np^6$): Khí hiếm (He là $1s^2$).</p>
+  <p>- Nhóm B (gồm 8 nhóm từ IB đến VIIIB - kim loại chuyển tiếp họ $d$ và $f$):</p>
+  <p class="indent-1">+ Cấu hình electron hóa trị dạng: $(n-1)d^a ns^b$ với $S = a + b$ (tổng electron hóa trị):</p>
+  <p class="indent-2">* Nếu $S < 8 \implies$ Nguyên tố thuộc nhóm $S$B (ví dụ: $Sc \ [Ar]3d^14s^2 \implies S = 3 \implies$ nhóm IIIB; $Mn \ [Ar]3d^54s^2 \implies S = 7 \implies$ nhóm VIIB).</p>
+  <p class="indent-2">* Nếu $S \in \{8, 9, 10\} \implies$ Nguyên tố thuộc nhóm VIIIB (gồm 3 cột 8, 9, 10 trong BTH; ví dụ $_{26}Fe \ [Ar]3d^64s^2 \implies S = 8 \implies$ nhóm VIIIB).</p>
+  <p class="indent-2">* Nếu $S > 10 \implies$ Nguyên tố thuộc nhóm $(S - 10)$B (ví dụ Cu $[Ar]3d^{10}4s^1 \implies S = 11 \implies$ nhóm IB; Zn $[Ar]3d^{10}4s^2 \implies S = 12 \implies$ nhóm IIB).</p>
+  <p>- Phân biệt electron ngoài cùng và electron hóa trị:</p>
+  <p class="indent-1">+ Nhóm A: e hóa trị = e ngoài cùng (ví dụ $_{20}Ca$ có 2 e hóa trị).</p>
+  <p class="indent-1">+ Nhóm B: e hóa trị = e ngoài cùng + e phân lớp $(n-1)d$ chưa bão hòa (ví dụ $_{26}Fe$ có 2 e ngoài cùng nhưng 8 e hóa trị; $_{25}Mn$ có 7 e hóa trị).</p>
+
+  <h3>d. Khối Nguyên Tố (Họ $s, p, d, f$)</h3>
+  <p>- Xác định theo phân lớp chứa electron cuối cùng khi điền theo trật tự mức năng lượng: Họ $s, p$ thuộc nhóm A; Họ $d, f$ thuộc nhóm B.</p>
+
+  <hr>
+
+  <h2>3. Cấu Hình Electron và Ba Nguyên Lý Phân Bố</h2>
+  <p>- Lớp electron ($n = 1, 2, 3, 4...$ tương ứng tên lớp $K, L, M, N...$):</p>
+  <p class="indent-1">+ Số phân lớp trong lớp $n$ là $n$ ($n \le 4$).</p>
+  <p class="indent-1">+ Số orbital nguyên tử (AO) trong lớp $n$ là $n^2$.</p>
+  <p class="indent-1">+ Số electron tối đa trong lớp $n$ là $2n^2$.</p>
+  <p class="indent-1">+ Lớp 1 (K): 1 AO, tối đa 2e | Lớp 2 (L): 4 AO, tối đa 8e | Lớp 3 (M): 9 AO, tối đa 18e | Lớp 4 (N): 16 AO, tối đa 32e.</p>
+  <p>- Phân lớp electron: Phân lớp $s$ (1 AO, tối đa 2e), phân lớp $p$ (3 AO, tối đa 6e), phân lớp $d$ (5 AO, tối đa 10e), phân lớp $f$ (7 AO, tối đa 14e).</p>
+  <p>- Ba nguyên lý và quy tắc:</p>
+  <p class="indent-1">+ Nguyên lý vững bền: $1s \to 2s \to 2p \to 3s \to 3p \to 4s \to 3d \to 4p \to 5s \to 4d...$</p>
+  <p class="indent-1">+ Nguyên lý Pauli: Mỗi orbital chứa tối đa 2 electron có spin đối song ($\upharpoonleft\downharpoonright$).</p>
+  <p class="indent-1">+ Quy tắc Hund: Trong cùng phân lớp chưa bão hòa, electron phân bố sao cho số e độc thân là cực đại và cùng chiều spin.</p>
+  <p>- Cấu hình bán bão hòa và bão hòa bền vững: $_{24}Cr: [Ar]3d^54s^1$ (thay vì $3d^44s^2$) và $_{29}Cu: [Ar]3d^{10}4s^1$ (thay vì $3d^94s^2$).</p>
+  <p>- Cấu hình Ion:</p>
+  <p class="indent-1">+ Cation nhường e lớp ngoài cùng trước: $Fe \to Fe^{2+}: [Ar]3d^6 \to Fe^{3+}: [Ar]3d^5$.</p>
+  <p class="indent-1">+ Anion nhận thêm e vào lớp ngoài cùng: $Cl \to Cl^-: [Ar]$.</p>
+
+  <hr>
+
+  <h2>4. Quy Luật Biến Đổi Tuần Hoàn Tính Chất Trong Bảng Tuần Hoàn</h2>
+  <p>- Điện tích hạt nhân ($Z$): Trong 1 chu kỳ TĂNG; Trong 1 nhóm A TĂNG (do số proton tăng dần).</p>
+  <p>- Số lớp electron: Trong 1 chu kỳ KHÔNG ĐỔI; Trong 1 nhóm A TĂNG (mỗi chu kỳ thêm 1 lớp e mới).</p>
+  <p>- Bán kính nguyên tử ($r$):</p>
+  <p class="indent-1">+ Trong 1 chu kỳ: GIẢM DẦN (cùng số lớp e, điện tích hạt nhân tăng hút e chặt hơn $\implies$ co lại).</p>
+  <p class="indent-1">+ Trong 1 nhóm A: TĂNG DẦN (số lớp e tăng lấn át điện tích hạt nhân $\implies$ bán kính tăng nhanh).</p>
+  <p>- Độ âm điện ($\chi$): Trong 1 chu kỳ TĂNG DẦN; Trong 1 nhóm A GIẢM DẦN (khả năng hút electron liên kết tăng khi bán kính giảm).</p>
+  <p>- Năng lượng ion hóa thứ nhất ($I_1$): Trong 1 chu kỳ TĂNG DẦN; Trong 1 nhóm A GIẢM DẦN (năng lượng tối thiểu bứt 1 electron ra khỏi nguyên tử).</p>
+  <p>- Tính kim loại: Trong 1 chu kỳ GIẢM DẦN; Trong 1 nhóm A TĂNG DẦN (khả năng nhường electron $M \to M^{n+} + ne$).</p>
+  <p>- Tính phi kim: Trong 1 chu kỳ TĂNG DẦN; Trong 1 nhóm A GIẢM DẦN (khả năng nhận electron $X + me \to X^{m-}$).</p>
+  <p>- Oxide cao nhất: Trong chu kỳ tính base GIẢM, tính acid TĂNG; Trong nhóm A tính base TĂNG, tính acid GIẢM.</p>
+  <p>- Hydroxide tương ứng: Trong chu kỳ tính base GIẢM, tính acid TĂNG; Trong nhóm A tính base TĂNG, tính acid GIẢM.</p>
+  <p>- Dãy biến đổi tính Acid - Base chu kỳ 3:</p>
+  <p class="indent-1">+ Oxide cao nhất: $Na_2O \ (\text{basic oxide kiềm}) \to MgO \to Al_2O_3 \ (\text{lưỡng tính}) \to SiO_2 \to P_2O_5 \to SO_3 \to Cl_2O_7 \ (\text{acidic oxide rất mạnh})$.</p>
+  <p class="indent-1">+ Hydroxide: $NaOH \ (\text{kiềm mạnh}) \to Mg(OH)_2 \to Al(OH)_3 \ (\text{lưỡng tính}) \to H_2SiO_3 \to H_3PO_4 \to H_2SO_4 \to HClO_4 \ (\text{acid rất mạnh})$.</p>
+  <p>- Ghi nhớ suy luận nhanh:</p>
+  <p class="indent-1">* Bán kính nguyên tử và Tính kim loại biến đổi cùng chiều: Trong chu kỳ giảm, trong nhóm tăng.</p>
+  <p class="indent-1">* Độ âm điện, Tính phi kim, Năng lượng ion hóa, Tính acid biến đổi: Trong chu kỳ tăng, trong nhóm giảm.</p>
+  <p class="indent-1">* Kim loại mạnh nhất: Cesium ($Cs$) | Phi kim mạnh nhất: Fluorine ($F$).</p>
+  <p class="indent-1">* Bán kính hạt đẳng electron ($10e$): $r_{Al^{3+}} < r_{Mg^{2+}} < r_{Na^+} < r_{Ne} < r_{F^-} < r_{O^{2-}} < r_{N^{3-}}$.</p>
+
+  <hr>
+
+  <h2>5. Hóa Trị và Hợp Chất Với Oxygen và Hydrogen</h2>
+  <p>- Hóa trị cao nhất với oxygen = Số thứ tự nhóm A (tăng dần từ 1 đến 7).</p>
+  <p>- Hóa trị trong hợp chất khí với hydrogen = $8 - \text{Số thứ tự nhóm A}$ (từ nhóm IVA đến VIIA, giảm dần từ 4 về 1).</p>
+  <p>- Tổng hóa trị: $(\text{Hóa trị với O}) + (\text{Hóa trị với H}) = 8$.</p>
+  <p>- Tóm tắt dạng hợp chất từng nhóm A:</p>
+  <p class="indent-1">+ Nhóm IA: Hóa trị O: 1 | Oxide: $R_2O$ | Hydroxide: $ROH$ (kiềm mạnh).</p>
+  <p class="indent-1">+ Nhóm IIA: Hóa trị O: 2 | Oxide: $RO$ | Hydroxide: $R(OH)_2$ (base ít tan).</p>
+  <p class="indent-1">+ Nhóm IIIA: Hóa trị O: 3 | Oxide: $R_2O_3$ | Hydroxide: $R(OH)_3$ (lưỡng tính).</p>
+  <p class="indent-1">+ Nhóm IVA: Hóa trị O: 4 | Oxide: $RO_2$ | Hợp chất H: $RH_4$ | Hydroxide: $H_2RO_3$ (acid rất yếu).</p>
+  <p class="indent-1">+ Nhóm VA: Hóa trị O: 5 | Oxide: $R_2O_5$ | Hợp chất H: $RH_3$ | Hydroxide: $H_3RO_4$ (acid trung bình).</p>
+  <p class="indent-1">+ Nhóm VIA: Hóa trị O: 6 | Oxide: $RO_3$ | Hợp chất H: $H_2R$ | Hydroxide: $H_2RO_4$ (acid mạnh).</p>
+  <p class="indent-1">+ Nhóm VIIA: Hóa trị O: 7 | Oxide: $R_2O_7$ | Hợp chất H: $HR$ | Hydroxide: $HRO_4$ (acid rất mạnh).</p>
+
+  <hr>
+
+  <h2>6. Phương Pháp và Công Thức Giải Chung Cho Các Dạng Bài Toán Tính Toán</h2>
+  
+  <h3>Dạng 1: Bài toán hạt cơ bản trong nguyên tử và phân tử</h3>
+  <p>- Tổng hạt cơ bản $S = 2Z + n$; Hiệu số hạt mang điện và không mang điện $\Delta = 2Z - n$.</p>
+  <p>- Công thức giải nhanh:</p>
+  <p class="indent-1">$$Z = \frac{S + \Delta}{4} \qquad n = \frac{S - \Delta}{2}$$</p>
+  <p>- Điều kiện bền hạt nhân ($Z \le 82$): $1 \le \dfrac{n}{Z} \le 1,5 \implies \dfrac{S}{3,5} \le Z \le \dfrac{S}{3}$.</p>
+  <p>- Trong ion: Cation $M^{a+}$ có số hạt mang điện là $2Z - a$; Anion $X^{b-}$ có số hạt mang điện là $2Z + b$.</p>
+
+  <h3>Dạng 2: Bài toán xác định 2 nguyên tố kế tiếp nhau</h3>
+  <p>- Cùng chu kỳ, 2 nhóm A kế tiếp:</p>
+  <p class="indent-1">$$\begin{cases} Z_B - Z_A = 1 \\ Z_A + Z_B = \text{Tổng } Z \end{cases} \implies Z_A = \frac{\text{Tổng } Z - 1}{2}, \quad Z_B = Z_A + 1$$</p>
+  <p>- Cùng nhóm A, 2 chu kỳ kế tiếp ($Z_B - Z_A = \Delta Z$):</p>
+  <p class="indent-1">+ $\text{Tổng } Z \le 30 \implies \Delta Z = 8$ (Chu kỳ nhỏ 2 và 3).</p>
+  <p class="indent-1">+ $30 < \text{Tổng } Z < 70 \implies \Delta Z = 8$ (nếu nhóm IA, IIA) hoặc $\Delta Z = 18$ (nếu nhóm IIIA $\to$ VIIIA).</p>
+  <p class="indent-1">+ $\text{Tổng } Z \ge 70 \implies \Delta Z = 32$.</p>
+
+  <h3>Dạng 3: Bài toán xác định nguyên tố dựa vào % khối lượng hợp chất</h3>
+  <p>- Bước 1: Xác định nhóm A của nguyên tố $R \implies$ công thức Oxide cao nhất ($R_2O_n$) và hợp chất khí với Hydrogen ($RH_{8-n}$).</p>
+  <p>- Bước 2: Lập tỉ lệ khối lượng và rút ra khối lượng mol $M_R$:</p>
+  <p class="indent-1">$$\frac{\%m_R}{\%m_O} = \frac{2 \cdot M_R}{16 \cdot n} \implies M_R = \frac{\%m_R}{\%m_O} \times 8n$$</p>
+  <p class="indent-1">$$\frac{\%m_R}{\%m_H} = \frac{M_R}{8 - n} \implies M_R = \frac{\%m_R}{\%m_H} \times (8 - n)$$</p>
+
+  <h3>Dạng 4: Bài toán hỗn hợp kim loại kiềm (IA) / kiềm thổ (IIA) tác dụng nước hoặc acid</h3>
+  <p>- Bước 1: Số mol khí $H_2$ ở điều kiện chuẩn ($25^\circ\text{C}, 1\text{ bar}$): $n_{H_2} = \dfrac{V}{24,79}$ (hoặc $\dfrac{V}{22,4}$ nếu ở đktc cũ).</p>
+  <p>- Bước 2: Khối lượng mol trung bình $\bar{M}$:</p>
+  <p class="indent-1">+ Kim loại nhóm IA (hóa trị 1): $n_{\bar{M}} = 2 \cdot n_{H_2} \implies \bar{M} = \dfrac{m_{\text{hỗn hợp kim loại}}}{2 \cdot n_{H_2}}$.</p>
+  <p class="indent-1">+ Kim loại nhóm IIA (hóa trị 2): $n_{\bar{R}} = n_{H_2} \implies \bar{M} = \dfrac{m_{\text{hỗn hợp kim loại}}}{n_{H_2}}$.</p>
+  <p>- Bước 3: Chọn cặp nguyên tố thỏa mãn $M_1 < \bar{M} < M_2$ thuộc 2 chu kỳ liên tiếp:</p>
+  <p class="indent-1">* Nhóm IA: $Li (7) < Na (23) < K (39) < Rb (85,5) < Cs (133)$.</p>
+  <p class="indent-1">* Nhóm IIA: $Be (9) < Mg (24) < Ca (40) < Sr (88) < Ba (137)$.</p>
+  <p>- Bước 4: Khối lượng muối chloride thu được khi tác dụng với $HCl$:</p>
+  <p class="indent-1">$$m_{\text{muối}} = m_{\text{kim loại}} + 35,5 \cdot 2n_{H_2} = m_{\text{kim loại}} + 71 \cdot n_{H_2}$$</p>
+
+  <h3>Dạng 5: Bài toán hỗn hợp muối chloride tác dụng dung dịch $AgNO_3$ tạo kết tủa</h3>
+  <p>- Phương trình phản ứng: $\bar{M}Cl + AgNO_3 \to AgCl \downarrow + \bar{M}NO_3$.</p>
+  <p>- Bước 1: Tính $n_{\bar{M}Cl} = n_{AgCl} = \dfrac{m_{\downarrow AgCl}}{143,5}$.</p>
+  <p>- Bước 2: Tính khối lượng mol trung bình muối: $M_{\bar{M}Cl} = \dfrac{m_{\text{hỗn hợp muối}}}{n_{\bar{M}Cl}}$.</p>
+  <p>- Bước 3: Tính $\bar{M} = M_{\bar{M}Cl} - 35,5 \implies$ Chặn $M_1 < \bar{M} < M_2$ để tìm 2 kim loại kiềm.</p>
+
+  <h3>Dạng 6: Bài toán hỗn hợp kim loại và oxide kim loại tác dụng acid</h3>
+  <p>- Chỉ có kim loại $M$ tự do phản ứng sinh khí $H_2$: $n_M = \dfrac{2}{n} \cdot n_{H_2} \implies m_M = n_M \cdot M$.</p>
+  <p>- Khối lượng oxide: $m_{\text{oxide}} = m_{\text{hỗn hợp}} - m_M$.</p>
+  <p>- Thiết lập bảo toàn acid ($HCl$) phản ứng với cả kim loại và oxide để giải tìm khối lượng mol $M$.</p>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ],
+      throwOnError: false
+    });
+  });
+</script>
+</body>
+</html>

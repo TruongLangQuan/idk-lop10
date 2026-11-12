@@ -1,0 +1,419 @@
+{
+  "title": "Đề kiểm tra Ôn tập Hóa học Chương 2 - K12Online",
+  "subject": "Hóa học",
+  "grade": 10,
+  "total_questions": 28,
+  "duration_minutes": 45,
+  "part1": [
+    {
+      "id": 1,
+      "question": "Bảng tuần hoàn hiện nay có số chu kì và số hàng ngang lần lượt là",
+      "options": [
+        "7 và 7.",
+        "7 và 8.",
+        "7 và 9.",
+        "6 và 7."
+      ],
+      "correct": 0,
+      "user_answer": 2,
+      "explanation": "Bảng tuần hoàn hiện đại có 7 chu kì tương ứng với đúng 7 hàng ngang chính. Các nguyên tố họ Lanthanide và Actinide được tách ra đặt ở cuối bảng chỉ là hình thức trình bày cho gọn, không tính thành hàng ngang chu kì riêng."
+    },
+    {
+      "id": 2,
+      "question": "Nguyên tố R có cấu hình electron: $1s^2 2s^2 2p^3$. Công thức hợp chất oxide ứng với hóa trị cao nhất của R và hydride (hợp chất của R với hydrogen) tương ứng là",
+      "options": [
+        "$R_2O_5, RH_5$.",
+        "$R_2O_7, RH$.",
+        "$R_2O_3, RH_3$.",
+        "$R_2O_5, RH_3$."
+      ],
+      "correct": 3,
+      "user_answer": 3,
+      "explanation": "R có 5 electron lớp ngoài cùng ($2s^2 2p^3$), thuộc nhóm VA. Hóa trị cao nhất với oxygen bằng V -> $R_2O_5$. Hóa trị trong hợp chất khí với hydrogen là $8 - 5 = 3$ -> $RH_3$."
+    },
+    {
+      "id": 3,
+      "question": "$X^{2+}$ có tổng số hạt cơ bản là 58, trong X có số hạt mang điện nhiều hơn số hạt không mang điện là 20. Vị trí của X trong bảng tuần hoàn các nguyên tố hóa học là",
+      "options": [
+        "ô số 19, chu kì 4, nhóm IA.",
+        "ô số 20, chu kì 4, nhóm IIA.",
+        "ô số 20, chu kì 3, nhóm IIA.",
+        "ô số 20, chu kì 4, nhóm IIIA."
+      ],
+      "correct": 1,
+      "user_answer": 0,
+      "explanation": "Trong nguyên tử trung hòa X: $2Z - N = 20$. Trong ion $X^{2+}$ mất 2 electron: $(2Z - 2) + N = 58 -> 2Z + N = 60$. Giải hệ: $4Z = 80 -> Z = 20$ (Calcium: Ca), $N = 20$. Vị trí: Ô số 20, chu kì 4, nhóm IIA ($[Ar]4s^2$)."
+    },
+    {
+      "id": 4,
+      "question": "Nguyên tử của nguyên tố nào sau đây có tính phi kim mạnh nhất? Cho biết nguyên tố này có trong thành phần của hợp chất teflon, được sử dụng để tráng chảo chống dính.",
+      "options": [
+        "Phosphorus.",
+        "Iodine.",
+        "Fluorine.",
+        "Bromine."
+      ],
+      "correct": 2,
+      "user_answer": 2,
+      "explanation": "Fluorine ($F$) là phi kim có độ âm điện lớn nhất (3,98) và có tính phi kim mạnh nhất trong bảng tuần hoàn. Teflon là polyme polytetrafluoroethylene."
+    },
+    {
+      "id": 5,
+      "question": "X là nguyên tố có hóa trị cao nhất đối với oxygen bằng hóa trị của X trong hợp chất khí với hydrogen. Trong oxide cao nhất của X, oxygen chiếm 53,33% về khối lượng. Nguyên tố X là",
+      "options": [
+        "Silicon ($Si=28$).",
+        "Sulfur ($S=32$).",
+        "Carbon ($C=12$).",
+        "Nitrogen ($N=14$)."
+      ],
+      "correct": 0,
+      "user_answer": 0,
+      "explanation": "Hóa trị với oxygen bằng hóa trị với hydrogen: $a = 8 - a -> a = 4$. Oxide cao nhất là $XO_2$. %O = 32 / (M_X + 32) = 53,33% -> M_X = 28 ($Si$)."
+    },
+    {
+      "id": 6,
+      "question": "Chọn phương án đúng để hoàn thành câu sau: Trong bảng tuần hoàn các nguyên tố hóa học do Mendeleev đề xuất, các nguyên tố được sắp xếp theo chiều tăng dần của ...(1)... Trong bảng tuần hoàn hiện đại, các nguyên tố được sắp xếp theo chiều tăng dần của ...(2)...",
+      "options": [
+        "(1) số hiệu nguyên tử; (2) khối lượng nguyên tử.",
+        "(1) khối lượng nguyên tử; (2) số hiệu nguyên tử.",
+        "(1) điện tích hạt nhân; (2) khối lượng nguyên tử.",
+        "(1) bán kính nguyên tử; (2) độ âm điện."
+      ],
+      "correct": 1,
+      "user_answer": 1,
+      "explanation": "Bảng tuần hoàn Mendeleev xếp theo khối lượng nguyên tử; BTH hiện đại xếp theo số hiệu nguyên tử (điện tích hạt nhân Z)."
+    },
+    {
+      "id": 7,
+      "question": "Nguyên tố X ở chu kì 3, nhóm IIA của bảng tuần hoàn. Cấu hình electron của nguyên tử nguyên tố X là",
+      "options": [
+        "$1s^2 2s^2 2p^4$.",
+        "$1s^2 2s^2 2p^6 3s^2$.",
+        "$1s^2 2s^2 2p^6 3s^1$.",
+        "$1s^2 2s^2 2p^6 3s^2 3p^2$."
+      ],
+      "correct": 1,
+      "user_answer": 1,
+      "explanation": "Chu kì 3 có 3 lớp electron; nhóm IIA kết thúc ở phân lớp $3s^2$ ($[Ne]3s^2$, $Z=12$ Magnesium)."
+    },
+    {
+      "id": 8,
+      "question": "Cho các nguyên tố $_8X, _{11}Y, _{12}Z, _{14}T$. Nguyên tố có 1 electron hóa trị là",
+      "options": [
+        "X.",
+        "Y.",
+        "Z.",
+        "T."
+      ],
+      "correct": 1,
+      "user_answer": 1,
+      "explanation": "$_{11}Y$ là Sodium có cấu hình $[Ne]3s^1$ (1 electron hóa trị ở lớp ngoài cùng)."
+    },
+    {
+      "id": 9,
+      "question": "Nguyên tử của nguyên tố X có tổng số electron ở phân lớp ngoài cùng của lớp M và lớp N là 9. Vị trí của X trong bảng tuần hoàn là",
+      "options": [
+        "Chu kì 4, nhóm IA.",
+        "Chu kì 3, nhóm VIIIA.",
+        "Chu kì 4, nhóm IB.",
+        "Chu kì 4, nhóm IIA."
+      ],
+      "correct": 0,
+      "user_answer": 3,
+      "explanation": "Lớp M ($n=3$) có các phân lớp $3s^2 3p^6$ chứa 8 electron. Khi có electron ở lớp N ($n=4$) thì số electron ở lớp N là $9 - 8 = 1$ ($4s^1$). Cấu hình: $[Ar]4s^1$ ($Z=19$, Potassium). Vị trí: chu kì 4, nhóm IA."
+    },
+    {
+      "id": 10,
+      "question": "Cho các nguyên tố $_{11}X, _{12}Y, _{13}Z$. Thứ tự tính base tăng dần của các hydroxide tương ứng là",
+      "options": [
+        "Các nguyên tố này không thuộc cùng một chu kì.",
+        "$NaOH < Mg(OH)_2 < Al(OH)_3$.",
+        "$Al(OH)_3 < Mg(OH)_2 < NaOH$.",
+        "$Mg(OH)_2 < Al(OH)_3 < NaOH$."
+      ],
+      "correct": 2,
+      "user_answer": 0,
+      "explanation": "$_{11}Na, _{12}Mg, _{13}Al$ cùng thuộc chu kì 3. Theo chiều tăng dần Z trong chu kì, tính kim loại giảm dần -> tính base giảm dần: $NaOH > Mg(OH)_2 > Al(OH)_3$. Thứ tự TĂNG DẦN là $Al(OH)_3 < Mg(OH)_2 < NaOH$."
+    },
+    {
+      "id": 11,
+      "question": "Đại lượng nào sau đây đặc trưng cho khả năng hút electron của nguyên tử khi hình thành liên kết hóa học?",
+      "options": [
+        "Độ âm điện.",
+        "Bán kính nguyên tử.",
+        "Năng lượng ion hóa.",
+        "Tính kim loại."
+      ],
+      "correct": 0,
+      "user_answer": 0,
+      "explanation": "Theo SGK Hóa học 10 GDPT 2018: Độ âm điện của một nguyên tử đặc trưng cho khả năng hút electron của nguyên tử đó khi hình thành liên kết hóa học."
+    },
+    {
+      "id": 12,
+      "question": "Dãy acid nào sau đây được xếp theo thứ tự giảm dần tính acid?",
+      "options": [
+        "$HClO_4 > H_2SO_4 > H_3PO_4 > H_2SiO_3$.",
+        "$H_2SiO_3 > H_3PO_4 > H_2SO_4 > HClO_4$.",
+        "$HClO_4 > H_3PO_4 > H_2SO_4 > H_2SiO_3$.",
+        "$H_2SO_4 > HClO_4 > H_3PO_4 > H_2SiO_3$."
+      ],
+      "correct": 0,
+      "user_answer": 0,
+      "explanation": "Trong chu kì 3, tính phi kim tăng dần từ $Si < P < S < Cl$, do đó tính acid của hydroxide tương ứng tăng dần: $H_2SiO_3 < H_3PO_4 < H_2SO_4 < HClO_4$. Thứ tự GIẢM DẦN là $HClO_4 > H_2SO_4 > H_3PO_4 > H_2SiO_3$."
+    },
+    {
+      "id": 13,
+      "question": "Trong các nguyên tố sau: $_3Li, _{11}Na, _{19}K, _{20}Ca$. Nguyên tố có bán kính nguyên tử lớn nhất là",
+      "options": [
+        "Potassium ($K$).",
+        "Lithium ($Li$).",
+        "Calcium ($Ca$).",
+        "Sodium ($Na$)."
+      ],
+      "correct": 0,
+      "user_answer": 1,
+      "explanation": "Trong nhóm IA: bán kính tăng theo chiều $Li < Na < K$. Ở chu kì 4, bán kính giảm từ $K$ sang $Ca$ do điện tích hạt nhân tăng. Vì vậy $K$ có bán kính lớn nhất (227 pm), còn $Li$ nhỏ nhất (152 pm)."
+    },
+    {
+      "id": 14,
+      "question": "Quy luật biến đổi tính kim loại của các nguyên tố trong bảng tuần hoàn là",
+      "options": [
+        "Trong một chu kì giảm dần, trong một nhóm A tăng dần.",
+        "Trong một chu kì tăng dần, trong một nhóm A giảm dần.",
+        "Cả trong chu kì và trong nhóm A đều tăng dần.",
+        "Cả trong chu kì và trong nhóm A đều giảm dần."
+      ],
+      "correct": 0,
+      "user_answer": 0,
+      "explanation": "Trong một chu kì theo chiều tăng dần điện tích hạt nhân, tính kim loại giảm dần. Trong nhóm A theo chiều từ trên xuống dưới, tính kim loại tăng dần."
+    },
+    {
+      "id": 15,
+      "question": "Các nguyên tố thuộc cùng một nhóm A trong bảng tuần hoàn luôn có cùng",
+      "options": [
+        "Số lớp electron.",
+        "Bán kính nguyên tử.",
+        "Số khối.",
+        "Số electron hóa trị."
+      ],
+      "correct": 3,
+      "user_answer": 3,
+      "explanation": "Các nguyên tố trong cùng nhóm A có cùng số electron hóa trị (và bằng số electron lớp ngoài cùng)."
+    },
+    {
+      "id": 16,
+      "question": "Nguyên tố sulfur ($Z=16$) ở ô số 16, chu kì 3, nhóm VIA. Phát biểu nào sau đây là KHÔNG đúng?",
+      "options": [
+        "Oxide cao nhất của sulfur là $SO_3$, là acidic oxide.",
+        "Hợp chất khí của sulfur với hydrogen là $H_2S$.",
+        "Hydroxide ứng với oxide cao nhất của sulfur là $H_2SO_4$, là acid mạnh.",
+        "Sulfur là một kim loại vì có 6 electron ở lớp ngoài cùng."
+      ],
+      "correct": 3,
+      "user_answer": 3,
+      "explanation": "Nguyên tử có 6 electron lớp ngoài cùng ($3s^2 3p^4$) là phi kim điển hình, không phải kim loại."
+    },
+    {
+      "id": 17,
+      "question": "Nguyên tử Chromium ($Cr$) có $Z=24$. Vị trí của Chromium trong bảng tuần hoàn là",
+      "options": [
+        "Ô số 24, chu kì 4, nhóm VIB.",
+        "Ô số 24, chu kì 4, nhóm IIB.",
+        "Ô số 24, chu kì 4, nhóm VIA.",
+        "Ô số 24, chu kì 3, nhóm VIB."
+      ],
+      "correct": 0,
+      "user_answer": 0,
+      "explanation": "Cấu hình đặc biệt của Cr ($Z=24$): $[Ar]3d^5 4s^1$. Có 4 lớp electron -> chu kì 4; tổng số electron $3d + 4s = 5 + 1 = 6$, nguyên tố d -> nhóm VIB."
+    },
+    {
+      "id": 18,
+      "question": "Cho ba nguyên tố X ($3s^1$), Q ($3s^2$), Z ($3s^2 3p^1$). Thứ tự tăng dần tính base của các hydroxide tương ứng là",
+      "options": [
+        "$XOH < Q(OH)_2 < Z(OH)_3$.",
+        "$Z(OH)_3 < Q(OH)_2 < XOH$.",
+        "$Q(OH)_2 < XOH < Z(OH)_3$.",
+        "$Z(OH)_3 < XOH < Q(OH)_2$."
+      ],
+      "correct": 1,
+      "user_answer": 0,
+      "explanation": "X là Na, Q là Mg, Z là Al. Tính base giảm dần: $NaOH > Mg(OH)_2 > Al(OH)_3$. Do đó thứ tự TĂNG DẦN là $Z(OH)_3 < Q(OH)_2 < XOH$."
+    }
+  ],
+  "part2": [
+    {
+      "id": 19,
+      "question": "Hai nguyên tố X và Y ở hai nhóm A liên tiếp trong bảng tuần hoàn. Ở trạng thái đơn chất, X và Y không phản ứng với nhau. Tổng số proton trong hạt nhân X và Y bằng 23; X thuộc nhóm VA trong bảng tuần hoàn.",
+      "items": [
+        {
+          "id": "a",
+          "text": "Số electron lớp ngoài cùng của hai nguyên tố X, Y lần lượt là 4 và 5.",
+          "correct": false,
+          "user": true,
+          "explanation": "X nhóm VA có 5e ngoài cùng; Y nhóm VIA có 6e ngoài cùng."
+        },
+        {
+          "id": "b",
+          "text": "Độ âm điện của X lớn hơn độ âm điện của Y.",
+          "correct": true,
+          "user": false,
+          "explanation": "$Z_X=7$ (Nitrogen: 3,04) và $Z_Y=16$ (Sulfur: 2,58) -> Độ âm điện của X lớn hơn Y."
+        },
+        {
+          "id": "c",
+          "text": "Vị trí của Y trong bảng tuần hoàn là chu kì 2, nhóm VIA.",
+          "correct": false,
+          "user": true,
+          "explanation": "Y có $Z=16$ ($[Ne]3s^2 3p^4$) thuộc chu kì 3, nhóm VIA."
+        },
+        {
+          "id": "d",
+          "text": "X và Y là hai nguyên tố liên tiếp nhau trong cùng một chu kì.",
+          "correct": false,
+          "user": true,
+          "explanation": "X ở chu kì 2, Y ở chu kì 3."
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "question": "Nguyên tố X ở ô thứ 17 của bảng tuần hoàn (Chlorine: $Cl$). Cho các phát biểu sau:",
+      "items": [
+        {
+          "id": "a",
+          "text": "Hydroxide của X có công thức $HXO_4$ và là acid yếu.",
+          "correct": false,
+          "user": true,
+          "explanation": "$HClO_4$ là một trong những acid vô cơ mạnh nhất, không phải acid yếu."
+        },
+        {
+          "id": "b",
+          "text": "Oxide cao nhất của X có công thức $X_2O_5$ và là acidic oxide.",
+          "correct": false,
+          "user": false,
+          "explanation": "X thuộc nhóm VIIA nên oxide cao nhất có dạng $X_2O_7$ ($Cl_2O_7$)."
+        },
+        {
+          "id": "c",
+          "text": "X có độ âm điện lớn và là một phi kim mạnh.",
+          "correct": true,
+          "user": true,
+          "explanation": "Chlorine có độ âm điện 3,16 và là một phi kim rất mạnh."
+        },
+        {
+          "id": "d",
+          "text": "X có thể tạo thành ion bền có dạng $X^+$.",
+          "correct": false,
+          "user": false,
+          "explanation": "Chlorine có 7e ngoài cùng nên dễ nhận 1e tạo anion $Cl^-$, không tạo cation bền $Cl^+$."
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "question": "Cho vị trí của các nguyên tố E, T, Q, X, Y, Z trong bảng tuần hoàn rút gọn (nhóm IA đến VIIA):",
+      "items": [
+        {
+          "id": "a",
+          "text": "Thứ tự giảm dần bán kính nguyên tử là Y, E, X, T.",
+          "correct": true,
+          "user": false,
+          "explanation": "Y ở nhóm IA dưới cùng có bán kính lớn nhất, giảm dần sang phải và lên trên đến T."
+        },
+        {
+          "id": "b",
+          "text": "Thứ tự giảm dần tính phi kim là T, Z, Q.",
+          "correct": true,
+          "user": false,
+          "explanation": "T ở góc trên cùng bên phải nhóm VIIA có tính phi kim mạnh nhất, sau đó đến Z, rồi Q."
+        },
+        {
+          "id": "c",
+          "text": "Thứ tự tăng dần độ âm điện là Y, X, Z, T.",
+          "correct": true,
+          "user": false,
+          "explanation": "Kim loại kiềm Y có độ âm điện nhỏ nhất, tăng dần theo tính phi kim đến halogen T."
+        },
+        {
+          "id": "d",
+          "text": "Thứ tự giảm dần tính kim loại là Y, E, X.",
+          "correct": true,
+          "user": false,
+          "explanation": "Y là kim loại kiềm mạnh nhất, tính kim loại giảm dần sang E và X."
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "question": "Cho các phát biểu về bảng tuần hoàn các nguyên tố hóa học:",
+      "items": [
+        {
+          "id": "a",
+          "text": "Nguyên tử các nguyên tố trong cùng một hàng có cùng số lớp electron.",
+          "correct": true,
+          "user": false,
+          "explanation": "Các nguyên tố trong cùng một chu kì (hàng ngang) có cùng số lớp electron."
+        },
+        {
+          "id": "b",
+          "text": "Số electron ở lớp vỏ ngoài cùng càng lớn thì số thứ tự của nhóm càng lớn.",
+          "correct": false,
+          "user": true,
+          "explanation": "Chỉ đúng với nhóm A. Các kim loại chuyển tiếp nhóm B có 1-2e ngoài cùng nhưng số nhóm từ IIIB đến VIIIB."
+        },
+        {
+          "id": "c",
+          "text": "Nguyên tử các nguyên tố trong cùng một cột có cùng số electron hóa trị.",
+          "correct": false,
+          "user": false,
+          "explanation": "Nhóm VIIIB gồm 3 cột có 8, 9, 10 electron hóa trị, không bằng nhau ở mọi cột."
+        },
+        {
+          "id": "d",
+          "text": "Số thứ tự của nhóm luôn luôn bằng số electron ở lớp vỏ ngoài cùng của nguyên tử nguyên tố thuộc nhóm đó.",
+          "correct": false,
+          "user": true,
+          "explanation": "Chỉ đúng với các nguyên tố nhóm A, không đúng với nhóm B."
+        }
+      ]
+    }
+  ],
+  "part3": [
+    {
+      "id": 23,
+      "question": "Quá trình sản xuất aluminium từ quặng bauxite gồm tinh chế bauxite và trộn $Al_2O_3$ thu được với cryolite ($Na_3AlF_6$) rồi điện phân nóng chảy. Trường hợp bể điện phân chưa đúng tiêu chuẩn, sản phẩm là Al có lẫn Na. Cho 4,55 gam hỗn hợp sản phẩm phản ứng với dung dịch sulfuric acid loãng, dư, thoát ra 6,07355 L khí hydrogen ($25^\\circ\\text{C}$ và 1 bar). Độ tinh khiết của aluminium trong sản phẩm là bao nhiêu phần trăm? (Kết quả làm tròn đến hàng đơn vị).",
+      "correct": "89",
+      "explanation": "n_H2 = 6,07355 / 24,79 = 0,245 mol. Hệ: 27x + 23y = 4,55 và 1,5x + 0,5y = 0,245 -> x = 0,15 mol (Al), y = 0,04 mol (Na). m_Al = 4,05 g -> %Al = (4,05 / 4,55) * 100% = 89%."
+    },
+    {
+      "id": 24,
+      "question": "Cho các nguyên tố: $_3Li, _8O, _9F, _{11}Na, _{15}P, _{20}Ca$ và $_{26}Fe$. Có bao nhiêu nguyên tố s trong dãy các nguyên tố trên?",
+      "correct": "3",
+      "explanation": "Có 3 nguyên tố s gồm: $_3Li ([He]2s^1)$, $_{11}Na ([Ne]3s^1)$, $_{20}Ca ([Ar]4s^2)$."
+    },
+    {
+      "id": 25,
+      "question": "Bán kính ion là thước đo sử dụng để mô tả kích thước của một ion... Cho các số liệu kích thước nguyên tử và ion: 54 pm, 104 pm, 118 pm, 184 pm. Số liệu kích thước (pm) nào là phù hợp với ion $S^{2-}$?",
+      "correct": "184",
+      "explanation": "Bán kính nguyên tử S là 104 pm. Khi nhận thêm 2 electron tạo anion $S^{2-}$, bán kính tăng lên do lực đẩy giữa các electron. Giá trị phù hợp là 184 pm."
+    },
+    {
+      "id": 26,
+      "question": "Các electron của nguyên tử nguyên tố X được phân bố trên 2 lớp, lớp thứ 2 có 4 electron. Nguyên tố X nằm ở ô số mấy trong bảng tuần hoàn các nguyên tố hóa học?",
+      "correct": "6",
+      "explanation": "Lớp 1 có 2 electron, lớp 2 có 4 electron -> Z = 2 + 4 = 6. X ở ô số 6 (Carbon: C)."
+    },
+    {
+      "id": 27,
+      "question": "Cho cấu hình electron của các hạt vi mô sau: $X^{2+}: 1s^2 2s^2 2p^6 3s^2 3p^6$; $Y^{3+}: 1s^2 2s^2 2p^6$; $R^{2+}: 1s^2 2s^2 2p^6 3s^2 3p^6 3d^6$; $T^{2-}: 1s^2 2s^2 2p^6$. Có bao nhiêu nguyên tố đều thuộc chu kì 3?",
+      "correct": "1",
+      "explanation": "Nguyên tử X có Z=20 (Chu kì 4); Y có Z=13 (Chu kì 3); R có Z=26 (Chu kì 4); T có Z=8 (Chu kì 2). Chỉ có 1 nguyên tố Y thuộc chu kì 3."
+    },
+    {
+      "id": 28,
+      "question": "Nguyên tố Y thuộc chu kỳ 3 trong bảng tuần hoàn các nguyên tố hoá học. Công thức oxide cao nhất của Y là $YO_3$. Khi cho 0,1 mol $YO_3$ tác dụng với dung dịch NaOH dư thì số mol NaOH phản ứng là bao nhiêu?",
+      "correct": "0,2",
+      "explanation": "Oxide cao nhất là $YO_3$ -> Y là Sulfur ($S$). Phản ứng: $SO_3 + 2NaOH -> Na_2SO_4 + H_2O$. Số mol NaOH phản ứng = 2 * 0,1 = 0,2 mol."
+    }
+  ]
+}

@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trọng Tâm Sinh Học 10 - Bài 8 Tế Bào Nhân Thực</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"></script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    @page {
+      size: A4;
+      margin: 15mm 15mm 15mm 15mm;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: #111827;
+      background-color: #ffffff;
+      padding: 0;
+      font-size: 13.5px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    h2 {
+      font-size: 15px;
+      color: #111827;
+      font-weight: 700;
+      margin: 16px 0 6px 0;
+      text-transform: uppercase;
+      border-bottom: 1px solid #d1d5db;
+      padding-bottom: 3px;
+    }
+
+    .container > h2:first-child {
+      margin-top: 0;
+    }
+
+    h3 {
+      font-size: 14px;
+      color: #1f2937;
+      font-weight: 700;
+      margin: 10px 0 4px 0;
+    }
+
+    h4 {
+      font-size: 13.5px;
+      color: #1f2937;
+      font-weight: 700;
+      margin: 8px 0 3px 0;
+    }
+
+    p {
+      margin-bottom: 4px;
+      color: #111827;
+    }
+
+    .indent-1 { padding-left: 18px; }
+    .indent-2 { padding-left: 36px; }
+    .indent-3 { padding-left: 54px; }
+
+    .font-bold { font-weight: 700; }
+    hr {
+      border: none;
+      border-top: 1px dashed #d1d5db;
+      margin: 14px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 8px 0 12px 0;
+      font-size: 13px;
+    }
+
+    th, td {
+      border: 1px solid #9ca3af;
+      padding: 6px 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #f3f4f6;
+      font-weight: 700;
+      color: #111827;
+    }
+
+    tr:nth-child(even) td {
+      background-color: #f9fafb;
+    }
+
+    @media print {
+      body { font-size: 12px; line-height: 1.5; }
+      h2 { page-break-after: avoid; margin-top: 14px; }
+      h3, h4 { page-break-after: avoid; }
+      table { page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>BÀI 8: TẾ BÀO NHÂN THỰC (KẾT NỐI TRI THỨC VỚI CUỘC SỐNG)</h2>
+
+  <h3>1. Đặc điểm chung của tế bào nhân thực</h3>
+  <p>- Kích thước lớn ($10 - 100\,\mu\text{m}$) và cấu tạo phức tạp hơn nhiều so với tế bào nhân sơ.</p>
+  <p>- Đã có <strong>nhân chính thức</strong>: Vật chất di truyền (DNA kết hợp protein histone tạo chất nhiễm sắc) được bao bọc bởi màng nhân kép ngăn cách với tế bào chất.</p>
+  <p>- Tế bào chất được phân vùng bởi hệ thống nội màng tạo các xoang riêng biệt, giúp các phản ứng sinh hóa diễn ra đồng thời không bị xáo trộn.</p>
+  <p>- Chứa nhiều bào quan có màng chuyên hóa và hệ thống khung xương tế bào phát triển.</p>
+
+  <hr>
+
+  <h3>2. Cấu trúc và chức năng của nhân tế bào</h3>
+  <p><strong>a. Cấu trúc:</strong></p>
+  <p class="indent-1">- <strong>Màng nhân:</strong> Màng kép gồm màng ngoài và màng trong; trên màng có các <strong>lỗ màng nhân</strong> kiểm soát trao đổi chất (RNA, protein, enzyme) giữa nhân và tế bào chất. Màng ngoài thông trực tiếp với lưới nội chất hạt.</p>
+  <p class="indent-1">- <strong>Chất nhiễm sắc:</strong> Cấu tạo từ phân tử DNA mạch kép thẳng liên kết chặt với protein histone, mang thông tin di truyền.</p>
+  <p class="indent-1">- <strong>Hạch nhân (nhân con):</strong> Nơi tổng hợp rRNA và lắp ráp các tiểu đơn vị ribosome.</p>
+  <p class="indent-1">- <strong>Dịch nhân:</strong> Khối dịch lỏng chứa enzyme, nucleotide và ion khoáng.</p>
+  <p><strong>b. Chức năng:</strong></p>
+  <p class="indent-1">- Là <strong>trung tâm thông tin và điều khiển</strong> mọi hoạt động sống và chuyển hóa vật chất của tế bào.</p>
+  <p class="indent-1">- Lưu giữ, bảo quản và truyền đạt thông tin di truyền qua các thế hệ.</p>
+
+  <hr>
+
+  <h3>3. Vì sao nhân là trung tâm điều khiển mọi hoạt động sống của tế bào?</h3>
+  <p>- Trong nhân chứa DNA mang bộ gen chỉ đạo tổng hợp các loại protein cấu trúc và enzyme.</p>
+  <p>- Các enzyme xúc tác và điều hòa mọi chuỗi phản ứng trao đổi chất trong tế bào.</p>
+  <p>- <em>Thực nghiệm:</em> Thí nghiệm cấy ghép nhân (loài tảo đơn bào <em>Acetabularia</em>) chứng minh mọi đặc tính sinh học của cơ thể đều do nhân quy định.</p>
+
+  <hr>
+
+  <h3>4. Tế bào không có nhân và tế bào có nhiều nhân</h3>
+  <p>- <strong>Tế bào không nhân:</strong> Tế bào hồng cầu người trưởng thành (tiêu biến nhân để tối đa hóa dung tích chứa hemoglobin $Hb$ vận chuyển khí $O_2$), tế bào ống rây mạch rây.</p>
+  <p>- <strong>Tế bào nhiều nhân:</strong> Tế bào cơ vân (cơ xương động vật - hợp bào gồm hàng trăm nhân), sợi nấm mốc.</p>
+
+  <hr>
+
+  <h3>5. Ribosome (80S): Cấu trúc và chức năng</h3>
+  <table>
+    <tr>
+      <th style="width: 25%;">Tiêu chí</th>
+      <th>Nội dung chuẩn SGK Kết nối tri thức</th>
+    </tr>
+    <tr>
+      <td><strong>Bản chất hóa học</strong></td>
+      <td>Cấu tạo từ <strong>rRNA</strong> (chiếm 80% – 90%) và <strong>protein</strong>.</td>
+    </tr>
+    <tr>
+      <td><strong>Cấu trúc hình thái</strong></td>
+      <td>Bào quan <strong>không có màng bao bọc</strong>, dạng hình cầu; gồm 2 tiểu đơn vị: <strong>tiểu đơn vị lớn</strong> và <strong>tiểu đơn vị nhỏ</strong>.</td>
+    </tr>
+    <tr>
+      <td><strong>Vị trí tồn tại</strong></td>
+      <td>Đính trên bề mặt <strong>lưới nội chất hạt</strong> hoặc nằm <strong>tự do</strong> rải rác trong tế bào chất (và dạng 70S trong ti thể, lục lạp).</td>
+    </tr>
+    <tr>
+      <td><strong>Chức năng chính</strong></td>
+      <td>Là “nhà máy” trực tiếp thực hiện quá trình <strong>tổng hợp protein</strong> (dịch mã) cho tế bào.</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3>6. Tế bào có nhiều Ribosome nhất</h3>
+  <p>- Các tế bào có hoạt động tổng hợp và tiết protein mạnh mẽ: <strong>tế bào tuyến tụy</strong> (tiết enzyme tiêu hóa và hormone insulin/glucagon), tế bào gan (tiết protein huyết tương), tương bào (tiết kháng thể).</p>
+
+  <hr>
+
+  <h3>7. Mạng lưới nội chất: Cấu tạo và chức năng</h3>
+  <table>
+    <tr>
+      <th style="width: 25%;">Loại lưới nội chất</th>
+      <th style="width: 35%;">Đặc điểm cấu tạo</th>
+      <th>Chức năng chính</th>
+    </tr>
+    <tr>
+      <td><strong>Lưới nội chất hạt</strong></td>
+      <td>Hệ thống các túi dẹp thông với màng ngoài của nhân; bề mặt màng có <strong>đính dày đặc các hạt ribosome</strong>.</td>
+      <td>Tiếp nhận chuỗi polypeptide, hoàn thiện protein, gắn gốc đường và đóng gói vào túi vận chuyển.</td>
+    </tr>
+    <tr>
+      <td><strong>Lưới nội chất trơn</strong></td>
+      <td>Hệ thống màng dạng ống phân nhánh thông với lưới nội chất hạt; bề mặt <strong>không có ribosome</strong>, gắn nhiều enzyme.</td>
+      <td><strong>Tổng hợp lipid</strong> (phospholipid, cholesterol, hormone steroid), <strong>chuyển hóa đường</strong>, <strong>khử độc</strong> thuốc và độc chất (ở gan), dự trữ $Ca^{2+}$.</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3>8. Vì sao người uống nhiều rượu dễ mắc bệnh về gan?</h3>
+  <p>- Rượu (ethanol) được chuyển hóa và khử độc tại <strong>lưới nội chất trơn</strong> của tế bào gan.</p>
+  <p>- Khi uống nhiều rượu, tế bào gan bị quá tải; quá trình oxy hóa cồn sinh ra chất trung gian cực độc là <strong>acetaldehyde</strong> phá hủy màng tế bào gan, gây tích lũy mỡ $\rightarrow$ <strong>gan nhiễm mỡ</strong>, viêm gan và lâu dài biến tính xơ hóa thành <strong>xơ gan</strong>.</p>
+
+  <hr>
+
+  <h3>9. Bộ máy Golgi: Cấu tạo và chức năng</h3>
+  <p>- <strong>Cấu tạo:</strong> Gồm một chồng các <strong>túi màng dẹp</strong> nằm song song nhưng <strong>hoàn toàn tách rời nhau</strong> (không thông nối như ER). Có mặt nhập (<em>cis</em>) tiếp nhận túi từ ER và mặt xuất (<em>trans</em>) giải phóng túi tiết.</p>
+  <p>- <strong>Chức năng:</strong> Là nơi tập trung <strong>tiếp nhận, chế biến, lắp ráp, gắn nhãn nhận diện, đóng gói và phân phối</strong> các sản phẩm protein, lipid đến các bào quan hoặc xuất bào.</p>
+
+  <hr>
+
+  <h3>10. Mối liên quan chức năng giữa Ribosome, Lưới nội chất và Bộ máy Golgi</h3>
+  <p class="indent-1 font-bold">Ribosome &rarr; Lưới nội chất hạt &rarr; Túi vận chuyển &rarr; Bộ máy Golgi &rarr; Túi tiết &rarr; Màng sinh chất (xuất bào)</p>
+  <p>- <em>Ví dụ cụ thể:</em> Tuyến tụy sản xuất và tiết hormone insulin: Ribosome dịch mã đưa chuỗi protein vào lòng lưới nội chất hạt cuộn gập $\rightarrow$ đóng túi vận chuyển đến bộ máy Golgi cắt tỉa hoàn thiện insulin $\rightarrow$ đóng túi tiết hòa màng sinh chất xuất bào vào máu.</p>
+
+  <hr>
+
+  <h3>11. Bảng so sánh Lysosome, Peroxysome và Không bào</h3>
+  <table>
+    <tr>
+      <th style="width: 20%;">Bào quan</th>
+      <th style="width: 30%;">Cấu tạo</th>
+      <th style="width: 20%;">Phân bố</th>
+      <th>Chức năng chính</th>
+    </tr>
+    <tr>
+      <td><strong>Lysosome</strong></td>
+      <td>Dạng túi có <strong>1 lớp màng</strong>, chứa nhiều enzyme thủy phân.</td>
+      <td>Chủ yếu ở <strong>tế bào động vật</strong>.</td>
+      <td>Tiêu hóa nội bào: phân giải tế bào và bào quan già cỗi, tiêu hóa thức ăn (thực bào), tiêu diệt vi khuẩn.</td>
+    </tr>
+    <tr>
+      <td><strong>Peroxysome</strong></td>
+      <td>Hình cầu có <strong>1 lớp màng</strong>, chứa enzyme oxy hóa (catalase).</td>
+      <td>Động vật và thực vật (nhiều ở gan, thận).</td>
+      <td><strong>Khử độc tế bào</strong>: phân giải chất độc $H_2O_2$ thành nước và oxy ($2H_2O_2 \rightarrow 2H_2O + O_2$); oxy hóa acid béo.</td>
+    </tr>
+    <tr>
+      <td><strong>Không bào</strong></td>
+      <td>Bào quan có <strong>1 lớp màng</strong> bao bọc; bên trong chứa dịch không bào.</td>
+      <td><strong>Rất lớn ở tế bào thực vật</strong>; ở động vật nhỏ hoặc không có.</td>
+      <td><strong>Điều hòa áp suất thẩm thấu và sức trương nước</strong>; dự trữ chất dinh dưỡng, ion khoáng, sắc tố (thu hút côn trùng) hoặc chất thải.</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3>12. Lục lạp: Cấu tạo và chức năng</h3>
+  <p>- <strong>Cấu tạo:</strong></p>
+  <p class="indent-1">+ <strong>Màng kép:</strong> Màng ngoài và màng trong đều trơn nhẵn.</p>
+  <p class="indent-1">+ <strong>Hệ thống Thylakoid & Grana:</strong> Bên trong là các túi màng dẹp <em>thylakoid</em> xếp chồng lên nhau tạo thành cấu trúc <strong>granum</strong>; trên bề mặt màng thylakoid chứa <strong>hệ sắc tố quang hợp</strong> (diệp lục chlorophyll, carotenoid) và enzyme quang hợp.</p>
+  <p class="indent-1">+ <strong>Chất nền (Stroma):</strong> Khối chất lỏng không màu bao quanh grana, chứa enzyme pha tối, phân tử DNA dạng vòng nhỏ và ribosome 70S.</p>
+  <p>- <strong>Chức năng:</strong> Là bào quan thực hiện quá trình <strong>quang hợp</strong>: hấp thụ quang năng mặt trời tổng hợp nên chất hữu cơ ($C_6H_{12}O_6$) từ $CO_2$ và $H_2O$, đồng thời giải phóng $O_2$.</p>
+
+  <hr>
+
+  <h3>13. Ti thể: Cấu tạo và chức năng</h3>
+  <p>- <strong>Cấu tạo:</strong></p>
+  <p class="indent-1">+ <strong>Màng kép:</strong> Màng ngoài trơn nhẵn; <strong>màng trong gấp nếp sâu tạo thành mào (cristae)</strong> làm tăng diện tích màng, trên mào chứa chuỗi truyền electron hô hấp và enzyme tổng hợp ATP.</p>
+  <p class="indent-1">+ <strong>Chất nền (Matrix):</strong> Chứa nhiều enzyme của chu trình Krebs, phân tử DNA dạng vòng nhỏ và ribosome 70S.</p>
+  <p>- <strong>Chức năng:</strong> Là “nhà máy điện của tế bào”, nơi diễn ra quá trình <strong>hô hấp tế bào</strong>, chuyển hóa năng lượng trong chất hữu cơ thành năng lượng <strong>ATP</strong> cung cấp cho mọi hoạt động sống.</p>
+
+  <hr>
+
+  <h3>14. Bảng so sánh Ti thể và Lục lạp</h3>
+  <table>
+    <tr>
+      <th style="width: 25%;">Đặc điểm so sánh</th>
+      <th style="width: 37%;">Ti thể</th>
+      <th>Lục lạp</th>
+    </tr>
+    <tr>
+      <td><strong>Loại tế bào</strong></td>
+      <td>Có ở hầu hết tế bào nhân thực (ĐV, TV, nấm).</td>
+      <td>Chỉ có ở tế bào thực vật (phần xanh) và tảo quang hợp.</td>
+    </tr>
+    <tr>
+      <td><strong>Hình dáng</strong></td>
+      <td>Nhiều hình dạng (hình cầu, hình que, bầu dục).</td>
+      <td>Hình bầu dục / hình đĩa hai mặt lồi.</td>
+    </tr>
+    <tr>
+      <td><strong>Cấu trúc màng</strong></td>
+      <td>Màng kép: màng trong <strong>gấp nếp tạo mào cristae</strong>.</td>
+      <td>Màng kép: <strong>cả hai màng đều trơn nhẵn</strong>.</td>
+    </tr>
+    <tr>
+      <td><strong>Cấu trúc bên trong</strong></td>
+      <td>Chất nền matrix và mào cristae.</td>
+      <td>Chất nền stroma và các hạt grana (thylakoid).</td>
+    </tr>
+    <tr>
+      <td><strong>Sắc tố</strong></td>
+      <td><strong>Không có</strong> sắc tố quang hợp.</td>
+      <td><strong>Có sắc tố diệp lục</strong> và carotenoid.</td>
+    </tr>
+    <tr>
+      <td><strong>Chức năng chính</strong></td>
+      <td>Hô hấp tế bào (phân giải hữu cơ tổng hợp ATP).</td>
+      <td>Quang hợp (tổng hợp chất hữu cơ từ $CO_2$ và $H_2O$).</td>
+    </tr>
+    <tr>
+      <td><strong>Chuyển hóa năng lượng</strong></td>
+      <td>Hóa năng trong hữu cơ &rarr; Hóa năng trong ATP.</td>
+      <td>Quang năng &rarr; Hóa năng trong chất hữu cơ.</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3>15. Nguồn gốc tạo ra Ti thể / Lục lạp mới & khả năng tự tổng hợp protein</h3>
+  <p>- <strong>Cách tạo ra:</strong> Được tạo ra bằng cách <strong>tự phân chia (phân đôi)</strong> từ các ti thể và lục lạp có trước.</p>
+  <p>- <strong>Tự tổng hợp protein:</strong> Do chúng có <strong>hệ thống di truyền độc lập</strong> bán tự chủ (chứa phân tử DNA dạng vòng riêng và ribosome 70S riêng tương tự vi khuẩn).</p>
+
+  <hr>
+
+  <h3>16. Mối quan hệ giữa Ti thể và Lục lạp ở tế bào thực vật</h3>
+  <p>- <strong>Lục lạp</strong> quang hợp tổng hợp chất hữu cơ ($C_6H_{12}O_6$) và giải phóng $O_2$.</p>
+  <p>- <strong>Ti thể</strong> sử dụng sản phẩm hữu cơ và $O_2$ từ lục lạp làm nguyên liệu cho hô hấp tế bào để giải phóng ATP, đồng thời thải ra $CO_2$ và $H_2O$.</p>
+  <p>- $CO_2$ và $H_2O$ này lại là nguyên liệu đầu vào cho lục lạp quang hợp (chu trình trao đổi chất khép kín, hỗ trợ nhau).</p>
+
+  <hr>
+
+  <h3>17. Tế bào chất (Bào tương)</h3>
+  <p>- Vùng nằm giữa màng sinh chất và màng nhân.</p>
+  <p>- Gồm <strong>bào tương</strong> (chất dịch keo chứa nước, các phân tử sinh học và ion vô cơ) cùng các bào quan và khung xương tế bào.</p>
+  <p>- Là môi trường diễn ra hầu hết các hoạt động sống và chuyển hóa vật chất cơ bản của tế bào.</p>
+
+  <hr>
+
+  <h3>18. Khung xương tế bào: Cấu tạo và chức năng</h3>
+  <p>- <strong>Cấu tạo:</strong> Mạng lưới gồm 3 loại sợi protein đan xen: <strong>vi sợi</strong> (actin), <strong>sợi trung gian</strong>, và <strong>vi ống</strong> (tubulin).</p>
+  <p>- <strong>Chức năng:</strong> Nâng đỡ, duy trì hình dạng ổn định của tế bào; neo giữ các bào quan và làm hệ thống đường ray cho sự vận chuyển nội bào.</p>
+
+  <hr>
+
+  <h3>19. Trung thể: Cấu tạo và chức năng</h3>
+  <p>- <strong>Cấu tạo:</strong> Bào quan <strong>không có màng bao bọc</strong>; gồm <strong>hai trung tử</strong> xếp vuông góc nhau (mỗi trung tử gồm 9 bộ ba vi ống xếp thành vòng). <em>(Chỉ có ở tế bào động vật; thực vật bậc cao không có)</em>.</p>
+  <p>- <strong>Chức năng:</strong> Là trung tâm tổ chức vi ống, tham gia hình thành <strong>thoi phân bào</strong> giúp phân li nhiễm sắc thể khi phân chia tế bào.</p>
+
+  <hr>
+
+  <h3>20. Bảng thành phần cấu tạo màng sinh chất (Mô hình Khảm động)</h3>
+  <table>
+    <tr>
+      <th style="width: 25%;">Thành phần</th>
+      <th style="width: 40%;">Đặc điểm cấu trúc</th>
+      <th>Chức năng tương ứng</th>
+    </tr>
+    <tr>
+      <td><strong>Lớp kép phospholipid</strong></td>
+      <td>Đầu ưa nước quay ra ngoài, đuôi kị nước quay vào nhau.</td>
+      <td>Tạo khung nền cơ bản của màng; kiểm soát cho các chất tan trong lipid khuếch tán qua.</td>
+    </tr>
+    <tr>
+      <td><strong>Protein màng</strong></td>
+      <td>Gồm protein xuyên màng và protein bám màng (ngoại vi).</td>
+      <td>Kênh vận chuyển chất tan, bơm ion, enzyme xúc tác trên màng, thụ thể tiếp nhận tin.</td>
+    </tr>
+    <tr>
+      <td><strong>Protein thụ thể</strong></td>
+      <td>Protein màng có vị trí liên kết đặc hiệu với phân tử tín hiệu.</td>
+      <td>Tiếp nhận thông tin từ môi trường ngoài và truyền tin vào bên trong tế bào.</td>
+    </tr>
+    <tr>
+      <td><strong>Cholesterol (ở TB ĐV)</strong></td>
+      <td>Phân tử steroid nằm xen kẽ giữa các phospholipid.</td>
+      <td><strong>Điều hòa tính linh động (tính lỏng)</strong> của màng sinh chất.</td>
+    </tr>
+    <tr>
+      <td><strong>Carbohydrate màng</strong></td>
+      <td>Gắn với protein (glycoprotein) hoặc lipid (glycolipid) thò ra ngoài.</td>
+      <td>Đóng vai trò là <strong>“dấu chuẩn nhận diện”</strong> của tế bào.</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3>21. Các chức năng của màng sinh chất</h3>
+  <p>1. <strong>Bảo vệ và ngăn cách:</strong> Phân tách tế bào chất với môi trường bên ngoài.</p>
+  <p>2. <strong>Trao đổi chất chọn lọc:</strong> Có tính bán thấm, kiểm soát nghiêm ngặt các chất đi vào/ra tế bào.</p>
+  <p>3. <strong>Tiếp nhận và truyền tin:</strong> Nhận tín hiệu hóa học từ môi trường giúp tế bào đáp ứng kịp thời.</p>
+  <p>4. <strong>Nhận diện tế bào:</strong> Giúp hệ miễn dịch phân biệt tế bào của cơ thể và tế bào ngoại lai.</p>
+
+  <hr>
+
+  <h3>22. Vì sao nói màng tế bào có cấu trúc "khảm động"?</h3>
+  <p>- <strong>Khảm:</strong> Khung nền là lớp kép phospholipid, các phân tử protein khảm xen kẽ vào khung lipid (xuyên qua hoặc bám bề mặt).</p>
+  <p>- <strong>Động:</strong> Các phân tử phospholipid và protein có thể dịch chuyển tương đối linh hoạt trên bề mặt màng.</p>
+
+  <hr>
+
+  <h3>23. So sánh acid béo màng tế bào của cá Nam Cực và cá nhiệt đới</h3>
+  <p>- <strong>Khác biệt:</strong> Cá sống ở Nam Cực có <strong>tỉ lệ acid béo không no cao hơn rất nhiều</strong> so với cá sống ở vùng nhiệt đới.</p>
+  <p>- <strong>Giải thích:</strong> Acid béo không no có các liên kết đôi gấp khúc giúp các phân tử phospholipid không bị nén chặt, ngăn cản sự đông cứng màng ở nhiệt độ băng giá, duy trì tính lỏng sinh học bình thường của màng.</p>
+
+  <hr>
+
+  <h3>24. Cấu tạo và chức năng thành tế bào Thực vật và Nấm</h3>
+  <table>
+    <tr>
+      <th style="width: 25%;">Đặc điểm</th>
+      <th style="width: 37%;">Thành tế bào Thực vật</th>
+      <th>Thành tế bào Nấm</th>
+    </tr>
+    <tr>
+      <td><strong>Thành phần hóa học</strong></td>
+      <td>Cấu tạo chủ yếu từ <strong>Cellulose</strong>.</td>
+      <td>Cấu tạo chủ yếu từ chất <strong>Chitin</strong>.</td>
+    </tr>
+    <tr>
+      <td><strong>Đặc điểm cấu trúc</strong></td>
+      <td>Các sợi cellulose đan xen bền chắc, có cầu sinh chất.</td>
+      <td>Lớp vỏ chitin dai chắc bao ngoài màng sinh chất.</td>
+    </tr>
+    <tr>
+      <td><strong>Chức năng chính</strong></td>
+      <td>Bảo vệ tế bào, định hình tế bào, chống vỡ khi trương nước.</td>
+      <td>Duy trì hình thái sợi nấm và bảo vệ cơ học.</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3>25. Bảng so sánh Lông và Roi ở tế bào nhân thực</h3>
+  <table>
+    <tr>
+      <th style="width: 25%;">Tiêu chí</th>
+      <th style="width: 37%;">Lông (Cilia)</th>
+      <th>Roi (Flagella)</th>
+    </tr>
+    <tr>
+      <td><strong>Kích thước & Số lượng</strong></td>
+      <td>Ngắn ($2 - 10\,\mu\text{m}$), số lượng <strong>rất nhiều</strong> bao quanh tế bào.</td>
+      <td>Rất dài ($100 - 200\,\mu\text{m}$), số lượng <strong>rất ít</strong> (1 hoặc vài sợi).</td>
+    </tr>
+    <tr>
+      <td><strong>Cấu tạo vi thể</strong></td>
+      <td>Cấu tạo từ các <strong>vi ống theo cấu trúc $9 + 2$</strong>.</td>
+      <td>Đều cấu tạo từ các <strong>vi ống theo cấu trúc $9 + 2$</strong>.</td>
+    </tr>
+    <tr>
+      <td><strong>Chức năng chính</strong></td>
+      <td>Chuyển động nhịp nhàng: giúp bơi hoặc quét dòng dịch bề mặt.</td>
+      <td>Chuyển động lượn sóng giúp tế bào di chuyển nhanh trong dịch lỏng.</td>
+    </tr>
+    <tr>
+      <td><strong>Ví dụ minh họa</strong></td>
+      <td>Lông rung biểu mô đường hô hấp người, lông trùng đế giày.</td>
+      <td>Roi tinh trùng người và động vật, roi trùng roi xanh.</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3>26. Vì sao người nghiện thuốc lá hay bị viêm đường hô hấp?</h3>
+  <p>- Khói thuốc lá làm <strong>tê liệt và phá hủy lông rung</strong> của các tế bào biểu mô niêm mạc phế quản.</p>
+  <p>- Lông rung bị liệt không thể quét chất nhầy và bụi bẩn ra ngoài, làm ứ đọng dịch và vi khuẩn gây viêm phế quản và viêm phổi.</p>
+
+  <hr>
+
+  <h3>27. Cấu tạo và chức năng của chất nền ngoại bào (ECM)</h3>
+  <p>- <strong>Cấu tạo:</strong> Nằm phía ngoài màng tế bào động vật; gồm phức hợp <strong>proteoglycan kết hợp với các sợi collagen</strong>, liên kết với khung xương tế bào qua protein màng (integrin).</p>
+  <p>- <strong>Chức năng:</strong> Nâng đỡ, gắn kết các tế bào hình thành mô; <strong>điều khiển sự hoạt động của các gene</strong> giúp các tế bào trong cùng một mô phối hợp nhịp nhàng.</p>
+
+  <hr>
+
+  <h3>28. Các loại mối nối giữa các tế bào động vật</h3>
+  <p>- <strong>Mối nối kín (mối kín):</strong> Các tế bào ghép sát khít nhau bằng protein chuyên biệt, <strong>ngăn cản chất lọt qua khe giữa các tế bào</strong> (giúp chọn lọc chất hấp thu ở biểu mô ruột).</p>
+  <p>- <strong>Mối nối hở (mối nối truyền tin):</strong> Tạo nên <strong>kênh thông trực tiếp</strong> giữa hai tế bào, cho phép các ion và phân tử nhỏ truyền qua nhau rất nhanh (ở cơ tim). <em>(Ở tế bào thực vật, cấu trúc tương ứng là <strong>cầu sinh chất</strong> xuyên qua thành tế bào)</em>.</p>
+
+  <hr>
+
+  <h3>29. Tế bào phối hợp hoạt động qua chất nền ngoại bào như thế nào?</h3>
+  <p>- Tín hiệu bên ngoài tác động lên sợi collagen/proteoglycan của chất nền ngoại bào &rarr; truyền qua protein màng liên kết vào khung xương tế bào &rarr; truyền tin vào nhân <strong>điều hòa biểu hiện gene</strong> của tế bào.</p>
+
+  <hr>
+
+  <h3>30. Sơ đồ đường đi của một phân tử protein từ khi tổng hợp đến khi xuất bào</h3>
+  <p class="indent-1 font-bold">Lưới nội chất hạt (Ribosome) &rarr; Túi vận chuyển &rarr; Bộ máy Golgi &rarr; Túi tiết &rarr; Màng sinh chất &rarr; Xuất bào</p>
+
+  <hr>
+
+  <h3>31. Điều gì xảy ra với tế bào động vật nếu bộ khung xương tế bào bị tổn thương?</h3>
+  <p>- Tế bào mất lực nâng đỡ cơ học, bị <strong>biến dạng hoặc dễ vỡ</strong>.</p>
+  <p>- Các bào quan bị trôi dạt lộn xộn, mất vị trí cố định.</p>
+  <p>- Ngưng trệ quá trình vận chuyển nội bào của các túi tiết.</p>
+  <p>- Tế bào không thể tạo thoi phân bào để phân chia.</p>
+
+  <hr>
+
+  <h3>32. Phân loại các bào quan theo số lớp màng tế bào</h3>
+  <table>
+    <tr>
+      <th style="width: 35%;">Số lớp màng</th>
+      <th>Tên các bào quan cụ thể</th>
+    </tr>
+    <tr>
+      <td><strong>Bào quan có 2 lớp màng (Màng kép)</strong></td>
+      <td><strong>Nhân tế bào</strong>, <strong>Ti thể</strong>, <strong>Lục lạp</strong>.</td>
+    </tr>
+    <tr>
+      <td><strong>Bào quan có 1 lớp màng (Màng đơn)</strong></td>
+      <td><strong>Lưới nội chất</strong> (hạt & trơn), <strong>Bộ máy Golgi</strong>, <strong>Lysosome</strong>, <strong>Peroxysome</strong>, <strong>Không bào</strong>.</td>
+    </tr>
+    <tr>
+      <td><strong>Bào quan không có màng</strong></td>
+      <td><strong>Ribosome</strong>, <strong>Trung thể</strong> (ở tế bào động vật).</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3>33. Những điểm giống nhau giữa tế bào Thực vật và tế bào Động vật</h3>
+  <p>1. Đều là <strong>tế bào nhân thực (Eukaryote)</strong> có kích thước lớn và cấu tạo hoàn chỉnh.</p>
+  <p>2. Đều có <strong>màng sinh chất</strong> cấu tạo theo mô hình khảm động.</p>
+  <p>3. Đều có <strong>nhân chính thức</strong> có màng nhân kép bao bọc chứa chất nhiễm sắc (DNA + histone).</p>
+  <p>4. Có chung hệ thống khung xương tế bào và các bào quan cơ bản: <strong>Ti thể, Ribosome, Lưới nội chất, Bộ máy Golgi, Peroxysome</strong>.</p>
+  <p>5. Đều thực hiện các hoạt động sống cơ bản: trao đổi chất, hô hấp tế bào tạo ATP, tổng hợp protein và phân bào.</p>
+
+  <hr>
+
+  <h3>34. Sự khác biệt giữa tế bào Thực vật và tế bào Động vật</h3>
+  <table>
+    <tr>
+      <th style="width: 25%;">Đặc điểm so sánh</th>
+      <th style="width: 37%;">Tế bào Thực vật</th>
+      <th>Tế bào Động vật</th>
+    </tr>
+    <tr>
+      <td><strong>Thành tế bào</strong></td>
+      <td><strong>Có thành tế bào</strong> bằng cellulose, định hình tế bào vững chắc.</td>
+      <td><strong>Không có thành tế bào</strong>, hình dạng mềm dẻo.</td>
+    </tr>
+    <tr>
+      <td><strong>Lục lạp</strong></td>
+      <td><strong>Có lục lạp</strong> chứa diệp lục (quang hợp tự dưỡng).</td>
+      <td><strong>Không có lục lạp</strong> (dinh dưỡng dị dưỡng).</td>
+    </tr>
+    <tr>
+      <td><strong>Không bào</strong></td>
+      <td><strong>Có không bào trung tâm rất lớn</strong>, duy trì sức trương.</td>
+      <td><strong>Không có</strong> hoặc chỉ có không bào rất nhỏ.</td>
+    </tr>
+    <tr>
+      <td><strong>Trung thể</strong></td>
+      <td><strong>Không có trung tử</strong> (ở thực vật bậc cao).</td>
+      <td><strong>Có trung thể</strong> với 2 trung tử (tham gia phân bào).</td>
+    </tr>
+    <tr>
+      <td><strong>Lysosome</strong></td>
+      <td>Rất hiếm gặp (không bào đảm nhiệm).</td>
+      <td><strong>Có lysosome điển hình</strong> phát triển mạnh.</td>
+    </tr>
+    <tr>
+      <td><strong>Chất dự trữ</strong></td>
+      <td>Chủ yếu là <strong>Tinh bột</strong> và dầu thực vật.</td>
+      <td>Chủ yếu là <strong>Glycogen</strong> và mỡ động vật.</td>
+    </tr>
+  </table>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: "$$", right: "$$", display: true},
+        {left: "$", right: "$", display: false}
+      ],
+      throwOnError: false
+    });
+    window.mathDone = true;
+  });
+</script>
+
+</body>
+</html>
